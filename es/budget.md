@@ -8,165 +8,150 @@ nav_order: 2
 
 # Presupuesto
 
-La página de Presupuesto es el corazón de savr. Cada mes decides cómo se gasta cada unidad de dinero antes de que salga de tu cuenta.
+La página de Presupuesto es el corazón de savr. Cada mes decides cómo se gasta cada unidad de dinero antes de que salga de tu cuenta. Cuando el valor **Por Asignar** llega a cero, cada peso tiene un propósito.
 
 ---
 
-## El banner Por presupuestar
+## Anatomía de la página de presupuesto
 
-El banner **Por presupuestar (TBB)** está fijo en la parte superior de la página y siempre es visible mientras desplazas las categorías. Muestra:
-
-- La cantidad de ingresos aún sin asignar
-- Una frase rotatoria que cambia cada vez que el escenario cambia
-
-| Escenario | Qué significa |
+| Elemento | Qué muestra |
 |---|---|
-| Monto positivo | Tienes dinero esperando ser asignado a categorías |
-| Cero | Cada unidad está contabilizada — presupuesto completo |
-| Negativo (rojo) | Has asignado más de lo que tienes — reduce algunas categorías |
+| **Selector de mes / año** | Navega a cualquier mes pasado o futuro. Por defecto se selecciona el mes actual. |
+| **Por Asignar** | Ingresos que has recibido pero aún no has asignado a una categoría. La meta es mantenerlo en cero. |
+| **Saldo total de cuentas** | Suma de todos los saldos de tus cuentas activas, mostrado junto al presupuesto como contexto. |
+| **Grupos de categorías** | Agrupaciones colapsables de categorías (p. ej. "Servicios", "Metas"). Cada grupo muestra métricas agregadas. |
+| **Filas de categoría** | Cada categoría muestra Asignado, Gastado y Disponible para el mes seleccionado. |
 
-La frase usa el nombre de tu moneda configurada (ej. "Cada peso tiene un destino" o "Every US dollar has a job"), y hay 20 frases diferentes por escenario para que la experiencia se mantenga fresca.
+Cada fila de categoría tiene tres valores centrales:
+
+- **Asignado** — lo que has asignado este mes
+- **Gastado** — total de transacciones en esta categoría este mes
+- **Disponible** — `Asignado − Gastado`. Lo que aún puedes gastar.
+
+Cuando **Disponible** es negativo, el valor se muestra en rojo. Es la señal para mover dinero hacia esa categoría.
 
 ---
 
-## Leer la tabla de presupuesto
+## Asignar dinero a las categorías
 
-Las categorías están organizadas en grupos colapsables. Para cada categoría puedes ver:
+Haz clic en cualquier categoría e ingresa la cantidad que quieres presupuestar para el mes. Cada asignación reduce **Por Asignar** en la misma cantidad.
 
-| Columna | Qué muestra |
+El objetivo del mes es simple:
+
+> **Ingresos − Asignaciones = 0**
+
+Si te queda saldo en Por Asignar, no has planificado todo. Si Por Asignar se vuelve negativo, has asignado de más y necesitas reducir en algún lado.
+
+### Clasificación de ingresos
+
+Cómo afectan las transacciones a Por Asignar depende de su tipo:
+
+| Tipo de transacción | Efecto en Por Asignar |
 |---|---|
-| Categoría | El nombre de la categoría (soporta emojis y unicode) |
-| Presupuestado | Cuánto asignaste este mes |
-| Gastado | El gasto real registrado hasta ahora |
-| Disponible | Presupuestado + remanente − gastado |
+| **Ingreso** | Aumenta Por Asignar |
+| **Gasto** | Sin efecto directo (reduce el Disponible de la categoría vía Gastado) |
+| **Reembolso** | Sin efecto en Por Asignar. Solo reduce el Gastado de la categoría. |
+| **Transferencia** | Sin efecto — el dinero se mueve entre tus cuentas |
 
-### Barra de progreso
-
-Cada fila de categoría tiene una **barra de progreso** directamente debajo del nombre. Te da una visualización instantánea de cuánto del saldo disponible se ha utilizado:
-
-- **Verde oscuro** — saldo disponible sin gastar
-- **Verde claro** — porción gastada (dentro del presupuesto)
-- **Rojo / amarillo** — excedido
-
-Una leyenda debajo de la barra siempre muestra las cifras exactas: cuánto se gastó, cuánto queda y si hay remanente del mes anterior.
+Esto significa que un reembolso cancela correctamente una compra anterior en tu categoría, sin inflar tus ingresos del mes.
 
 ---
 
-## Asignar dinero
+## Mover dinero entre categorías
 
-Haz clic en cualquier monto en la columna **Presupuestado** y escribe un nuevo valor.
+Cuando una categoría está sobregirada y otra tiene excedente, no necesitas romper el presupuesto — solo mueves dinero.
 
-- Presiona **Enter** para guardar
-- Presiona **Escape** para cancelar sin hacer cambios
-- Haz clic fuera para guardar
+1. Haz clic en la categoría origen en la lista del presupuesto.
+2. Usa la acción **Mover dinero** y elige la categoría destino y el monto.
+3. La transferencia se registra en el historial de presupuesto de ambas categorías.
+
+Tu **Por Asignar** general permanece en cero. Solo cambia la asignación interna.
 
 ---
 
-## El panel de detalle de categoría
+## Estrategias de auto-asignación
 
-Haz clic en cualquier **fila** de categoría para abrir el panel de detalle en el lado derecho de la pantalla. El panel permanece fijo mientras desplazas, siempre accesible.
+savr puede llenar tu presupuesto automáticamente. Abre el menú **Auto-Asignar** en la página de Presupuesto y elige una estrategia:
 
-### Desglose de estadísticas
-
-| Estadística | Qué muestra |
-|---|---|
-| Remanente | Saldo no gastado transferido del mes anterior |
-| Asignado este mes | El monto que presupuestaste para este mes |
-| Gastos en efectivo | Gastos cargados a cuentas que no son de crédito |
-| Gastos con crédito | Gastos cargados a tarjetas de crédito |
-| **Disponible** | El saldo neto (remanente + asignado − gastos) |
-
-Si la categoría está excedida, aparece una advertencia con el monto en números rojos.
-
-### Estrategias de auto-asignación
-
-El panel ofrece cinco estrategias para llenar esta categoría automáticamente:
-
-| Estrategia | Qué hace |
-|---|---|
-| **Subcubierta** | Completa hasta el monto objetivo; nunca reduce lo ya asignado |
-| **Asignado el mes pasado** | Copia el monto que asignaste el mes anterior |
-| **Gastado el mes pasado** | Coincide con tu gasto real del mes pasado |
-| **Disponible en cero** | Ajusta el presupuesto para que el saldo disponible llegue exactamente a cero (puede liberar remanente de vuelta al TBB) |
-| **Presupuestado en cero** | Elimina todo el dinero asignado, dejando el presupuesto en cero |
-
-Cada tarjeta de estrategia muestra una vista previa del cambio (+/−) antes de confirmar. Si no tienes suficiente dinero sin asignar (TBB), el monto se limita automáticamente y se muestra una advertencia. Haz clic en **Aplicar** para confirmar.
-
-### Objetivo
-
-El panel muestra el objetivo activo de la categoría junto con su estado (al día, subcubierto o sin cubrir). Haz clic en **Editar** para cambiarlo, o **Establecer objetivo** si aún no existe.
-
-### Botones de acción
-
-| Botón | Cuándo aparece | Qué hace |
+| Estrategia | Qué hace | Cuándo es útil |
 |---|---|---|
-| Cubrir exceso | La categoría está en números rojos | Abre el modal para tomar fondos de otra categoría |
-| Mover dinero | El saldo disponible es positivo | Abre el modal para mover dinero |
-| Ver transacciones | Siempre | Filtra la lista de transacciones a esta categoría del mes actual |
-| Ver historial | Siempre | Muestra todas las asignaciones hechas a esta categoría este mes |
+| **Insuficiente** | Llena cada categoría hasta su objetivo (o hasta lo ya gastado si no hay objetivo). | La más común — deja cada categoría "cubierta". |
+| **Asignado el mes anterior** | Copia las asignaciones del mes pasado. | Meses predecibles donde nada ha cambiado. |
+| **Gastado el mes anterior** | Asigna a cada categoría lo que realmente se gastó el mes pasado. | Verificar el presupuesto contra el gasto real. |
+| **Disponible Cero** | Agrega dinero a categorías donde Disponible es negativo, llevándolas de regreso a cero. | Solución rápida cuando hay sobregiros tarde en el mes. |
+| **Asignado Cero** | Asigna a categorías que aún no tienen presupuesto este mes. | Empezar un mes nuevo desde cero. |
+
+Puedes ver el total que asignará cada estrategia antes de aplicarla, y opcionalmente fijar un máximo a gastar.
+
+### Llenar por Objetivos
+
+El botón **Llenar por Objetivos** es un atajo de un clic: llena cada categoría que tenga objetivo con el monto sugerido para el mes actual. Las categorías sin objetivo no se modifican.
+
+### Auto-asignación por categoría
+
+También puedes auto-asignar una sola categoría desde su menú de acciones. savr usa el objetivo de la categoría — o su gasto previo — para sugerir un monto.
 
 ---
 
-## Botones de acción rápida en las filas
+## Objetivos (metas)
 
-Dos botones de ícono aparecen en cada fila de categoría al pasar el cursor:
+Un objetivo le dice a savr cuánto quieres presupuestar para una categoría, para que pueda mostrarte un estado de un vistazo (en regla, insuficiente, sin asignar) y potenciar funciones como Llenar por Objetivos.
 
-- **⇄** — aparece cuando el saldo disponible es positivo; abre el diálogo para mover dinero
-- **▼ (ícono de rellenar)** — aparece cuando la categoría está excedida; abre el diálogo para cubrir el exceso
+### Tipos de objetivo
 
-Estos permiten actuar sin necesidad de abrir el panel de detalle.
-
----
-
-## Mover dinero
-
-1. Haz clic en **⇄** en una fila de categoría, o abre el panel de detalle y haz clic en **Mover dinero**.
-2. Selecciona la categoría de destino.
-3. Ingresa el monto a transferir.
-
-### Cubrir exceso de gasto
-
-Cuando una categoría se vuelve negativa, haz clic en el ícono de rellenar en la fila o en **Cubrir exceso** en el panel. Selecciona una categoría de origen para tomar los fondos.
-
----
-
-## Objetivos
-
-Un objetivo le indica a savr cuánto debe recibir una categoría cada período. Los objetivos impulsan el auto-llenado y muestran de un vistazo si una categoría está al día.
-
-### Establecer un objetivo
-
-Abre el panel de detalle de la categoría y haz clic en **Establecer objetivo** o **Editar** junto al objetivo existente. Elige un tipo:
-
-| Tipo | Descripción |
+| Tipo | Comportamiento |
 |---|---|
-| Mensual | Un monto fijo cada mes |
-| Semanal | Monto × semanas en el mes |
-| Anual | Total dividido en partes iguales en 12 meses |
-| Personalizado | Un monto total específico para una fecha objetivo |
+| **Mensual** | Recurrente cada mes. Opcionalmente ligado a un día específico del mes. |
+| **Semanal** | Se repite cada semana en el día elegido (domingo a sábado). |
+| **Anual** | Se repite anualmente en un mes y día específicos. |
+| **Personalizado** | Ahorrar un monto total para una fecha objetivo. Puede repetirse cada N meses / años, o ser único. |
 
-Activa **Remanente** si el dinero no gastado debe trasladarse al mes siguiente (útil para gastos irregulares o anuales).
+### Configurar un objetivo
+
+1. Haz clic en una categoría para abrir su panel de detalle.
+2. Haz clic en **Establecer objetivo**.
+3. Elige el tipo de objetivo y el monto.
+4. Para objetivos Personalizados, configura la fecha objetivo y (opcionalmente) un intervalo de repetición.
+5. Para objetivos Mensuales, opcionalmente activa **Acumular** para que el saldo no usado pase al siguiente mes.
+
+### Estado
+
+Cada categoría con objetivo muestra uno de tres estados:
+
+- **OK** — el presupuesto cumple o supera el objetivo
+- **Insuficiente** — el presupuesto es menor que el objetivo
+- **Sin asignar** — no hay nada presupuestado este mes
+
+### Eliminar un objetivo
+
+Abre el modal de objetivo de la categoría y haz clic en **Eliminar objetivo**. La categoría se mantiene; solo se borra la meta.
 
 ---
 
-## Auto-asignar (todas las categorías a la vez)
+## Panel de detalle de la categoría
 
-El botón **Auto-asignar** en la parte superior de la tabla llena todas las categorías simultáneamente. Elige una estrategia y savr limita cada categoría para que nunca superes tu saldo TBB.
+Haz clic en cualquier categoría para abrir su panel de detalle. Verás:
 
-### Llenar por objetivos
+- **Historial de presupuesto** — cada asignación y transferencia de dinero de esta categoría, de más antiguo a más reciente
+- **Desglose efectivo vs crédito** — gasto dividido entre cuentas de tipo efectivo (cheques, ahorros, efectivo) y tarjetas de crédito. Útil para conciliar una categoría con el flujo real de efectivo.
+- **Transacciones recientes** — vista rápida de la actividad que genera el valor Gastado
+- **Estado del objetivo** — si hay objetivo configurado
 
-El botón **↓ Llenar por objetivos** llena todas las categorías que tienen un objetivo establecido, en un solo paso.
+### Entradas del historial de presupuesto
+
+En el historial aparecen dos tipos de entradas:
+
+| Tipo de entrada | Qué representa |
+|---|---|
+| **Asignación** | Dinero que asignaste directamente a esta categoría. |
+| **Transferencia** | Dinero movido desde o hacia otra categoría. |
 
 ---
 
-## Navegar entre meses
+## Consejos para un presupuesto saludable
 
-Usa las flechas **← →** en la parte superior para moverte entre meses, o haz clic en **Este mes** para regresar al mes actual. El banner TBB y la navegación de meses permanecen fijos mientras solo la tabla de categorías se desplaza.
-
-Los meses pasados son de solo lectura — puedes revisar asignaciones y gastos pero no editarlos.
-
----
-
-## Categorías y grupos ocultos
-
-Las categorías ocultas son invisibles por defecto. Haz clic en **Mostrar ocultos** (aparece en la barra de navegación cuando existen elementos ocultos) para revelarlos temporalmente. Administra la visibilidad desde la página de **Categorías**.
+- **Apunta a Por Asignar = 0.** Cualquier cosa en Por Asignar es dinero sin plan. Asígnalo.
+- **No presupuestes dinero que no tienes.** Solo lo que ya está en tus cuentas puede asignarse. Los ingresos futuros se presupuestan el mes siguiente.
+- **Ajusta a mitad de mes.** Sobregirar no es un fracaso — es información. Mueve dinero desde una categoría flexible (p. ej. Entretenimiento) para cubrirlo.
+- **Usa los objetivos con calma al inicio.** Familiarízate con la asignación manual antes de depender del auto-llenado.
+- **Revisa al cierre del mes.** Una mirada rápida a las categorías con Disponible positivo te ayuda a decidir si lo dejas pasar al siguiente mes o lo reasignas.

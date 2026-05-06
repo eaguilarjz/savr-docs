@@ -8,78 +8,100 @@ nav_order: 1
 
 # Getting Started with savr
 
-savr is a zero-based budgeting app — every unit of your income is assigned a job before you spend it. When your budget is balanced, the **To Be Budgeted** amount reaches zero and you know exactly where your money is going.
+savr is a zero-based budgeting app. Every unit of income gets a job before you spend it: rent, groceries, savings, fun. When your budget is balanced, the **To Be Budgeted** amount reaches zero and you know exactly where each dollar is going.
 
-## How savr works
-
-1. **Add your accounts** — checking, savings, credit cards, loans, cash.
-2. **Create categories** — group similar expenses (Housing, Food, Transport, etc.).
-3. **Budget your income** — assign all available money to categories until nothing is left unassigned.
-4. **Record transactions** — every purchase reduces the available balance in the matching category.
-5. **Adjust as you go** — if you overspend in one category, move money from another.
+This guide walks you through creating an account, learning the core concepts, and getting your first month set up.
 
 ---
 
-## Quick setup (first time)
+## Create your account
 
-### 1. Create your accounts
+1. Open the app and click **Sign up**.
+2. Enter your email address and click **Continue**.
+3. Check your inbox for a verification email from savr. Click the link inside.
+   - If you don't see the email within a minute, check your spam folder.
+   - The verification link expires after 15 minutes. If it expires, return to **Sign up** and request a new one.
+4. On the completion page, set your **display name**, choose a **password** (8 characters minimum), and accept the **Terms of Service**.
+5. You're in.
 
-Go to **Accounts** and add each account you want to track. Enter the current balance as of today — this becomes your starting point.
+> **Forgot your password?** From the sign-in screen, click **Forgot password?** and enter your email. You'll receive a reset link valid for one hour. Open it and set a new password.
 
-For credit cards, enter the current balance owed as a positive number (e.g. `450.00`). For loans, you'll also enter the interest rate and monthly payment.
-
-### 2. Set up categories
-
-Go to **Categories** and organize your spending into groups and categories. You can use emojis and unicode characters in category names to make them easier to scan at a glance. For example:
-
-```
-🏠 Housing
-  ├─ Rent
-  └─ Utilities
-
-🍔 Food
-  ├─ Groceries
-  └─ Restaurants
-
-🚗 Transport
-  ├─ Fuel
-  └─ Insurance
-```
-
-You can drag categories and groups to reorder them at any time.
-
-### 3. Budget this month
-
-Go to **Budget**. The **To Be Budgeted** banner shows your total unallocated money. Click the **Budgeted** amount next to any category and type in how much you want to assign. Press **Enter** to save or **Escape** to cancel. Keep going until the banner reads **0.00** and shows a congratulatory message.
-
-If you have budget targets set, use **Auto-Assign** or **Fill by targets** to fill categories automatically.
-
-### 4. Record your spending
-
-Every time you spend money, add a transaction in the **Transactions** page or directly inside an account. Select the right category and the available balance updates instantly.
+For account security options like two-factor authentication, see the [Security](security/) page.
 
 ---
 
-## Key concepts
+## The zero-based budgeting method
 
-### To Be Budgeted (TBB)
+The core idea: **income minus outgo equals zero.** Every dollar you earn is assigned to a category — groceries, rent, savings, fun — until nothing is left unallocated. When you spend, the category balance decreases. If you overspend in one category, you move money from another.
 
-The amount of income you haven't assigned to any category yet. This number should reach **zero** — not go negative. If it's negative, you've budgeted more than you have and need to reduce some categories.
+This method works because it forces you to make spending decisions in advance, not after the fact.
 
-The TBB banner displays a rotating motivational phrase that changes each time you move between scenarios (money to assign, fully budgeted, or over-budgeted). The phrase uses your account's currency name automatically.
+| Concept | Meaning |
+|---|---|
+| **To Be Budgeted (TBB)** | Money you've received but haven't assigned to a category yet. The goal is to keep this at zero. |
+| **Budgeted** | Amount you've allocated to a specific category for the current month. |
+| **Spent** | Total transactions recorded against a category this month. |
+| **Available** | What's left in the category: `Budgeted − Spent`. This is what you can still spend. |
 
-### Available balance
+---
 
-Each category shows an **Available** amount: what you budgeted plus any carry-over from last month, minus what you've spent. A **progress bar** below the category name shows the spending ratio at a glance. If the available balance turns red, you've overspent and need to cover it by moving money from another category.
+## Set up your first month
 
-### The category detail panel
+Follow this order the first time you use savr. You can revisit each section as your needs grow.
 
-Click any category row to open a detail panel on the right side. It shows a breakdown of carry-over, assigned money, cash spending, credit spending, and the net available balance. It also lets you apply per-category auto-assign strategies and manage the category's target — all without leaving the budget page.
+### 1. Add your accounts
 
-### Targets
+Go to **Accounts → Add Account** and create one entry for each real account: checking, savings, credit cards, cash, investments, and loans. Enter the current balance as the **opening balance**.
 
-A target is a goal for a category — how much you want to budget each month, week, or year. Targets drive the **Auto-Assign** and **Fill by targets** features.
+savr supports six account types — see the [Accounts](accounts/) page for what each one does.
 
-### Rollover
+### 2. Build your category list
 
-When a category has money left at the end of the month and rollover is enabled, that surplus carries forward into the next month's available balance.
+Open **Categories** and create the spending buckets you actually use. Group them however makes sense for you (Bills, Variable, Goals, etc.). A typical starter set:
+
+- **Bills**: Rent / Mortgage, Utilities, Phone, Internet
+- **Variable**: Groceries, Transportation, Dining Out
+- **Goals**: Emergency Fund, Vacation
+- **Quality of Life**: Entertainment, Subscriptions, Hobbies
+
+Don't worry about getting it perfect — you can rename, reorder, hide, or delete categories anytime.
+
+### 3. Record your transactions
+
+Go to **Transactions** to log income and expenses. Pick the right type:
+
+- **Income** — paychecks, refunds you received as cash, gifts
+- **Expense** — anything you spent
+- **Transfer** — moving money between two of your accounts
+- **Credit** — refunds on a previous purchase (these reduce category spending without showing up as new income)
+
+See the [Transactions](transactions/) page for splits, debt payments, and filters.
+
+### 4. Assign your money
+
+Go to **Budget**. Your **To Be Budgeted** amount shows everything you've earned that isn't yet committed. Click any category and enter how much you want to allocate this month. Keep going until **To Be Budgeted = 0**.
+
+If you have recurring expenses (rent, subscriptions, paychecks), set up [Recurring Transactions](recurring/) so they fill in automatically each month.
+
+### 5. Review and adjust
+
+As the month progresses:
+
+- When you overspend in a category, the **Available** value goes red. Move money from another category to cover it — your overall budget stays balanced.
+- New income arrives → it lands in **To Be Budgeted**, ready to assign.
+- Want to plan for the future? Add **Targets** to categories so savr can suggest amounts each month.
+
+---
+
+## Where to go next
+
+| Topic | What's covered |
+|---|---|
+| [Budget](budget/) | Assigning money, auto-assign strategies, targets, moving money, the detail panel |
+| [Accounts](accounts/) | All six account types, loans, closing/reopening, drag-to-reorder |
+| [Transactions](transactions/) | Income, expense, transfer, credit, splits, debt payments, filters |
+| [Categories](categories/) | Groups, ordering, hiding, deletion with reassignment |
+| [Recurring](recurring/) | Scheduled transactions, frequencies, applying due items |
+| [Payees](payees/) | Creating, renaming, merging, deleting |
+| [Profile & Settings](profile/) | Display name, language, theme, timezone, currency |
+| [Security](security/) | Two-factor authentication, password changes, recovery codes |

@@ -8,48 +8,81 @@ nav_order: 8
 
 # Perfil y Ajustes
 
-Accede a tu perfil y preferencias haciendo clic en tu avatar en la barra lateral o el menú superior.
+La página de Perfil es donde administras tu información personal y cómo se ve y se comporta savr. Ábrela desde tu avatar en la barra lateral o el menú superior.
 
-## Cuenta
-
-**Nombre para mostrar** — Tu nombre tal como aparece en la aplicación. Haz clic en el campo para editar y presiona Enter para guardar.
-
-**Correo electrónico** — El correo usado para iniciar sesión. No puede cambiarse.
+Para cambios de contraseña, autenticación de dos factores y otras funciones de seguridad, consulta la página [Seguridad](security/).
 
 ---
 
-## Cambiar tu contraseña
+## Información de la cuenta
 
-1. Haz clic en **Cambiar contraseña**.
-2. Ingresa tu contraseña actual.
-3. Ingresa una nueva contraseña (mínimo 8 caracteres).
-4. Confirma la nueva contraseña.
-5. Haz clic en **Guardar**.
+### Nombre
+
+Tu nombre aparece en la página de perfil y donde sea que savr te salude. Edítalo en el campo **Nombre** y haz clic en **Guardar**. No hay reglas — primer nombre, nombre completo, apodo, todo funciona.
+
+### Correo electrónico
+
+Tu correo se muestra en modo solo lectura. Es la dirección con la que te registraste y el destino para mensajes relacionados con seguridad (enlaces de recuperación de contraseña, verificación, códigos de recuperación de MFA).
+
+> **¿Necesitas cambiar tu correo?** No está soportado desde la interfaz. Contacta soporte si necesitas actualizarlo.
 
 ---
 
 ## Preferencias
 
-Los cambios en preferencias se guardan instantáneamente — no se necesita botón de guardar.
+Las preferencias se guardan al instante cuando las cambias — sin botón de **Guardar** separado.
 
 ### Idioma
 
-Alterna entre **ES** (Español) e **EN** (Inglés). Toda la aplicación cambia de inmediato, incluyendo etiquetas, mensajes y frases motivacionales.
+Elige entre **English** y **Español**. El cambio aplica de inmediato en toda la aplicación, incluyendo este sitio de documentación (que tiene secciones separadas por idioma en la barra lateral).
 
 ### Tema
 
-Alterna entre modo **Claro** y **Oscuro**.
+Elige la apariencia de la aplicación:
+
+| Opción | Comportamiento |
+|---|---|
+| **Claro** | Modo claro sin importar la configuración de tu dispositivo |
+| **Oscuro** | Modo oscuro sin importar la configuración de tu dispositivo |
 
 ### Zona horaria
 
-Selecciona tu zona horaria desde el menú desplegable con búsqueda. savr usa tu zona horaria al mostrar fechas de transacciones.
+Configura la zona horaria que savr usa para fechas de transacciones, calendarios recurrentes y filtros de fecha.
+
+La lista incluye cada zona horaria IANA disponible para tu navegador (típicamente varias cientos de entradas). Es buscable — empieza a teclear "New_York" o "Mexico" para acotar la lista rápido.
+
+> **Por qué importa la zona horaria:** Una transacción creada a las 11:30 PM hora local del 31 debe pertenecer al presupuesto de ese mes, no del siguiente. Configurar tu zona horaria correctamente asegura que las fechas caigan donde esperas.
 
 ### Moneda
 
-Selecciona tu moneda desde la lista con búsqueda. La lista muestra los nombres de moneda en tu idioma seleccionado actualmente (ej. al estar en Español se muestra "dólar estadounidense" en lugar de "US Dollar"). Los cambios tienen efecto inmediato en toda la aplicación — todos los montos se formatean con la moneda seleccionada, y el banner Por presupuestar usa el nombre correcto de la moneda en sus frases.
+Elige tu moneda de visualización de una lista de 40+ opciones incluyendo USD, EUR, GBP, MXN, JPY y muchas más. El código (p. ej. "USD") y el nombre completo (p. ej. "Dólar Estadounidense") son buscables juntos.
+
+savr usa la moneda para formatear los montos en todas partes — saldos de cuenta, totales de presupuesto, listas de transacciones. No realiza conversión de tipo de cambio. Si tienes cuentas en varias monedas, trata los montos mostrados como sus valores nominales.
 
 ---
 
-## ¿Olvidaste tu contraseña?
+## Legal
 
-En la página de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de restablecimiento válido por 1 hora. Si el enlace expira, solicita uno nuevo.
+Los **Términos de Servicio** son accesibles desde la página de Perfil. savr lleva el control de qué versión de los términos aceptaste y cuándo. Si los términos se actualizan, se te pedirá revisar y aceptar la nueva versión antes de continuar.
+
+---
+
+## Cerrar sesión
+
+Usa **Cerrar sesión** desde el menú de usuario para terminar tu sesión. La próxima vez que inicies sesión se te pedirán tu correo, contraseña y (si está activo) tu código de dos factores.
+
+Para detalles sobre qué pasa con tu sesión — duración de tokens, refresco, múltiples dispositivos — consulta [Seguridad → Sesiones](security/#sesiones).
+
+---
+
+## Lo que *no* está en esta página
+
+Algunas cosas que a veces se esperan en una página de perfil viven en otro lado:
+
+| Ajuste | Dónde encontrarlo |
+|---|---|
+| **Cambio de contraseña** | [Seguridad](security/#cambia-tu-contraseña) |
+| **Autenticación de dos factores** | [Seguridad](security/#autenticación-de-dos-factores-mfa) |
+| **Códigos de recuperación** | [Seguridad](security/#códigos-de-recuperación) |
+| **Tipos de cuenta y orden** | [Cuentas](accounts/#organizar-la-página-de-cuentas) |
+| **Grupos de categorías** | [Categorías](categories/#grupos-de-categorías) |

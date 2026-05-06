@@ -8,82 +8,146 @@ nav_order: 4
 
 # Transactions
 
-Transactions record every movement of money in and out of your accounts. You can add them from the **Transactions** page or directly from any account's detail page.
+Transactions record every movement of money in and out of your accounts. They drive everything else in savr: account balances, category spending, and budget metrics.
+
+You can manage transactions from the **Transactions** page or directly from any account's detail view.
+
+---
 
 ## Transaction types
 
-| Type | When to use |
-|---|---|
-| Expense | Money leaving an account (groceries, bills, etc.) |
-| Income | Money coming in (paycheck, freelance payment) |
-| Credit / Refund | A refund or credit posted to your account |
-| Transfer | Moving money between two of your own accounts |
-| Debt Payment | Paying down a loan (principal, interest, fees) |
+savr supports four transaction types. Picking the right one matters because it affects both account balances and budget calculations.
+
+| Type | Effect on account | Effect on budget |
+|---|---|---|
+| **Income** | Adds money to the account | Increases **To Be Budgeted** |
+| **Expense** | Removes money from the account | Increases **Spent** in the chosen category |
+| **Transfer** | Moves money between two of your accounts | No effect on budget — money stays inside your net worth |
+| **Credit** (refund) | Adds money back to the account | **Reduces** Spent in the chosen category. Does **not** add to TBB. |
+
+> **Why Credit and Income are different:** A refund cancels out a previous expense — your category should reflect the net cost, but the refund isn't new income. Credit handles this correctly. Use Income for actual new money: paychecks, gifts, interest earned.
 
 ---
 
-## Adding a transaction
+## Create a transaction
 
-Click **Add transaction** and fill in:
-
-| Field | Notes |
-|---|---|
-| Date | Defaults to today |
-| Type | See types above |
-| Amount | Positive number; type determines direction |
-| Account | Which account the money comes from (or goes to) |
-| Payee | Optional — who you paid or received money from |
-| Category | Where this transaction belongs in your budget |
-| Memo | Optional note |
+1. Open **Transactions** and click **New Transaction** (or open an account's detail page and use the same button there).
+2. Fill in:
+   - **Type** — Income, Expense, Transfer, or Credit
+   - **Account** — which account this affects
+   - **Amount** — always positive; the type determines direction
+   - **Date** — defaults to today
+   - **Category** — required for Expense and Credit
+   - **Payee** — optional, but useful for spending analysis
+   - **Memo** — optional notes
+   - **Cleared** — toggle if the transaction has cleared your bank statement
+3. Click **Save**.
 
 ### Transfers
 
-For a transfer, select **Transfer** as the type, then choose the source account and the destination account. The amount is debited from the source and credited to the destination automatically.
+For a Transfer, you'll be asked for both the **from** account and the **to** account. savr creates a linked pair of transactions — one debit and one credit — that always move together. If you edit or delete one side, the other follows.
 
-### Debt payments
+---
 
-Select **Debt Payment** to break a loan payment into its components:
+## Splits
 
-| Field | Effect |
+A split lets you divide a single transaction across multiple categories. This is especially useful for grocery store runs that include both food and household items, or any other purchase that doesn't fit cleanly into one category.
+
+To split a transaction:
+
+1. In the create or edit dialog, toggle **Split**.
+2. Add a split row for each category. Each row has:
+   - **Category**
+   - **Amount**
+   - **Memo** (optional)
+3. The total of the splits must match the transaction's total amount.
+
+You can have as many splits as you need. To remove a split, delete its row — if only one split remains, savr converts the transaction back to a normal (non-split) transaction.
+
+---
+
+## Debt payments
+
+Debt payments are a specialized transaction type for recording payments against a loan account. They give you a clean breakdown of the three things a loan payment usually includes:
+
+| Component | Where it goes |
 |---|---|
-| Principal | Reduces the loan balance |
-| Interest | Recorded as interest expense; does not reduce balance |
-| Fees | Recorded as fee expense; does not reduce balance |
+| **Principal** | Reduces the loan account's balance |
+| **Interest** | Posts as an expense to the linked payment category |
+| **Fees** | Posts as an expense to the linked payment category |
 
-The **Total** field is the sum of all three. You can fill in any two and the third is calculated automatically.
+To record a debt payment:
 
----
+1. Open **New Transaction** and switch to **Debt Payment** mode.
+2. Pick the **source account** (where the money comes from — usually checking).
+3. Pick the **loan account** being paid down.
+4. Enter the **principal**, **interest**, and **fees** amounts.
+5. Confirm the payment category (defaults to the one linked to the loan).
+6. Save.
 
-## Split transactions
-
-A split lets you allocate a single transaction across multiple categories. For example, a supermarket receipt that includes groceries and household supplies.
-
-1. Add a transaction and click **Split**.
-2. Add a row for each category.
-3. Enter the amount for each row — they must sum to the transaction total.
-
----
-
-## Editing a transaction
-
-Click any transaction row to open it for editing. All fields can be changed, including the account (the account balance adjusts automatically).
+Your checking balance drops by the total payment, the loan balance drops by the principal, and interest plus fees show up as spending in the payment category.
 
 ---
 
-## Deleting a transaction
+## Cleared status
 
-Open the transaction and click **Delete**. You'll be asked to confirm. Deletion is permanent and reverses the account balance change.
+Each transaction has a **cleared** flag. Use it to mark transactions that have been confirmed by your bank.
+
+Common workflows:
+
+- Reconcile against a statement once a month, marking each line cleared as you go.
+- Leave recently entered transactions uncleared until they post on your bank's side.
+
+The cleared flag is informational — it doesn't change balance calculations.
 
 ---
 
-## Filtering transactions
+## Edit and delete transactions
 
-Both the Transactions page and each account detail page have a filter bar:
+Click any transaction in the list to open its edit dialog. You can change any field, including converting a regular transaction into a split or back. Click **Save** to apply.
 
-- **Date range** — limit to a specific period
-- **Type** — show only expenses, income, transfers, etc.
-- **Account** — show transactions from a specific account (Transactions page only)
-- **Category** — show transactions in a specific category
-- **Payee** — show transactions from a specific payee
+To remove a transaction, open the edit dialog and click **Delete**. Deletes are permanent and the affected account's balance updates immediately.
 
-Clear any filter to return to the full list.
+> **Opening balance transactions** are special. They're auto-created with each account and don't affect budgets. You can edit the amount if you mistyped your starting balance, but you can't delete the opening balance entry without deleting the account.
+
+---
+
+## Filters
+
+The Transactions page has a filter bar across the top so you can find activity quickly:
+
+| Filter | What it does |
+|---|---|
+| **Account** | Show transactions in one specific account |
+| **Category** | Show transactions in a specific category |
+| **Payee** | Show transactions with a specific payee |
+| **Type** | Restrict to Income, Expense, Transfer, or Credit |
+| **Date range** | Pick a start and end date |
+
+Filters combine with **AND** logic — every constraint applies. To clear filters, hit the reset button or remove them individually.
+
+---
+
+## Pagination
+
+Long transaction lists load in pages of 50 at a time. As you scroll near the bottom, savr fetches the next batch automatically. There's no "next page" button — just keep scrolling.
+
+For very large queries, you may want to apply a date range filter rather than scrolling through everything.
+
+---
+
+## Recurring transaction links
+
+Transactions created from a [recurring rule](recurring/) keep a reference to the rule that produced them. This lets you trace a transaction back to its template, and lets savr keep your recurring schedule accurate.
+
+Edits to a transaction created by a recurring rule don't change the rule itself — only that one occurrence.
+
+---
+
+## Account detail view
+
+Every account has a detail page that shows the same transaction list, scoped to just that account. Use it to:
+
+- Reconcile against a paper or online statement
+- Quickly add multiple transactions for one account in a row
+- Review activity over a specific period without setting account filters

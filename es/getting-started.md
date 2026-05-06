@@ -8,78 +8,100 @@ nav_order: 1
 
 # Primeros pasos con savr
 
-savr es una aplicación de presupuesto de base cero — cada unidad de tus ingresos tiene un trabajo antes de que lo gastes. Cuando tu presupuesto está equilibrado, el monto **Por presupuestar** llega a cero y sabes exactamente a dónde va tu dinero.
+savr es una aplicación de presupuesto de base cero. Cada unidad de tus ingresos recibe un propósito antes de gastarse: renta, comida, ahorros, entretenimiento. Cuando tu presupuesto está balanceado, el monto **Por Asignar** llega a cero y sabes exactamente a dónde va cada peso.
 
-## Cómo funciona savr
-
-1. **Agrega tus cuentas** — cuenta corriente, ahorros, tarjetas de crédito, préstamos, efectivo.
-2. **Crea categorías** — agrupa gastos similares (Vivienda, Comida, Transporte, etc.).
-3. **Presupuesta tus ingresos** — asigna todo el dinero disponible a categorías hasta que no quede nada sin asignar.
-4. **Registra tus transacciones** — cada compra reduce el saldo disponible de la categoría correspondiente.
-5. **Ajusta sobre la marcha** — si te excedes en una categoría, mueve dinero de otra.
+Esta guía te lleva paso a paso por crear tu cuenta, conocer los conceptos centrales y configurar tu primer mes.
 
 ---
 
-## Configuración rápida (primera vez)
+## Crea tu cuenta
 
-### 1. Crea tus cuentas
+1. Abre la aplicación y haz clic en **Registrarse**.
+2. Ingresa tu correo electrónico y haz clic en **Continuar**.
+3. Revisa tu bandeja de entrada para encontrar el correo de verificación de savr. Haz clic en el enlace.
+   - Si no lo ves en un minuto, revisa tu carpeta de spam.
+   - El enlace de verificación expira en 15 minutos. Si expira, vuelve a **Registrarse** y solicita uno nuevo.
+4. En la pantalla de finalización, configura tu **nombre**, elige una **contraseña** (mínimo 8 caracteres) y acepta los **Términos de Servicio**.
+5. Listo, ya estás dentro.
 
-Ve a **Cuentas** y agrega cada cuenta que quieras rastrear. Ingresa el saldo actual de hoy — este es tu punto de partida.
+> **¿Olvidaste tu contraseña?** Desde la pantalla de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de recuperación válido por una hora. Ábrelo y configura una nueva contraseña.
 
-Para tarjetas de crédito, ingresa el saldo adeudado como número positivo (ej. `450.00`). Para préstamos, también ingresarás la tasa de interés y el pago mensual.
-
-### 2. Configura las categorías
-
-Ve a **Categorías** y organiza tus gastos en grupos y categorías. Puedes usar emojis y caracteres unicode en los nombres para hacerlos más visuales y fáciles de identificar de un vistazo:
-
-```
-🏠 Vivienda
-  ├─ Renta / Hipoteca
-  └─ Servicios
-
-🍔 Comida
-  ├─ Supermercado
-  └─ Restaurantes
-
-🚗 Transporte
-  ├─ Gasolina
-  └─ Seguro
-```
-
-Puedes arrastrar categorías y grupos para reordenarlos en cualquier momento.
-
-### 3. Presupuesta este mes
-
-Ve a **Presupuesto**. El banner **Por presupuestar** muestra tu dinero total sin asignar. Haz clic en el monto de **Presupuestado** junto a cualquier categoría y escribe cuánto quieres asignar. Presiona **Enter** para guardar o **Escape** para cancelar. Continúa hasta que el banner muestre **0.00** y aparezca un mensaje de felicitación.
-
-Si tienes objetivos configurados, usa **Auto-asignar** o **Llenar por objetivos** para llenar las categorías automáticamente.
-
-### 4. Registra tus gastos
-
-Cada vez que gastes dinero, agrega una transacción en la página de **Transacciones** o directamente dentro de una cuenta. Selecciona la categoría correcta y el saldo disponible se actualiza al instante.
+Para opciones de seguridad como la autenticación de dos factores, consulta la página [Seguridad](security/).
 
 ---
 
-## Conceptos clave
+## El método de presupuesto de base cero
 
-### Por presupuestar (TBB)
+La idea central: **ingresos menos egresos es igual a cero.** Cada peso que ganas se asigna a una categoría — comida, renta, ahorros, entretenimiento — hasta que no queda nada sin asignar. Cuando gastas, el saldo de la categoría disminuye. Si te excedes en una categoría, mueves dinero de otra.
 
-La cantidad de ingresos que aún no has asignado a ninguna categoría. Este número debe llegar a **cero** — no debe ser negativo. Si es negativo, has presupuestado más de lo que tienes y necesitas reducir algunas categorías.
+Este método funciona porque te obliga a tomar decisiones de gasto con anticipación, no después del hecho.
 
-El banner muestra una frase motivacional rotatoria que cambia cada vez que el escenario cambia (dinero por asignar, totalmente presupuestado, excedido). La frase usa el nombre de tu moneda configurada automáticamente.
+| Concepto | Significado |
+|---|---|
+| **Por Asignar** | Dinero que has recibido pero que aún no has asignado a ninguna categoría. La meta es mantenerlo en cero. |
+| **Asignado** | Cantidad que has asignado a una categoría específica para el mes actual. |
+| **Gastado** | Total de transacciones registradas en una categoría este mes. |
+| **Disponible** | Lo que queda en la categoría: `Asignado − Gastado`. Es lo que aún puedes gastar. |
 
-### Saldo disponible
+---
 
-Cada categoría muestra un monto **Disponible**: lo que presupuestaste más el remanente del mes anterior, menos lo que gastaste. Una **barra de progreso** debajo del nombre de la categoría muestra la proporción de gasto de un vistazo. Si el saldo disponible se vuelve rojo, te has excedido y necesitas cubrirlo moviendo dinero de otra categoría.
+## Configura tu primer mes
 
-### El panel de detalle de categoría
+Sigue este orden la primera vez que uses savr. Puedes regresar a cada sección conforme vayan creciendo tus necesidades.
 
-Haz clic en cualquier fila de categoría para abrir un panel de detalle en el lado derecho. Muestra un desglose de remanente, dinero asignado, gastos en efectivo, gastos con tarjeta de crédito y el saldo neto disponible. También permite aplicar estrategias de auto-asignación por categoría y gestionar el objetivo de la categoría, todo sin salir de la página de presupuesto.
+### 1. Agrega tus cuentas
 
-### Objetivos
+Ve a **Cuentas → Agregar Cuenta** y crea una entrada por cada cuenta real: cheques, ahorros, tarjetas de crédito, efectivo, inversiones y préstamos. Ingresa el saldo actual como el **saldo inicial**.
 
-Un objetivo es una meta para una categoría — cuánto quieres presupuestar cada mes, semana o año. Los objetivos impulsan las funciones de **Auto-asignar** y **Llenar por objetivos**.
+savr soporta seis tipos de cuenta — consulta la página [Cuentas](accounts/) para saber qué hace cada uno.
 
-### Remanente
+### 2. Construye tu lista de categorías
 
-Cuando una categoría tiene dinero sobrante al final del mes y el remanente está activado, ese excedente se traslada al saldo disponible del mes siguiente.
+Abre **Categorías** y crea las cubetas de gasto que realmente usas. Agrúpalas como tenga sentido para ti (Bills, Variable, Goals, etc.). Un punto de partida típico:
+
+- **Servicios y Renta**: Renta / Hipoteca, Servicios, Teléfono, Internet
+- **Variables**: Comida, Transporte, Restaurantes
+- **Metas**: Fondo de Emergencia, Vacaciones
+- **Calidad de Vida**: Entretenimiento, Suscripciones, Hobbies
+
+No te preocupes por dejarlo perfecto — puedes renombrar, reordenar, ocultar o eliminar categorías en cualquier momento.
+
+### 3. Registra tus transacciones
+
+Ve a **Transacciones** para registrar ingresos y gastos. Elige el tipo correcto:
+
+- **Ingreso** — sueldos, reembolsos en efectivo, regalos
+- **Gasto** — cualquier cosa que hayas gastado
+- **Transferencia** — mover dinero entre dos de tus cuentas
+- **Reembolso** — devoluciones de una compra anterior (reducen el gasto de la categoría sin contar como ingreso nuevo)
+
+Consulta la página [Transacciones](transactions/) para divisiones, pagos de deuda y filtros.
+
+### 4. Asigna tu dinero
+
+Ve a **Presupuesto**. El monto **Por Asignar** muestra todo lo que has ganado y aún no has comprometido. Haz clic en cualquier categoría e ingresa cuánto quieres asignarle este mes. Continúa hasta que **Por Asignar = 0**.
+
+Si tienes gastos recurrentes (renta, suscripciones, sueldos), configura [Transacciones Recurrentes](recurring/) para que se llenen automáticamente cada mes.
+
+### 5. Revisa y ajusta
+
+Conforme avanza el mes:
+
+- Cuando te excedas en una categoría, el valor **Disponible** se pondrá en rojo. Mueve dinero de otra categoría para cubrirlo — tu presupuesto general queda balanceado.
+- Llegan ingresos nuevos → caen en **Por Asignar**, listos para ser asignados.
+- ¿Quieres planear a futuro? Agrega **Objetivos** a tus categorías para que savr te sugiera montos cada mes.
+
+---
+
+## A dónde ir después
+
+| Tema | Qué cubre |
+|---|---|
+| [Presupuesto](budget/) | Asignar dinero, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
+| [Cuentas](accounts/) | Los seis tipos de cuenta, préstamos, cerrar/reabrir, reordenar |
+| [Transacciones](transactions/) | Ingreso, gasto, transferencia, reembolso, divisiones, pagos de deuda, filtros |
+| [Categorías](categories/) | Grupos, orden, ocultar, eliminar con reasignación |
+| [Recurrentes](recurring/) | Transacciones programadas, frecuencias, aplicar vencimientos |
+| [Beneficiarios](payees/) | Crear, renombrar, fusionar, eliminar |
+| [Perfil y Ajustes](profile/) | Nombre, idioma, tema, zona horaria, moneda |
+| [Seguridad](security/) | Autenticación de dos factores, cambio de contraseña, códigos de recuperación |

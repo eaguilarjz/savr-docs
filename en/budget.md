@@ -8,165 +8,150 @@ nav_order: 2
 
 # Budget
 
-The Budget page is the heart of savr. Each month you decide how every unit of money is spent before it leaves your account.
+The Budget page is the heart of savr. Each month you decide how every unit of money is spent before it leaves your account. When the **To Be Budgeted** value reaches zero, every dollar has a job.
 
 ---
 
-## The To Be Budgeted banner
+## Anatomy of the budget page
 
-The **To Be Budgeted (TBB)** banner is fixed at the top of the page and always visible as you scroll through your categories. It shows:
-
-- The amount of income still unassigned
-- A rotating phrase that changes each time the scenario shifts
-
-| Scenario | What it means |
+| Element | What it shows |
 |---|---|
-| Positive amount | You have money waiting to be assigned to categories |
-| Zero | Every unit is accounted for — fully budgeted |
-| Negative (red) | You've assigned more than you have — reduce some categories |
+| **Month / year selector** | Navigate to any past or future month. The current month is selected by default. |
+| **To Be Budgeted (TBB)** | Income you've received but haven't assigned to a category yet. The goal is to keep this at zero. |
+| **Account balance total** | Sum of all your active account balances, displayed alongside the budget for context. |
+| **Category groups** | Collapsible groupings of categories (e.g. "Bills", "Goals"). Each group shows aggregated metrics. |
+| **Category rows** | Each category shows Budgeted, Spent, and Available for the selected month. |
 
-The phrase uses your account's configured currency name (e.g. "Every US dollar has a job" or "Cada euro tiene un destino"), and there are 20 different phrases per scenario so the experience stays fresh.
+Each category row has three core values:
+
+- **Budgeted** — what you've allocated this month
+- **Spent** — total transactions in this category this month
+- **Available** — `Budgeted − Spent`. What you can still spend.
+
+When **Available** is negative, the value turns red. That's a signal to move money in.
 
 ---
 
-## Reading the budget table
+## Assigning money to categories
 
-Categories are organized in collapsible groups. For each category you can see:
+Click any category and enter the amount you want to budget for the month. Each assignment reduces **To Be Budgeted** by the same amount.
 
-| Column | What it shows |
+The objective for the month is simple:
+
+> **Income − Allocations = 0**
+
+If you have a balance left in TBB, you haven't planned for everything. If TBB goes negative, you've over-allocated and need to reduce somewhere.
+
+### Income classification
+
+How transactions affect TBB depends on their type:
+
+| Transaction type | Effect on TBB |
 |---|---|
-| Category | The category name (supports emoji and unicode) |
-| Budgeted | How much you assigned this month |
-| Spent | Actual spending recorded so far |
-| Available | Budgeted + carry-over − spent |
+| **Income** | Increases TBB |
+| **Expense** | No direct effect (reduces category Available via Spent) |
+| **Credit** (refund) | No effect on TBB. Reduces category Spent only. |
+| **Transfer** | No effect — money moves between your accounts |
 
-### Progress bar
-
-Each category row has a **progress bar** directly below the category name. It gives you an instant visual of how much of the available balance has been used:
-
-- **Dark green** — unspent available balance
-- **Light green** — spent portion (within budget)
-- **Red / yellow** — overspent
-
-A legend below the bar always shows the exact figures: how much was spent, how much remains, and whether there is carry-over from last month.
+This means a refund correctly cancels out a previous purchase in your category, without inflating your income for the month.
 
 ---
 
-## Assigning money
+## Moving money between categories
 
-Click any amount in the **Budgeted** column and type a new value.
+When one category is overspent and another has a surplus, you don't need to break the budget — you just move money.
 
-- Press **Enter** to save
-- Press **Escape** to cancel without making any changes
-- Click away to save
+1. Click the source category in the budget list.
+2. Use the **Move money** action and pick the destination category and amount.
+3. The transfer is recorded in the budget history of both categories.
+
+Your overall **To Be Budgeted** stays at zero. Only the internal allocation changes.
 
 ---
 
-## The category detail panel
+## Auto-assign strategies
 
-Click any category **row** to open the detail panel on the right side of the screen. The panel stays fixed as you scroll, so it's always accessible.
+savr can fill out your budget automatically. Open the **Auto-Assign** menu on the Budget page and choose a strategy:
 
-### Stats breakdown
-
-| Stat | What it shows |
-|---|---|
-| Carry-over | Unspent balance rolled in from the previous month |
-| Assigned this month | The amount you budgeted for this month |
-| Cash spending | Spending charged to non-credit accounts |
-| Credit spending | Spending charged to credit card accounts |
-| **Available** | The net balance (carry-over + assigned − spending) |
-
-If the category is overspent, a warning shows how much is in the red.
-
-### Auto-assign strategies
-
-The panel offers five strategies to fill this category automatically:
-
-| Strategy | What it does |
-|---|---|
-| **Underfunded** | Tops up to the target amount; never reduces what's already assigned |
-| **Assigned last month** | Copies the amount you assigned in the previous month |
-| **Spent last month** | Matches your actual spending from last month |
-| **Zero Available** | Adjusts budgeted so the available balance becomes exactly zero (can release carry-over back to TBB) |
-| **Zero Budgeted** | Removes all assigned money, setting budgeted to zero |
-
-Each strategy card shows a preview delta (+/−) before you commit. If you don't have enough unassigned money (TBB), the amount is automatically capped and a warning is shown. Click **Apply** to confirm.
-
-### Target
-
-The panel shows the active target for the category along with its status (on track, underfunded, or unfunded). Click **Edit** to change the target, or **Set target** if none exists yet.
-
-### Action buttons
-
-| Button | When it appears | What it does |
+| Strategy | What it does | When it's useful |
 |---|---|---|
-| Cover overspending | Category is in the red | Opens the cover modal to pull funds from another category |
-| Move money | Available balance is positive | Opens the move money modal |
-| View transactions | Always | Filters the transaction list to this category for the current month |
-| View history | Always | Shows all budget assignments made to this category this month |
+| **Underfunded** | Fills each category up to its target (or up to what's already spent if no target). | Most common — gets every category to "covered" |
+| **Assigned Last Month** | Copies the previous month's allocations. | Predictable months where nothing has changed. |
+| **Spent Last Month** | Allocates each category what was actually spent last month. | Sanity-check budget against real spending. |
+| **Zero Available** | Adds money to categories where Available is negative, bringing them back to zero. | Quick fix for overspending late in the month. |
+| **Zero Budgeted** | Allocates to categories that have no budget yet this month. | Onboarding a new month from scratch. |
 
----
-
-## Quick-action buttons on rows
-
-Two icon buttons appear on each category row when you hover:
-
-- **⇄** — appears when the available balance is positive; opens the move money dialog
-- **▼ (fill icon)** — appears when the category is overspent; opens the cover overspending dialog
-
-These let you take action without opening the detail panel.
-
----
-
-## Moving money
-
-1. Click **⇄** on a category row, or open the detail panel and click **Move money**.
-2. Select the destination category.
-3. Enter the amount to transfer.
-
-### Covering overspending
-
-When a category goes negative, click the fill icon on the row or **Cover overspending** in the panel. Select a source category to pull funds from.
-
----
-
-## Targets
-
-A target tells savr how much a category should receive each period. Targets power auto-fill and show whether a category is on track at a glance.
-
-### Setting a target
-
-Open the category detail panel and click **Set target** or **Edit** next to the existing target badge. Choose a type:
-
-| Type | Description |
-|---|---|
-| Monthly | A fixed amount each month |
-| Weekly | Amount × weeks in the month |
-| Yearly | Total divided evenly across 12 months |
-| Custom | A specific total amount by a target date |
-
-Enable **Rollover** if unspent money should carry forward (useful for irregular or annual expenses).
-
----
-
-## Auto-Assign (all categories at once)
-
-The **Auto-Assign** button at the top of the budget table fills all categories simultaneously. Choose a strategy and savr caps each category so you never exceed your TBB balance.
+You can preview the total each strategy will assign before applying, and optionally cap the maximum amount to spend.
 
 ### Fill by Targets
 
-The **↓ Fill by targets** button fills all categories that have a target set, in one step.
+The **Fill by Targets** button is a one-click shortcut: it fills every category that has a target with that target's suggested amount for the current month. Categories without a target are left untouched.
+
+### Single-category auto-assign
+
+You can also auto-assign a single category from its action menu. savr uses the category's target — or its previous spending — to suggest an amount.
 
 ---
 
-## Navigating months
+## Targets (goals)
 
-Use the **← →** arrows at the top to move between months, or click **This month** to return to the current month. The TBB banner and month navigation stay fixed while only the category table scrolls.
+A target tells savr how much you want to budget for a category, so it can give you an at-a-glance status (on track, underfunded, unfunded) and power features like Fill by Targets.
 
-Past months are read-only — you can review allocations and spending but cannot edit them.
+### Target types
+
+| Type | Behavior |
+|---|---|
+| **Monthly** | Recurring each month. Optionally tied to a specific day-of-month. |
+| **Weekly** | Recurs each week on a chosen day (Sunday through Saturday). |
+| **Yearly** | Recurs annually on a specific month and day. |
+| **Custom** | Save a total amount by a target date. Can repeat every N months / years, or be one-time. |
+
+### Setting a target
+
+1. Click a category to open its detail panel.
+2. Click **Set target**.
+3. Choose the target type and amount.
+4. For Custom targets, set the target date and (optionally) a repeat interval.
+5. For Monthly targets, optionally enable **Rollover** so unspent budget carries over to next month.
+
+### Status
+
+Each category with a target shows one of three statuses:
+
+- **OK** — Budget meets or exceeds target
+- **Underfunded** — Budget is less than the target
+- **Unfunded** — Nothing budgeted yet this month
+
+### Removing a target
+
+Open the category's target modal and click **Remove target**. The category remains; only the goal is cleared.
 
 ---
 
-## Hidden categories and groups
+## Category detail panel
 
-Hidden categories are invisible by default. Click **Show hidden** (appears in the navigation bar when hidden items exist) to reveal them temporarily. Manage visibility from the **Categories** page.
+Click any category to open its detail panel. You'll see:
+
+- **Budget history** — every allocation and money transfer for this category, oldest to newest
+- **Cash vs. credit breakdown** — spending split between cash-style accounts (checking, savings, cash) and credit cards. Useful when reconciling a category against actual cash flow.
+- **Recent transactions** — quick view of the activity driving the Spent value
+- **Target status** — if a target is set
+
+### Budget history entries
+
+Two kinds of entries appear in the history:
+
+| Entry type | What it represents |
+|---|---|
+| **Allocation** | Money you assigned directly to this category. |
+| **Transfer** | Money moved in from or out to another category. |
+
+---
+
+## Tips for a healthy budget
+
+- **Aim for TBB = 0.** Anything in TBB is unplanned money. Assign it.
+- **Don't budget money you don't have.** Only what's already in your accounts can be allocated. Future income gets budgeted next month.
+- **Adjust mid-month.** Overspending isn't failure — it's information. Move money from a flexible category (e.g. Entertainment) to cover it.
+- **Use targets sparingly at first.** Get comfortable with manual assignment before relying on auto-fill.
+- **Review at month-end.** A quick look at categories with a positive Available helps you decide whether to roll the surplus forward or reallocate it.
