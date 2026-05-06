@@ -24,9 +24,11 @@ $savr-sidebar-active: rgba(255, 255, 255, 0.20);
   }
 
   // The "This site uses Just the Docs..." attribution that the theme
-  // injects at the bottom of the sidebar.
+  // injects at the bottom of the sidebar. The element ships with
+  // Bootstrap-style `d-md-block` utility classes that use !important,
+  // so we need !important to override.
   .site-footer {
-    display: none;
+    display: none !important;
   }
 
   // Top-level group labels (English / Español) and all child links
