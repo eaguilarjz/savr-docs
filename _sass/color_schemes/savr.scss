@@ -1,0 +1,10 @@
+// savr brand color overrides on top of the light theme.
+// Primary: brand-600 (#16a34a) — same green used in the web app's favicon
+// and Tailwind brand palette.
+
+$link-color: #16a34a;
+$btn-primary-color: #16a34a;
+$body-heading-color: #14532d; // brand-900 — slightly tinted for warmth
+
+// Code highlight + table-of-contents accent inherits from $link-color
+// so most accents update automatically.

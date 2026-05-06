@@ -10,7 +10,7 @@ plugins:
 
 permalink: pretty
 
-color_scheme: light
+color_scheme: savr
 
 search_enabled: true
 search:
