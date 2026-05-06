@@ -26,7 +26,7 @@ Esta guía te lleva paso a paso por crear tu cuenta, conocer los conceptos centr
 
 > **¿Olvidaste tu contraseña?** Desde la pantalla de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de recuperación válido por una hora. Ábrelo y configura una nueva contraseña.
 
-Para opciones de seguridad como la autenticación de dos factores, consulta la página [Seguridad](security/).
+Para opciones de seguridad como la autenticación de dos factores, consulta la página [Seguridad](../security/).
 
 ---
 
@@ -53,7 +53,7 @@ Sigue este orden la primera vez que uses savr. Puedes regresar a cada sección c
 
 Ve a **Cuentas → Agregar Cuenta** y crea una entrada por cada cuenta real: cheques, ahorros, tarjetas de crédito, efectivo, inversiones y préstamos. Ingresa el saldo actual como el **saldo inicial**.
 
-savr soporta seis tipos de cuenta — consulta la página [Cuentas](accounts/) para saber qué hace cada uno.
+savr soporta seis tipos de cuenta — consulta la página [Cuentas](../accounts/) para saber qué hace cada uno.
 
 ### 2. Construye tu lista de categorías
 
@@ -75,13 +75,13 @@ Ve a **Transacciones** para registrar ingresos y gastos. Elige el tipo correcto:
 - **Transferencia** — mover dinero entre dos de tus cuentas
 - **Reembolso** — devoluciones de una compra anterior (reducen el gasto de la categoría sin contar como ingreso nuevo)
 
-Consulta la página [Transacciones](transactions/) para divisiones, pagos de deuda y filtros.
+Consulta la página [Transacciones](../transactions/) para divisiones, pagos de deuda y filtros.
 
 ### 4. Asigna tu dinero
 
 Ve a **Presupuesto**. El monto **Por Asignar** muestra todo lo que has ganado y aún no has comprometido. Haz clic en cualquier categoría e ingresa cuánto quieres asignarle este mes. Continúa hasta que **Por Asignar = 0**.
 
-Si tienes gastos recurrentes (renta, suscripciones, sueldos), configura [Transacciones Recurrentes](recurring/) para que se llenen automáticamente cada mes.
+Si tienes gastos recurrentes (renta, suscripciones, sueldos), configura [Transacciones Recurrentes](../recurring/) para que se llenen automáticamente cada mes.
 
 ### 5. Revisa y ajusta
 
@@ -97,11 +97,11 @@ Conforme avanza el mes:
 
 | Tema | Qué cubre |
 |---|---|
-| [Presupuesto](budget/) | Asignar dinero, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
-| [Cuentas](accounts/) | Los seis tipos de cuenta, préstamos, cerrar/reabrir, reordenar |
-| [Transacciones](transactions/) | Ingreso, gasto, transferencia, reembolso, divisiones, pagos de deuda, filtros |
-| [Categorías](categories/) | Grupos, orden, ocultar, eliminar con reasignación |
-| [Recurrentes](recurring/) | Transacciones programadas, frecuencias, aplicar vencimientos |
-| [Beneficiarios](payees/) | Crear, renombrar, fusionar, eliminar |
-| [Perfil y Ajustes](profile/) | Nombre, idioma, tema, zona horaria, moneda |
-| [Seguridad](security/) | Autenticación de dos factores, cambio de contraseña, códigos de recuperación |
+| [Presupuesto](../budget/) | Asignar dinero, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
+| [Cuentas](../accounts/) | Los seis tipos de cuenta, préstamos, cerrar/reabrir, reordenar |
+| [Transacciones](../transactions/) | Ingreso, gasto, transferencia, reembolso, divisiones, pagos de deuda, filtros |
+| [Categorías](../categories/) | Grupos, orden, ocultar, eliminar con reasignación |
+| [Recurrentes](../recurring/) | Transacciones programadas, frecuencias, aplicar vencimientos |
+| [Beneficiarios](../payees/) | Crear, renombrar, fusionar, eliminar |
+| [Perfil y Ajustes](../profile/) | Nombre, idioma, tema, zona horaria, moneda |
+| [Seguridad](../security/) | Autenticación de dos factores, cambio de contraseña, códigos de recuperación |

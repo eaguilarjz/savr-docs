@@ -26,7 +26,7 @@ This guide walks you through creating an account, learning the core concepts, an
 
 > **Forgot your password?** From the sign-in screen, click **Forgot password?** and enter your email. You'll receive a reset link valid for one hour. Open it and set a new password.
 
-For account security options like two-factor authentication, see the [Security](security/) page.
+For account security options like two-factor authentication, see the [Security](../security/) page.
 
 ---
 
@@ -53,7 +53,7 @@ Follow this order the first time you use savr. You can revisit each section as y
 
 Go to **Accounts → Add Account** and create one entry for each real account: checking, savings, credit cards, cash, investments, and loans. Enter the current balance as the **opening balance**.
 
-savr supports six account types — see the [Accounts](accounts/) page for what each one does.
+savr supports six account types — see the [Accounts](../accounts/) page for what each one does.
 
 ### 2. Build your category list
 
@@ -75,13 +75,13 @@ Go to **Transactions** to log income and expenses. Pick the right type:
 - **Transfer** — moving money between two of your accounts
 - **Credit** — refunds on a previous purchase (these reduce category spending without showing up as new income)
 
-See the [Transactions](transactions/) page for splits, debt payments, and filters.
+See the [Transactions](../transactions/) page for splits, debt payments, and filters.
 
 ### 4. Assign your money
 
 Go to **Budget**. Your **To Be Budgeted** amount shows everything you've earned that isn't yet committed. Click any category and enter how much you want to allocate this month. Keep going until **To Be Budgeted = 0**.
 
-If you have recurring expenses (rent, subscriptions, paychecks), set up [Recurring Transactions](recurring/) so they fill in automatically each month.
+If you have recurring expenses (rent, subscriptions, paychecks), set up [Recurring Transactions](../recurring/) so they fill in automatically each month.
 
 ### 5. Review and adjust
 
@@ -97,11 +97,11 @@ As the month progresses:
 
 | Topic | What's covered |
 |---|---|
-| [Budget](budget/) | Assigning money, auto-assign strategies, targets, moving money, the detail panel |
-| [Accounts](accounts/) | All six account types, loans, closing/reopening, drag-to-reorder |
-| [Transactions](transactions/) | Income, expense, transfer, credit, splits, debt payments, filters |
-| [Categories](categories/) | Groups, ordering, hiding, deletion with reassignment |
-| [Recurring](recurring/) | Scheduled transactions, frequencies, applying due items |
-| [Payees](payees/) | Creating, renaming, merging, deleting |
-| [Profile & Settings](profile/) | Display name, language, theme, timezone, currency |
-| [Security](security/) | Two-factor authentication, password changes, recovery codes |
+| [Budget](../budget/) | Assigning money, auto-assign strategies, targets, moving money, the detail panel |
+| [Accounts](../accounts/) | All six account types, loans, closing/reopening, drag-to-reorder |
+| [Transactions](../transactions/) | Income, expense, transfer, credit, splits, debt payments, filters |
+| [Categories](../categories/) | Groups, ordering, hiding, deletion with reassignment |
+| [Recurring](../recurring/) | Scheduled transactions, frequencies, applying due items |
+| [Payees](../payees/) | Creating, renaming, merging, deleting |
+| [Profile & Settings](../profile/) | Display name, language, theme, timezone, currency |
+| [Security](../security/) | Two-factor authentication, password changes, recovery codes |

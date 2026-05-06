@@ -10,7 +10,7 @@ nav_order: 8
 
 The Profile page is where you manage personal information and how savr looks and behaves. Open it from your avatar in the sidebar or top menu.
 
-For password changes, two-factor authentication, and other security features, see the [Security](security/) page.
+For password changes, two-factor authentication, and other security features, see the [Security](../security/) page.
 
 ---
 
@@ -71,7 +71,7 @@ The **Terms of Service** are accessible from the Profile page. savr tracks the v
 
 Use **Sign out** from the user menu to end your session. On your next sign-in you'll be asked for your email, password, and (if enabled) your two-factor code.
 
-For details on what happens to your session — token lifetimes, refresh, multiple devices — see [Security → Sessions](security/#sessions).
+For details on what happens to your session — token lifetimes, refresh, multiple devices — see [Security → Sessions](../security/#sessions).
 
 ---
 
@@ -81,8 +81,8 @@ A few things sometimes expected on a profile page that live elsewhere:
 
 | Setting | Where to find it |
 |---|---|
-| **Password change** | [Security](security/#change-your-password) |
-| **Two-factor authentication** | [Security](security/#two-factor-authentication-mfa) |
-| **Recovery codes** | [Security](security/#recovery-codes) |
-| **Account types and ordering** | [Accounts](accounts/#organizing-the-accounts-page) |
-| **Category groups** | [Categories](categories/#category-groups) |
+| **Password change** | [Security](../security/#change-your-password) |
+| **Two-factor authentication** | [Security](../security/#two-factor-authentication-mfa) |
+| **Recovery codes** | [Security](../security/#recovery-codes) |
+| **Account types and ordering** | [Accounts](../accounts/#organizing-the-accounts-page) |
+| **Category groups** | [Categories](../categories/#category-groups) |

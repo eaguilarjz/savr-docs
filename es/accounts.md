@@ -59,7 +59,7 @@ Al crear o editar un préstamo, puedes configurar:
 
 Al crear un préstamo, puedes vincularlo a una **categoría existente** o pedir a savr que **cree una categoría nueva** (y opcionalmente la coloque en un grupo nuevo, como "Deuda"). Esto mantiene los intereses visibles en tu presupuesto sin configuración manual.
 
-Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](transactions/#pagos-de-deuda).
+Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](../transactions/#pagos-de-deuda).
 
 ---
 

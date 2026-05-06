@@ -138,7 +138,7 @@ Para consultas muy grandes, puede ser mejor aplicar un filtro de rango de fechas
 
 ## Vínculos a transacciones recurrentes
 
-Las transacciones creadas desde una [regla recurrente](recurring/) mantienen una referencia a la regla que las generó. Esto te permite rastrear una transacción hasta su plantilla y le permite a savr mantener tu calendario recurrente preciso.
+Las transacciones creadas desde una [regla recurrente](../recurring/) mantienen una referencia a la regla que las generó. Esto te permite rastrear una transacción hasta su plantilla y le permite a savr mantener tu calendario recurrente preciso.
 
 Editar una transacción creada por una regla recurrente no cambia la regla misma — solo esa ocurrencia.
 

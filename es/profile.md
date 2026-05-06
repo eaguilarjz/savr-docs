@@ -10,7 +10,7 @@ nav_order: 8
 
 La página de Perfil es donde administras tu información personal y cómo se ve y se comporta savr. Ábrela desde tu avatar en la barra lateral o el menú superior.
 
-Para cambios de contraseña, autenticación de dos factores y otras funciones de seguridad, consulta la página [Seguridad](security/).
+Para cambios de contraseña, autenticación de dos factores y otras funciones de seguridad, consulta la página [Seguridad](../security/).
 
 ---
 
@@ -71,7 +71,7 @@ Los **Términos de Servicio** son accesibles desde la página de Perfil. savr ll
 
 Usa **Cerrar sesión** desde el menú de usuario para terminar tu sesión. La próxima vez que inicies sesión se te pedirán tu correo, contraseña y (si está activo) tu código de dos factores.
 
-Para detalles sobre qué pasa con tu sesión — duración de tokens, refresco, múltiples dispositivos — consulta [Seguridad → Sesiones](security/#sesiones).
+Para detalles sobre qué pasa con tu sesión — duración de tokens, refresco, múltiples dispositivos — consulta [Seguridad → Sesiones](../security/#sesiones).
 
 ---
 
@@ -81,8 +81,8 @@ Algunas cosas que a veces se esperan en una página de perfil viven en otro lado
 
 | Ajuste | Dónde encontrarlo |
 |---|---|
-| **Cambio de contraseña** | [Seguridad](security/#cambia-tu-contraseña) |
-| **Autenticación de dos factores** | [Seguridad](security/#autenticación-de-dos-factores-mfa) |
-| **Códigos de recuperación** | [Seguridad](security/#códigos-de-recuperación) |
-| **Tipos de cuenta y orden** | [Cuentas](accounts/#organizar-la-página-de-cuentas) |
-| **Grupos de categorías** | [Categorías](categories/#grupos-de-categorías) |
+| **Cambio de contraseña** | [Seguridad](../security/#cambia-tu-contraseña) |
+| **Autenticación de dos factores** | [Seguridad](../security/#autenticación-de-dos-factores-mfa) |
+| **Códigos de recuperación** | [Seguridad](../security/#códigos-de-recuperación) |
+| **Tipos de cuenta y orden** | [Cuentas](../accounts/#organizar-la-página-de-cuentas) |
+| **Grupos de categorías** | [Categorías](../categories/#grupos-de-categorías) |

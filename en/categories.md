@@ -109,7 +109,7 @@ A few things to know about how categories behave:
 - **Spending** in a category is the sum of Expense transactions less any Credit (refund) transactions for the selected month.
 - **Budgeted** is the amount you've allocated this month — independent of spending.
 - **Available** = Budgeted − Spent. When negative, the category is overspent.
-- **Targets** can be set on any category to indicate what you want to budget. Targets drive auto-assign and the Fill by Targets shortcut. See [Budget → Targets](budget/#targets-goals).
+- **Targets** can be set on any category to indicate what you want to budget. Targets drive auto-assign and the Fill by Targets shortcut. See [Budget → Targets](../budget/#targets-goals).
 
 Hidden categories don't appear in the budget, but they still receive the transactions you've already assigned to them. To stop posting new transactions to a category, simply don't pick it when creating new ones — or delete it (with reassignment).
 

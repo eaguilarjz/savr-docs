@@ -59,7 +59,7 @@ When creating or editing a loan, you can set:
 
 When creating a loan, you can either link to an **existing category** or have savr **create a new category** for it (and optionally place it in a new group, like "Debt"). This keeps interest charges visible in your budget without manual setup.
 
-For how to record loan payments with separate principal, interest, and fees amounts, see [Debt payments](transactions/#debt-payments).
+For how to record loan payments with separate principal, interest, and fees amounts, see [Debt payments](../transactions/#debt-payments).
 
 ---
 

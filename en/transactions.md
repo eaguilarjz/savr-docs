@@ -138,7 +138,7 @@ For very large queries, you may want to apply a date range filter rather than sc
 
 ## Recurring transaction links
 
-Transactions created from a [recurring rule](recurring/) keep a reference to the rule that produced them. This lets you trace a transaction back to its template, and lets savr keep your recurring schedule accurate.
+Transactions created from a [recurring rule](../recurring/) keep a reference to the rule that produced them. This lets you trace a transaction back to its template, and lets savr keep your recurring schedule accurate.
 
 Edits to a transaction created by a recurring rule don't change the rule itself — only that one occurrence.
 

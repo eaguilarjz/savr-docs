@@ -109,7 +109,7 @@ Algunas cosas que vale saber sobre cómo se comportan las categorías:
 - El **Gasto** en una categoría es la suma de transacciones de Gasto menos cualquier transacción de Reembolso para el mes seleccionado.
 - **Asignado** es el monto que asignaste este mes — independiente del gasto.
 - **Disponible** = Asignado − Gastado. Cuando es negativo, la categoría está sobregirada.
-- Los **Objetivos** se pueden configurar en cualquier categoría para indicar cuánto quieres presupuestar. Los objetivos potencian la auto-asignación y el atajo Llenar por Objetivos. Consulta [Presupuesto → Objetivos](budget/#objetivos-metas).
+- Los **Objetivos** se pueden configurar en cualquier categoría para indicar cuánto quieres presupuestar. Los objetivos potencian la auto-asignación y el atajo Llenar por Objetivos. Consulta [Presupuesto → Objetivos](../budget/#objetivos-metas).
 
 Las categorías ocultas no aparecen en el presupuesto, pero siguen recibiendo las transacciones que ya les asignaste. Para dejar de registrar nuevas transacciones a una categoría, simplemente no la elijas al crearlas — o elimínala (con reasignación).
 
