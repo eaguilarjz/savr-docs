@@ -21,7 +21,7 @@ GitHub will build and publish the site. After a minute or two it will be availab
 https://docs.savr.pro/
 ```
 
-The default Pages URL `https://eaguilarjz.github.io/save-docs/` will 301-redirect to the custom domain.
+The default Pages URL `https://eaguilarjz.github.io/savr-docs/` will 301-redirect to the custom domain.
 
 ---
 
