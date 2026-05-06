@@ -1,4 +1,10 @@
-> 🌐 Lee esta página en [Español](../es/payees.md)
+---
+title: Payees
+parent: English
+nav_order: 7
+---
+
+> 🌐 Lee esta página en [Español](../es/payees/)
 
 # Payees
 

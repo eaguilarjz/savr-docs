@@ -1,4 +1,10 @@
-> 🌐 Lee esta página en [Español](../es/categories.md)
+---
+title: Categories
+parent: English
+nav_order: 5
+---
+
+> 🌐 Lee esta página en [Español](../es/categories/)
 
 # Categories
 

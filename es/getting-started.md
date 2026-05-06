@@ -1,4 +1,10 @@
-> 🌐 Read this page in [English](../en/getting-started.md)
+---
+title: Primeros pasos
+parent: Español
+nav_order: 1
+---
+
+> 🌐 Read this page in [English](../en/getting-started/)
 
 # Primeros pasos con savr
 

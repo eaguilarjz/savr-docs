@@ -1,4 +1,10 @@
-> 🌐 Read this page in [English](../en/budget.md)
+---
+title: Presupuesto
+parent: Español
+nav_order: 2
+---
+
+> 🌐 Read this page in [English](../en/budget/)
 
 # Presupuesto
 

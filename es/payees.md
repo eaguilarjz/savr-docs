@@ -1,4 +1,10 @@
-> 🌐 Read this page in [English](../en/payees.md)
+---
+title: Beneficiarios
+parent: Español
+nav_order: 7
+---
+
+> 🌐 Read this page in [English](../en/payees/)
 
 # Beneficiarios
 

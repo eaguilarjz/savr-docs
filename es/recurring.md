@@ -1,4 +1,10 @@
-> 🌐 Read this page in [English](../en/recurring.md)
+---
+title: Recurrentes
+parent: Español
+nav_order: 6
+---
+
+> 🌐 Read this page in [English](../en/recurring/)
 
 # Transacciones Recurrentes
 

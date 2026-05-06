@@ -1,4 +1,11 @@
-> 🌐 Read this documentation in [English](../en/README.md)
+---
+title: Español
+nav_order: 2
+has_children: true
+permalink: /es/
+---
+
+> 🌐 Read this documentation in [English](../en/)
 
 # Documentación de savr
 

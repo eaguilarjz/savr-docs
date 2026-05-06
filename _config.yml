@@ -1,6 +1,41 @@
 title: savr Documentation
 description: Zero-based budgeting — give every unit of money a job.
-theme: jekyll-theme-minimal
+url: https://docs.savr.pro
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+
+permalink: pretty
+
+color_scheme: light
+
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 2
+  preview_words_before: 3
+  preview_words_after: 3
+
+heading_anchors: true
+
+gh_edit_link: false
+last_edit_timestamp: false
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "&copy; savr. All rights reserved."
+
+aux_links:
+  "savr app":
+    - "https://savr.pro"
+aux_links_new_tab: true
 
 exclude:
   - DEPLOYMENT.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

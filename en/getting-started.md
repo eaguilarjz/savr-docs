@@ -1,4 +1,10 @@
-> 🌐 Lee esta página en [Español](../es/getting-started.md)
+---
+title: Getting Started
+parent: English
+nav_order: 1
+---
+
+> 🌐 Lee esta página en [Español](../es/getting-started/)
 
 # Getting Started with savr
 

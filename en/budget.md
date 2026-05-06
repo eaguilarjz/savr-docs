@@ -1,4 +1,10 @@
-> 🌐 Lee esta página en [Español](../es/budget.md)
+---
+title: Budget
+parent: English
+nav_order: 2
+---
+
+> 🌐 Lee esta página en [Español](../es/budget/)
 
 # Budget
 

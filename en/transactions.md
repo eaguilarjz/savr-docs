@@ -1,4 +1,10 @@
-> 🌐 Lee esta página en [Español](../es/transactions.md)
+---
+title: Transactions
+parent: English
+nav_order: 4
+---
+
+> 🌐 Lee esta página en [Español](../es/transactions/)
 
 # Transactions
 

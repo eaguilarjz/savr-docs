@@ -1,4 +1,10 @@
-> 🌐 Read this page in [English](../en/accounts.md)
+---
+title: Cuentas
+parent: Español
+nav_order: 3
+---
+
+> 🌐 Read this page in [English](../en/accounts/)
 
 # Cuentas
 
