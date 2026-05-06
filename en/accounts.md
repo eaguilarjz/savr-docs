@@ -1,7 +1,4 @@
----
-title: Accounts
-nav_order: 3
----
+> 🌐 Lee esta página en [Español](../es/accounts.md)
 
 # Accounts
 
@@ -9,14 +6,14 @@ Accounts represent the real financial accounts you want to track: bank accounts,
 
 ## Account types
 
-| Type        | Use for                              |
-| ----------- | ------------------------------------ |
-| Checking    | Day-to-day bank account              |
-| Savings     | Savings or emergency fund            |
-| Credit Card | Credit cards (track balance owed)    |
-| Cash        | Physical cash                        |
-| Investment  | Brokerage or retirement accounts     |
-| Loan        | Mortgages, car loans, personal loans |
+| Type | Use for |
+|---|---|
+| Checking | Day-to-day bank account |
+| Savings | Savings or emergency fund |
+| Credit Card | Credit cards (track balance owed) |
+| Cash | Physical cash |
+| Investment | Brokerage or retirement accounts |
+| Loan | Mortgages, car loans, personal loans |
 
 ---
 
@@ -31,7 +28,7 @@ Accounts represent the real financial accounts you want to track: bank accounts,
 
 ### Loan accounts
 
-Loan accounts have two additional fields:
+Loan accounts have additional fields:
 
 - **Annual Interest Rate** — used to calculate the interest portion of payments.
 - **Monthly Payment** — automatically creates a budget target in the linked category.

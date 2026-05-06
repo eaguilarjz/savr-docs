@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>savr Documentation</title>
+  <style>
+    body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f9fafb; }
+    .card { text-align: center; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    h1 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+    p { color: #6b7280; margin: 0 0 1.5rem; }
+    .links { display: flex; gap: 1rem; justify-content: center; }
+    a { padding: 0.5rem 1.25rem; border-radius: 6px; background: #2563eb; color: white; text-decoration: none; font-weight: 500; }
+    a:hover { background: #1d4ed8; }
+  </style>
+  <script>
+    (function () {
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      var dest = lang.startsWith('es') ? './es/' : './en/';
+      window.location.replace(dest);
+    })();
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>savr Documentation</h1>
+    <p>Redirecting based on your browser language…<br>Redirigiendo según el idioma de tu navegador…</p>
+    <div class="links">
+      <a href="./en/">English</a>
+      <a href="./es/">Español</a>
+    </div>
+  </div>
+</body>
+</html>

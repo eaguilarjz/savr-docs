@@ -1,7 +1,4 @@
----
-title: Transactions
-nav_order: 4
----
+> 🌐 Lee esta página en [Español](../es/transactions.md)
 
 # Transactions
 
@@ -9,13 +6,13 @@ Transactions record every movement of money in and out of your accounts. You can
 
 ## Transaction types
 
-| Type            | When to use                                       |
-| --------------- | ------------------------------------------------- |
-| Expense         | Money leaving an account (groceries, bills, etc.) |
-| Income          | Money coming in (paycheck, freelance payment)     |
-| Credit / Refund | A refund or credit posted to your account         |
-| Transfer        | Moving money between two of your own accounts     |
-| Debt Payment    | Paying down a loan (principal, interest, fees)    |
+| Type | When to use |
+|---|---|
+| Expense | Money leaving an account (groceries, bills, etc.) |
+| Income | Money coming in (paycheck, freelance payment) |
+| Credit / Refund | A refund or credit posted to your account |
+| Transfer | Moving money between two of your own accounts |
+| Debt Payment | Paying down a loan (principal, interest, fees) |
 
 ---
 
@@ -23,15 +20,15 @@ Transactions record every movement of money in and out of your accounts. You can
 
 Click **Add transaction** and fill in:
 
-| Field    | Notes                                           |
-| -------- | ----------------------------------------------- |
-| Date     | Defaults to today                               |
-| Type     | See types above                                 |
-| Amount   | Positive number; type determines direction      |
-| Account  | Which account the money comes from (or goes to) |
-| Payee    | Optional — who you paid or received money from  |
-| Category | Where this transaction belongs in your budget   |
-| Memo     | Optional note                                   |
+| Field | Notes |
+|---|---|
+| Date | Defaults to today |
+| Type | See types above |
+| Amount | Positive number; type determines direction |
+| Account | Which account the money comes from (or goes to) |
+| Payee | Optional — who you paid or received money from |
+| Category | Where this transaction belongs in your budget |
+| Memo | Optional note |
 
 ### Transfers
 
@@ -41,11 +38,11 @@ For a transfer, select **Transfer** as the type, then choose the source account 
 
 Select **Debt Payment** to break a loan payment into its components:
 
-| Field     | Effect                                                |
-| --------- | ----------------------------------------------------- |
-| Principal | Reduces the loan balance                              |
-| Interest  | Recorded as interest expense; does not reduce balance |
-| Fees      | Recorded as fee expense; does not reduce balance      |
+| Field | Effect |
+|---|---|
+| Principal | Reduces the loan balance |
+| Interest | Recorded as interest expense; does not reduce balance |
+| Fees | Recorded as fee expense; does not reduce balance |
 
 The **Total** field is the sum of all three. You can fill in any two and the third is calculated automatically.
 

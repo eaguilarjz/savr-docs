@@ -1,3 +1,8 @@
-title: savr docs
-remote_theme: just-the-docs/just-the-docs
-search_enabled: true
+title: savr Documentation
+description: Zero-based budgeting — give every unit of money a job.
+theme: jekyll-theme-minimal
+
+# GitHub Pages serves the docs/ folder at the repo root URL.
+# The index.html language detector takes precedence over this README.
+exclude:
+  - DEPLOYMENT.md

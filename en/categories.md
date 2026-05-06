@@ -1,7 +1,4 @@
----
-title: Categories
-nav_order: 5
----
+> 🌐 Lee esta página en [Español](../es/categories.md)
 
 # Categories
 
@@ -11,21 +8,23 @@ Categories let you group your spending into meaningful buckets so the budget pag
 
 Categories are nested inside **groups**. A group is just a label — it has no budget of its own. You can have as many groups and categories as you need.
 
-Example structure:
+### Emoji and unicode support
+
+Category and group names support emoji and unicode characters. Use them to make your budget more visual and easier to scan at a glance:
 
 ```
-Housing
-  ├─ Rent / Mortgage
-  ├─ Electricity
-  └─ Internet
+🏠 Housing
+  ├─ 🛏️ Rent / Mortgage
+  ├─ ⚡ Electricity
+  └─ 🌐 Internet
 
-Food
-  ├─ Groceries
-  └─ Eating Out
+🍔 Food
+  ├─ 🛒 Groceries
+  └─ 🍽️ Eating Out
 
-Savings Goals
-  ├─ Emergency Fund
-  └─ Vacation
+💰 Savings Goals
+  ├─ 🆘 Emergency Fund
+  └─ ✈️ Vacation
 ```
 
 ---
@@ -60,9 +59,9 @@ You can hide categories or groups you rarely use to keep the budget view clean �
 
 **To hide:** Hover over the category or group name and click **Hide**.
 
-**To unhide:** Hover and click **Unhide**. Hidden items are shown with an italic name and a _Hidden_ badge while you're on the Categories page.
+**To unhide:** Hover and click **Unhide**. Hidden items are shown with a *Hidden* badge while you're on the Categories page.
 
-On the **Budget page**, hidden items are invisible by default. Click **Show hidden** (appears in the month nav when hidden items exist) to reveal them temporarily.
+On the **Budget page**, hidden items are invisible by default. Click **Show hidden** (appears in the navigation bar when hidden items exist) to reveal them temporarily.
 
 ---
 

@@ -1,11 +1,8 @@
----
-title: Profile & Settings
-nav_order: 8
----
+> 🌐 Lee esta página en [Español](../es/profile.md)
 
 # Profile & Settings
 
-Access your profile and preferences by clicking your avatar in the top right.
+Access your profile and preferences by clicking your avatar in the sidebar or top menu.
 
 ## Account
 
@@ -31,7 +28,7 @@ Changes to preferences save instantly — no Save button needed.
 
 ### Language
 
-Toggle between **EN** (English) and **ES** (Spanish). The entire app switches immediately.
+Toggle between **EN** (English) and **ES** (Spanish). The entire app switches immediately, including all labels, messages, and motivational phrases.
 
 ### Theme
 
@@ -40,6 +37,10 @@ Toggle between **Light** and **Dark** mode.
 ### Timezone
 
 Select your timezone from the searchable dropdown. savr uses your timezone when displaying transaction dates.
+
+### Currency
+
+Select your currency from the searchable list. The list displays currency names in your currently selected language (e.g. switching to Spanish shows "dólar estadounidense" instead of "US Dollar"). Changes take effect immediately across the entire app — all amounts are formatted in the selected currency, and the To Be Budgeted banner uses the correct currency name in its phrases.
 
 ---
 

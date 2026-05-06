@@ -1,7 +1,4 @@
----
-title: Recurring Transactions
-nav_order: 6
----
+> 🌐 Lee esta página en [Español](../es/recurring.md)
 
 # Recurring Transactions
 
@@ -17,17 +14,17 @@ When a recurring transaction is **due**, it appears highlighted in the Recurring
 
 Click **Add Recurring** and fill in:
 
-| Field      | Notes                                                      |
-| ---------- | ---------------------------------------------------------- |
-| Type       | Expense, Income, Credit, Transfer, or Debt Payment         |
-| Frequency  | Daily, Weekly, Biweekly, Monthly, or Yearly                |
-| Start Date | When the first instance is due                             |
-| End Date   | Optional — leave blank for indefinite                      |
-| Account    | Source account                                             |
-| Amount     | Fixed amount for each occurrence                           |
-| Payee      | Optional                                                   |
-| Category   | Which budget category to charge (or split across multiple) |
-| Memo       | Optional note                                              |
+| Field | Notes |
+|---|---|
+| Type | Expense, Income, Credit, Transfer, or Debt Payment |
+| Frequency | Daily, Weekly, Biweekly, Monthly, or Yearly |
+| Start Date | When the first instance is due |
+| End Date | Optional — leave blank for indefinite |
+| Account | Source account |
+| Amount | Fixed amount for each occurrence |
+| Payee | Optional |
+| Category | Which budget category to charge (or split across multiple) |
+| Memo | Optional note |
 
 ### Transfer recurrings
 
