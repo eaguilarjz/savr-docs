@@ -1,6 +1,6 @@
 # Deploying savr Docs to GitHub Pages
 
-The docs site lives in the `docs/` folder of the repository and is served via GitHub Pages. Language detection is handled client-side with a small JavaScript redirect in `index.html`.
+The docs site lives at the root of the repository and is served via GitHub Pages at the custom domain `docs.savr.pro`. Language detection is handled client-side with a small JavaScript redirect in `index.html`.
 
 ---
 
@@ -11,14 +11,17 @@ The docs site lives in the `docs/` folder of the repository and is served via Gi
 3. Under **Build and deployment**, set:
    - **Source**: `Deploy from a branch`
    - **Branch**: `main`
-   - **Folder**: `/docs`
+   - **Folder**: `/ (root)`
 4. Click **Save**.
+5. Under **Custom domain**, enter `docs.savr.pro` and save. The repo's `CNAME` file at the root must contain the same value.
 
-GitHub will build and publish the site. After a minute or two the URL appears at the top of the Pages settings page — it will be:
+GitHub will build and publish the site. After a minute or two it will be available at:
 
 ```
-https://eaguilarjz.github.io/personal-budget-app/
+https://docs.savr.pro/
 ```
+
+The default Pages URL `https://eaguilarjz.github.io/save-docs/` will 301-redirect to the custom domain.
 
 ---
 
@@ -26,7 +29,7 @@ https://eaguilarjz.github.io/personal-budget-app/
 
 GitHub Pages serves static files only — there is no server-side logic. True i18n (e.g. reading the `Accept-Language` HTTP header) is not available.
 
-The workaround uses a JavaScript redirect in `docs/index.html`:
+The workaround uses a JavaScript redirect in `index.html`:
 
 ```js
 var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
@@ -38,7 +41,7 @@ window.location.replace(dest);
 
 | Step | What occurs |
 |---|---|
-| User visits `/` | GitHub Pages serves `docs/index.html` |
+| User visits `/` | GitHub Pages serves `index.html` |
 | JS runs | `navigator.language` is read (e.g. `"es-MX"`, `"en-US"`) |
 | Redirect | User is sent to `/es/` or `/en/` immediately |
 | Fallback | If JS is disabled, two manual links are shown (`English` / `Español`) |
@@ -50,17 +53,17 @@ window.location.replace(dest);
 | `es`, `es-MX`, `es-AR`, `es-*` | `/es/` |
 | Everything else | `/en/` |
 
-To add more languages in the future, add a new folder (e.g. `docs/fr/`) and extend the redirect logic in `index.html`.
+To add more languages in the future, add a new folder (e.g. `fr/`) and extend the redirect logic in `index.html`.
 
 ### Cross-page language links
 
-Every page in `docs/en/` has a link at the top pointing to the equivalent page in `docs/es/`, and vice versa. These are relative Markdown links that work both on GitHub (rendered Markdown) and on the Pages site (Jekyll).
+Every page in `en/` has a link at the top pointing to the equivalent page in `es/`, and vice versa. These are relative Markdown links that work both on GitHub (rendered Markdown) and on the Pages site (Jekyll).
 
 ---
 
 ## Updating the docs
 
-1. Edit any `.md` file under `docs/en/` or `docs/es/`.
+1. Edit any `.md` file under `en/` or `es/`.
 2. Commit and push to `main`.
 3. GitHub Actions rebuilds and deploys automatically — no manual step needed.
 
@@ -72,7 +75,6 @@ To preview the docs locally with Jekyll:
 
 ```bash
 gem install bundler jekyll
-cd docs
 jekyll serve
 # Open http://localhost:4000
 ```
