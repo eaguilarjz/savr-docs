@@ -6,11 +6,10 @@ $link-color: #16a34a;
 $btn-primary-color: #16a34a;
 $body-heading-color: #14532d; // brand-900 — slightly tinted for warmth
 
-// Sidebar — soft brand-100 green so navigation feels on-brand
-// without losing readability.
-$sidebar-color: #dcfce7;       // brand-100
-$search-background-color: #f0fdf4; // brand-50 — search box blends into sidebar
-$search-result-background-color: #ffffff;
+// Dark green sidebar with white text. Fine-grained text/active-state
+// overrides live in _sass/custom/custom.scss because just-the-docs
+// doesn't expose those as SCSS variables.
+$sidebar-color: #15803d; // brand-700
 
 // Code highlight + table-of-contents accent inherits from $link-color
 // so most accents update automatically.
