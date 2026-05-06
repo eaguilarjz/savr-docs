@@ -4,7 +4,7 @@ parent: English
 nav_order: 1
 ---
 
-> 🌐 Lee esta página en [Español](../es/getting-started/)
+> 🌐 Lee esta página en [Español](../../es/getting-started/)
 
 # Getting Started with savr
 

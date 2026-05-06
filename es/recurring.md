@@ -4,7 +4,7 @@ parent: Español
 nav_order: 6
 ---
 
-> 🌐 Read this page in [English](../en/recurring/)
+> 🌐 Read this page in [English](../../en/recurring/)
 
 # Transacciones Recurrentes
 

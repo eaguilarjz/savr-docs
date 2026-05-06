@@ -4,7 +4,7 @@ parent: Español
 nav_order: 8
 ---
 
-> 🌐 Read this page in [English](../en/profile/)
+> 🌐 Read this page in [English](../../en/profile/)
 
 # Perfil y Ajustes
 

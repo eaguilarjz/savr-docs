@@ -4,7 +4,7 @@ parent: Español
 nav_order: 4
 ---
 
-> 🌐 Read this page in [English](../en/transactions/)
+> 🌐 Read this page in [English](../../en/transactions/)
 
 # Transacciones
 

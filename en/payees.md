@@ -4,7 +4,7 @@ parent: English
 nav_order: 7
 ---
 
-> 🌐 Lee esta página en [Español](../es/payees/)
+> 🌐 Lee esta página en [Español](../../es/payees/)
 
 # Payees
 

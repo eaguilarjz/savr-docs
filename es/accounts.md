@@ -4,7 +4,7 @@ parent: Español
 nav_order: 3
 ---
 
-> 🌐 Read this page in [English](../en/accounts/)
+> 🌐 Read this page in [English](../../en/accounts/)
 
 # Cuentas
 

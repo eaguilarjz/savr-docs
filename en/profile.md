@@ -4,7 +4,7 @@ parent: English
 nav_order: 8
 ---
 
-> 🌐 Lee esta página en [Español](../es/profile/)
+> 🌐 Lee esta página en [Español](../../es/profile/)
 
 # Profile & Settings
 

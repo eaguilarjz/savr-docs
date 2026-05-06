@@ -4,7 +4,7 @@ parent: Español
 nav_order: 2
 ---
 
-> 🌐 Read this page in [English](../en/budget/)
+> 🌐 Read this page in [English](../../en/budget/)
 
 # Presupuesto
 
