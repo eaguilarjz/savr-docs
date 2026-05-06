@@ -9,7 +9,8 @@ $body-heading-color: #14532d; // brand-900 — slightly tinted for warmth
 // Dark green sidebar with white text. Fine-grained text/active-state
 // overrides live in _sass/custom/custom.scss because just-the-docs
 // doesn't expose those as SCSS variables.
-$sidebar-color: #15803d; // brand-700
+$sidebar-color: #15803d;                          // brand-700
+$nav-child-link-color: rgba(255, 255, 255, 0.92); // child nav items in sidebar
 
 // Code highlight + table-of-contents accent inherits from $link-color
 // so most accents update automatically.

@@ -1,12 +1,13 @@
 // Sidebar text and interactive states for the dark-green sidebar.
-// just-the-docs exposes $sidebar-color but not the colors of the
-// links/headings inside it, so we set those here.
+// just-the-docs exposes $sidebar-color and $nav-child-link-color but not
+// the colors of headings, hover/active states, or the search box, so we
+// set those here.
 
 $savr-sidebar-bg: #15803d;       // brand-700, matches $sidebar-color
 $savr-sidebar-text: #ffffff;
-$savr-sidebar-text-muted: rgba(255, 255, 255, 0.78);
-$savr-sidebar-hover: rgba(255, 255, 255, 0.10);
-$savr-sidebar-active: rgba(255, 255, 255, 0.18);
+$savr-sidebar-text-muted: rgba(255, 255, 255, 0.92);
+$savr-sidebar-hover: rgba(255, 255, 255, 0.12);
+$savr-sidebar-active: rgba(255, 255, 255, 0.20);
 
 .side-bar {
   color: $savr-sidebar-text;
@@ -22,10 +23,13 @@ $savr-sidebar-active: rgba(255, 255, 255, 0.18);
     border-bottom-color: rgba(255, 255, 255, 0.15);
   }
 
+  // The "This site uses Just the Docs..." attribution that the theme
+  // injects at the bottom of the sidebar.
   .site-footer {
-    color: $savr-sidebar-text-muted;
+    display: none;
   }
 
+  // Top-level group labels (English / Español) and all child links
   .nav-list .nav-list-item .nav-list-link {
     color: $savr-sidebar-text-muted;
 
