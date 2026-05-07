@@ -4,7 +4,7 @@ parent: Español
 nav_order: 5
 ---
 
-> 🌐 Read this page in [English](../../en/categories/)
+> {% include lang-globe.html %} Read this page in [English](../../en/categories/)
 
 # Categorías
 

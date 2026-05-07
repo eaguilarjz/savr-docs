@@ -4,7 +4,7 @@ parent: Español
 nav_order: 13
 ---
 
-> 🌐 Read this page in [English](../../en/security/)
+> {% include lang-globe.html %} Read this page in [English](../../en/security/)
 
 # Seguridad
 

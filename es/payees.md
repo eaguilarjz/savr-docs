@@ -4,7 +4,7 @@ parent: Español
 nav_order: 7
 ---
 
-> 🌐 Read this page in [English](../../en/payees/)
+> {% include lang-globe.html %} Read this page in [English](../../en/payees/)
 
 # Beneficiarios
 

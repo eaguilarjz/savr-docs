@@ -4,7 +4,7 @@ parent: English
 nav_order: 3
 ---
 
-> 🌐 Lee esta página en [Español](../../es/accounts/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/accounts/)
 
 # Accounts
 

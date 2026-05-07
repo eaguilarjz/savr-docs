@@ -4,7 +4,7 @@ parent: Español
 nav_order: 9
 ---
 
-> 🌐 Read this page in [English](../../en/reconcile/)
+> {% include lang-globe.html %} Read this page in [English](../../en/reconcile/)
 
 # Conciliación
 

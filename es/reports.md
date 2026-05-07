@@ -4,7 +4,7 @@ parent: Español
 nav_order: 8
 ---
 
-> 🌐 Read this page in [English](../../en/reports/)
+> {% include lang-globe.html %} Read this page in [English](../../en/reports/)
 
 # Informes
 

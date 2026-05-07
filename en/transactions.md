@@ -4,7 +4,7 @@ parent: English
 nav_order: 4
 ---
 
-> 🌐 Lee esta página en [Español](../../es/transactions/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/transactions/)
 
 # Transactions
 

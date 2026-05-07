@@ -4,7 +4,7 @@ parent: English
 nav_order: 12
 ---
 
-> 🌐 Lee esta página en [Español](../../es/billing/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/billing/)
 
 # Plans & Billing
 

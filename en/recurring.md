@@ -4,7 +4,7 @@ parent: English
 nav_order: 6
 ---
 
-> 🌐 Lee esta página en [Español](../../es/recurring/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/recurring/)
 
 # Recurring Transactions
 

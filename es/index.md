@@ -5,7 +5,7 @@ has_children: true
 permalink: /es/
 ---
 
-> 🌐 Read this documentation in [English](../en/)
+> {% include lang-globe.html %} Read this documentation in [English](../en/)
 
 # Documentación de savr
 

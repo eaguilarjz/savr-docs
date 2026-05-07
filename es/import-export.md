@@ -4,7 +4,7 @@ parent: Español
 nav_order: 10
 ---
 
-> 🌐 Read this page in [English](../../en/import-export/)
+> {% include lang-globe.html %} Read this page in [English](../../en/import-export/)
 
 # Importar y Exportar
 

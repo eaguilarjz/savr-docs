@@ -98,3 +98,12 @@ $savr-sidebar-active: rgba(255, 255, 255, 0.20);
   color: #14532d;
   background-color: #ffffff;
 }
+
+// Brand-green globe icon for the cross-language banner at the top
+// of every page (replaces the default blue 🌐 emoji).
+.lang-globe {
+  display: inline-block;
+  vertical-align: -3px;
+  margin-right: 0.25rem;
+  color: #16a34a; // brand-600
+}

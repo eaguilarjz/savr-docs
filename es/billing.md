@@ -4,7 +4,7 @@ parent: Español
 nav_order: 12
 ---
 
-> 🌐 Read this page in [English](../../en/billing/)
+> {% include lang-globe.html %} Read this page in [English](../../en/billing/)
 
 # Plan y Facturación
 

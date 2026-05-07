@@ -4,7 +4,7 @@ parent: English
 nav_order: 11
 ---
 
-> 🌐 Lee esta página en [Español](../../es/profile/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/profile/)
 
 # Profile & Settings
 
