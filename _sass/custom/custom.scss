@@ -107,3 +107,110 @@ $savr-sidebar-active: rgba(255, 255, 255, 0.20);
   margin-right: 0.25rem;
   color: #16a34a; // brand-600
 }
+
+// Dark mode — automatically applied when the visitor's OS is set
+// to dark. The sidebar already uses brand greens; the content area
+// flips to dark surfaces with brand-aligned accents.
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0c0a09;
+    color: #e7e5e4;
+  }
+
+  // Sidebar — go a touch darker than the light-mode brand-700.
+  .side-bar {
+    background-color: #052e16; // brand-950
+  }
+
+  // Main content area
+  .main-content {
+    color: #e7e5e4;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #f0fdf4; // brand-50
+    }
+
+    a:not(.btn) {
+      color: #4ade80; // brand-400 — brighter green pops on dark bg
+
+      &:hover {
+        color: #86efac; // brand-300
+      }
+    }
+
+    strong {
+      color: #f0fdf4;
+    }
+
+    code {
+      background-color: #1c1917;
+      color: #fde68a;
+    }
+
+    pre,
+    pre.highlight,
+    .highlight {
+      background-color: #1c1917 !important;
+
+      code {
+        background-color: transparent;
+      }
+    }
+
+    table {
+      th {
+        background-color: #1c1917;
+        color: #f0fdf4;
+        border-color: #292524;
+      }
+
+      td {
+        border-color: #292524;
+      }
+
+      tr:nth-child(even) td {
+        background-color: rgba(255, 255, 255, 0.025);
+      }
+    }
+
+    blockquote {
+      background-color: rgba(34, 197, 94, 0.06);
+      border-left-color: #22c55e;
+      color: #e7e5e4;
+    }
+
+    hr {
+      border-color: #292524;
+    }
+  }
+
+  // Breadcrumbs above the page title
+  .breadcrumb-nav,
+  .breadcrumb-nav-list-item,
+  .breadcrumb-nav-list-item a {
+    color: #a8a29e;
+  }
+
+  // Search results dropdown
+  .search-results {
+    color: #e7e5e4;
+    background-color: #1c1917;
+    border-color: #292524;
+
+    .search-result {
+      &:hover,
+      &.active {
+        background-color: #292524;
+      }
+
+      .search-result-title {
+        color: #f0fdf4;
+      }
+    }
+  }
+}
+
