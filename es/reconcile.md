@@ -82,7 +82,7 @@ Si la **Diferencia** no es cero, algo está mal. O:
 savr no auto-sugiere dónde está el problema — eso solo tú puedes resolverlo, porque depende de qué hay en tu extracto. Pero aquí está el flujo:
 
 1. **Mira el tamaño de la diferencia.** Si son $43.21, probablemente buscas una sola transacción de $43.21.
-2. **Escanea tu extracto por transacciones que no marcaste.** ¿Algo en el extracto pero no en tu pantalla? Esa es la transacción faltante. Agrégala (abre una nueva pestaña y usa la página de Transacciones) y regresa.
+2. **Escanea tu extracto por transacciones que no marcaste.** ¿Algo en el extracto pero no en tu pantalla? Esa es la transacción faltante. Agrégala (abre una nueva pestaña y usa la página de Actividad) y regresa.
 3. **Escanea tus transacciones marcadas por las que no estén en el extracto.** ¿Algo marcado pero no en el extracto? O no se ha publicado todavía (desmárcala e intenta de nuevo el siguiente mes) o no pertenece aquí (elimínala o corrígela).
 4. **Vigila errores de signo y de monto.** Un cargo de $51 capturado como $15 producirá una diferencia de $36. Un débito capturado como crédito producirá una diferencia de dos veces el monto (porque está mal por -$X y +$X).
 
@@ -123,7 +123,7 @@ Los saldos de inversión se mueven diariamente con el valor de mercado. Concilia
 
 ### Préstamos
 
-Los préstamos típicamente tienen una sola transacción al mes (el pago) más acumulación de intereses. Si usas transacciones de [pago de deuda](../transactions/#pagos-de-deuda), el saldo debería seguir el extracto del prestamista de cerca. Concilia cuando el prestamista mande un extracto de fin de año, o cuando los números se sientan raros.
+Los préstamos típicamente tienen una sola transacción al mes (el pago) más acumulación de intereses. Si usas transacciones de [pago de deuda](../actividad/#pagos-de-deuda), el saldo debería seguir el extracto del prestamista de cerca. Concilia cuando el prestamista mande un extracto de fin de año, o cuando los números se sientan raros.
 
 ---
 

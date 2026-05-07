@@ -61,7 +61,7 @@ Al crear o editar un préstamo, puedes configurar:
 
 Al crear un préstamo, puedes vincularlo a una **categoría existente** o pedir a savr que **cree una categoría nueva** (y opcionalmente la coloque en un grupo nuevo, como "Deuda"). De cualquier forma, los intereses caen en tu presupuesto como cualquier otro gasto — visibles, reales, planeados.
 
-Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](../transactions/#pagos-de-deuda). Para pagos mensuales que se ejecutan en calendario, consulta [Pagos de deuda recurrentes](../recurring/#pagos-de-deuda-recurrentes).
+Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](../actividad/#pagos-de-deuda). Para pagos mensuales que se ejecutan en calendario, consulta [Pagos de deuda recurrentes](../recurring/#pagos-de-deuda-recurrentes).
 
 > **Pro tip:** Cuando el préstamo esté pagado, [cierra la cuenta](#cerrar-una-cuenta) en lugar de eliminarla. El historial es parte de tu historia — querrás mirar atrás y ver el día que esa hipoteca llegó a cero.
 

@@ -82,7 +82,7 @@ If the **Difference** isn't zero, something is wrong. Either:
 savr doesn't auto-suggest where the issue is — that's a problem only you can solve, because it depends on what's on your statement. But here's the workflow:
 
 1. **Look at the size of the difference.** If it's $43.21, you're probably looking for a single transaction worth $43.21.
-2. **Scan your statement for transactions you haven't checked off.** Anything on the statement but not on your screen? That's a missing transaction. Add it (open a new tab and use the Transactions page) and come back.
+2. **Scan your statement for transactions you haven't checked off.** Anything on the statement but not on your screen? That's a missing transaction. Add it (open a new tab and use the Activity page) and come back.
 3. **Scan your checked transactions for ones not on the statement.** Anything checked but not on the statement? Either it hasn't posted yet (uncheck it and try again next month) or it doesn't belong here (delete it or fix it).
 4. **Watch for sign errors and amount typos.** A $51 charge entered as $15 will produce a $36 difference. A debit entered as a credit will produce a difference equal to twice the amount (because it's wrong by both -$X and +$X).
 
@@ -123,7 +123,7 @@ Investment balances move daily based on market value. Reconciling them against a
 
 ### Loans
 
-Loans typically have just one transaction a month (the payment) plus interest accrual. If you're using [debt payment](../transactions/#debt-payments) transactions, the balance should track your lender's statement closely. Run a reconciliation when the lender sends a year-end statement, or whenever the numbers feel off.
+Loans typically have just one transaction a month (the payment) plus interest accrual. If you're using [debt payment](../activity/#debt-payments) transactions, the balance should track your lender's statement closely. Run a reconciliation when the lender sends a year-end statement, or whenever the numbers feel off.
 
 ---
 

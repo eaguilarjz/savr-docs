@@ -148,4 +148,4 @@ Save the file somewhere outside savr — your cloud drive, an encrypted folder, 
 - **Import in chronological order.** If you have years of history, import the oldest year first, then the next, then the next. The opening balance and running totals will line up correctly.
 - **Reconcile after a big import.** Run a [reconciliation](../reconcile/) on the account after importing. Catches the typos and confirms savr matches reality.
 - **Don't import what's already in your recurring rules.** If you've already set up a recurring paycheck and applied it for the last six months, those transactions exist in savr. The matcher should catch the duplicates, but it's worth a glance.
-- **Clean up payees and categories *after* the import, not during.** Trying to categorize 247 transactions in the import flow is exhausting. Just import them, then sort it out from the Transactions page over a few sessions.
+- **Clean up payees and categories *after* the import, not during.** Trying to categorize 247 transactions in the import flow is exhausting. Just import them, then sort it out from the Activity page over a few sessions.

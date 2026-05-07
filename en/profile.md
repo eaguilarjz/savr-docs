@@ -37,7 +37,7 @@ Preferences save instantly when you change them — no separate **Save** button.
 
 ### Language
 
-Choose between **English** and **Español**. The change applies immediately across the entire app, including this documentation site (which has separate language sections in the sidebar). Switch back and forth as you like.
+Choose between **English** and **Español**. The change applies immediately across the entire app, including this help site (which has separate language sections in the sidebar). Switch back and forth as you like.
 
 ### Theme
 

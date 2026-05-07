@@ -1,12 +1,14 @@
-title: savr Documentation
-description: Zero-based budgeting — give every unit of money a job.
+title: savr Help
+description: Help and guides for savr — give every dollar a job before you spend it.
 url: https://docs.savr.pro
+logo: /assets/wordmark.svg
 
 remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
+  - jekyll-redirect-from
 
 permalink: pretty
 

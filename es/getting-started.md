@@ -10,11 +10,11 @@ nav_order: 1
 
 Hola. Bienvenido a savr.
 
-Si alguna vez abriste tu app del banco a fin de mes y pensaste "espera, ¿a *dónde* se me fue exactamente el dinero?" — estás en el lugar correcto. savr es una aplicación de presupuesto de base cero, que es una forma elegante de decir: cada dólar que entra recibe un trabajo antes de gastarse. Renta, comida, ahorros, esa suscripción que olvidaste cancelar. Para cuando terminas, cada dólar sabe a dónde pertenece y tú sabes exactamente con cuánto cuentas para cada cosa.
+Si alguna vez abriste tu app del banco a fin de mes y pensaste "espera, ¿a *dónde* se me fue exactamente el dinero?" — estás en el lugar correcto. savr funciona con una idea simple: cada dólar que entra recibe un trabajo antes de gastarse. Renta, comida, ahorros, esa suscripción que olvidaste cancelar. Para cuando terminas, cada dólar sabe a dónde pertenece y tú sabes exactamente con cuánto cuentas para cada cosa.
 
 La mayoría de las herramientas de presupuesto te dicen qué *gastaste*. savr te ayuda a decidir qué *vas* a gastar. Esa es la diferencia, y es por eso que la gente deja de odiar su presupuesto y empieza, sin darse cuenta, a disfrutarlo un poco.
 
-Esta guía te lleva paso a paso por crear tu cuenta, configurar tu primer mes y conocer el resto de la documentación.
+Esta guía te lleva paso a paso por crear tu cuenta, configurar tu primer mes y conocer el resto de la ayuda.
 
 ---
 
@@ -42,7 +42,7 @@ Para autenticación de dos factores y otras funciones de seguridad, salta a la p
 
 La primera vez que inicias sesión, savr te recibe con un breve asistente de configuración. Te lleva por tres cosas:
 
-1. **Bienvenida** — un recordatorio rápido de cómo funciona el presupuesto de base cero.
+1. **Bienvenida** — un recordatorio rápido de cómo funciona el presupuesto.
 2. **Agrega tus cuentas** — hasta 5 cuentas para empezar (siempre puedes agregar más después). Elige nombre, tipo y saldo actual de cada una.
 3. **Elige una plantilla de categorías** — savr puede pre-armar tu lista de categorías usando una de tres plantillas:
 
@@ -59,7 +59,7 @@ Puedes editar, renombrar o eliminar cualquier cosa que cree la plantilla. No lo 
 
 ---
 
-## Presupuesto de base cero en 90 segundos
+## Cómo funciona el presupuesto en savr (en 90 segundos)
 
 Aquí está todo el concepto:
 
@@ -69,21 +69,21 @@ Eso es todo. Sin hojas de cálculo, sin sobres, sin fórmulas elegantes — solo
 
 Funciona así:
 
-1. Llega dinero (sueldo, reembolso, lo que sea). savr lo pone en una cubeta llamada **Por presupuestar**.
+1. Llega dinero (sueldo, reembolso, lo que sea). savr lo pone en una cubeta llamada **Por asignar**.
 2. Vas a la página de Presupuesto y decides a dónde debe ir cada dólar: renta, comida, gasolina, ahorros.
-3. Conforme gastas, las categorías bajan. Cuando **Por presupuestar** llega a cero, sabes que cada dólar tiene un hogar.
+3. Conforme gastas, las categorías bajan. Cuando **Por asignar** llega a cero, sabes que cada dólar tiene un hogar.
 4. ¿Gastaste más en una categoría de lo planeado? Sin problema — mueves dinero de otra. Tu presupuesto general sigue balanceado.
 
 Aquí están las cuatro palabras que verás en todos lados:
 
 | Palabra | Qué significa |
 |---|---|
-| **Por presupuestar** | Dinero que has recibido pero al que aún no le has dado un trabajo. La meta es mantenerlo en cero. |
-| **Presupuestado** | Lo que has asignado a una categoría para el mes actual. |
+| **Por asignar** | Dinero que has recibido pero al que aún no le has dado un trabajo. La meta es mantenerlo en cero. |
+| **Asignado** | Lo que has asignado a una categoría para el mes actual. |
 | **Gastado** | Lo que realmente has gastado en una categoría este mes. |
-| **Disponible** | Lo que queda por gastar: `Presupuestado − Gastado`. |
+| **Disponible** | Lo que queda por gastar: `Asignado − Gastado`. |
 
-Ese es todo el vocabulario. Ya hablas presupuesto de base cero.
+Ese es todo el vocabulario. Listo.
 
 ---
 
@@ -112,9 +112,9 @@ Un punto de partida sólido se ve algo así:
 
 No te estreses con la estructura. Puedes renombrar, reordenar, ocultar o eliminar cualquier cosa después. Consulta [Categorías](../categories/) para grupos, ocultar y soporte de emojis (sí, tu barra lateral puede tener un 🛒 junto a Comida).
 
-### 3. Registra tus transacciones
+### 3. Registra tu actividad
 
-Ve a **Transacciones** para registrar lo que ha pasado. Tienes cuatro tipos:
+Ve a **Actividad** para registrar lo que ha pasado. Tienes cuatro tipos:
 
 - **Ingreso** — sueldos, reembolsos en efectivo, regalos, esos $20 que te mandó tu tía
 - **Gasto** — cualquier cosa que hayas gastado
@@ -123,15 +123,15 @@ Ve a **Transacciones** para registrar lo que ha pasado. Tienes cuatro tipos:
 
 Si vas a empezar con un año de transacciones del CSV de tu banco, salta a [Importar y Exportar](../import-export/) para el asistente de importación CSV.
 
-La página de [Transacciones](../transactions/) cubre divisiones, pagos de deuda y filtros en detalle.
+La página de [Actividad](../actividad/) cubre divisiones, pagos de deuda y filtros en detalle.
 
 ### 4. Asigna tu dinero
 
 Esta es la parte divertida. Abre **Presupuesto**.
 
-El número en la parte superior — **Por presupuestar** — es todo lo que has ganado y aún no tiene un trabajo. Haz clic en cualquier categoría, escribe cuánto quieres gastar ahí este mes, guarda. Repite hasta que el número llegue a cero.
+El número en la parte superior — **Por asignar** — es todo lo que has ganado y aún no tiene un trabajo. Haz clic en cualquier categoría, escribe cuánto quieres gastar ahí este mes, guarda. Repite hasta que el número llegue a cero.
 
-> **Recorrido:** Digamos que tienes $3,000 para presupuestar en mayo. Asignas $1,200 a Renta, $400 a Comida, $200 a Gasolina, $150 a Internet/Teléfono, $300 a Restaurantes, $250 a Fondo de Emergencia, $200 a Hobbies, $300 a Ahorros. Por presupuestar: $0. Acabas de hacer un presupuesto.
+> **Recorrido:** Digamos que tienes $3,000 para presupuestar en mayo. Asignas $1,200 a Renta, $400 a Comida, $200 a Gasolina, $150 a Internet/Teléfono, $300 a Restaurantes, $250 a Fondo de Emergencia, $200 a Hobbies, $300 a Ahorros. Por asignar: $0. Acabas de hacer un presupuesto.
 
 ¿Tienes gastos recurrentes? Configura [Transacciones Recurrentes](../recurring/) para que se llenen solas cada mes.
 
@@ -168,9 +168,9 @@ La mayoría de la gente hace la configuración inicial en una laptop y luego rev
 
 | Tema | Qué cubre |
 |---|---|
-| [Presupuesto](../budget/) | Asignar dinero, Por presupuestar, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
+| [Presupuesto](../budget/) | Asignar dinero, Por asignar, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
 | [Cuentas](../accounts/) | Los seis tipos de cuenta, préstamos con seguimiento de interés, cerrar/reabrir, reordenar |
-| [Transacciones](../transactions/) | Los cuatro tipos, divisiones, pagos de deuda, filtros, estado conciliada |
+| [Actividad](../actividad/) | Los cuatro tipos, divisiones, pagos de deuda, filtros, estado conciliada |
 | [Categorías](../categories/) | Grupos, orden, ocultar, eliminar con reasignación, plantillas |
 | [Recurrentes](../recurring/) | Transacciones programadas, frecuencias, aplicar vencimientos |
 | [Beneficiarios](../payees/) | Crear, renombrar, fusionar, eliminar |

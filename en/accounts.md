@@ -61,7 +61,7 @@ When creating or editing a loan, you can set:
 
 When you create a loan, you can either link to an **existing category** or have savr **create a new category** for it (and optionally place that category in a new group, like "Debt"). Either way, interest charges land in your budget like any other expense — visible, real, planned for.
 
-For how to record loan payments with separate principal, interest, and fees amounts, see [Debt payments](../transactions/#debt-payments). For monthly payments that fire on schedule, see [Recurring debt payments](../recurring/#recurring-debt-payments).
+For how to record loan payments with separate principal, interest, and fees amounts, see [Debt payments](../activity/#debt-payments). For monthly payments that fire on schedule, see [Recurring debt payments](../recurring/#recurring-debt-payments).
 
 > **Pro tip:** When the loan is paid off, [close the account](#close-an-account) instead of deleting it. The history is part of your story — you'll want to look back and see the day that mortgage hit zero.
 

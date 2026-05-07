@@ -129,8 +129,8 @@ This is the cleanest way to retire a category that's served its purpose without 
 A few things worth knowing about how categories behave:
 
 - **Spending** in a category is the sum of Expense transactions less any Credit (refund) transactions for the selected month.
-- **Budgeted** is what you've allocated this month — independent of spending.
-- **Available** = Budgeted − Spent. When negative, the category is overspent.
+- **Assigned** is what you've allocated this month — independent of spending.
+- **Available** = Assigned − Spent. When negative, the category is overspent.
 - **Targets** can be set on any category to indicate what you want to budget. They power auto-assign and the Fill by Targets shortcut. See [Budget → Targets](../budget/#targets-a-k-a-goals).
 
 Hidden categories don't appear in the budget, but they still receive any transactions already assigned to them. To stop posting new transactions to a category, simply don't pick it when creating new ones — or delete it (with reassignment).

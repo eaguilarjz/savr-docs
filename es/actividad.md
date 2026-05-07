@@ -1,18 +1,21 @@
 ---
-title: Transacciones
+title: Actividad
 parent: Español
 nav_order: 4
+redirect_from:
+  - /es/transactions/
+  - /es/transacciones/
 ---
 
-> {% include lang-globe.html %} Read this page in [English](../../en/transactions/)
+> {% include lang-globe.html %} Read this page in [English](../../en/activity/)
 
-# Transacciones
+# Actividad
 
-Las transacciones son los recibos de tu vida financiera. Cada dólar que se mueve — entra, sale, o se mueve lateralmente entre tus cuentas — recibe una transacción.
+Tu página de **Actividad** es el registro de tu vida financiera. Cada dólar que se mueve — entra, sale, o se mueve lateralmente entre tus cuentas — recibe una entrada aquí.
 
-savr usa las transacciones para mover todo lo demás: saldos de cuenta, gasto de categorías, el presupuesto, los informes. Si las haces bien, el resto se cuida solo.
+savr usa estas entradas para mover todo lo demás: saldos de cuenta, gasto de categorías, el presupuesto, los informes. Si las haces bien, el resto se cuida solo.
 
-Puedes administrar transacciones desde la página **Transacciones** o directamente desde la vista de detalle de cualquier cuenta. Ambas funcionan igual.
+Puedes administrar la actividad desde la página **Actividad** o directamente desde la vista de detalle de cualquier cuenta. Ambas funcionan igual.
 
 ---
 
@@ -22,10 +25,10 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 
 | Tipo | Efecto en la cuenta | Efecto en el presupuesto |
 |---|---|---|
-| **Ingreso** | Agrega dinero a la cuenta | Aumenta **Por presupuestar** |
+| **Ingreso** | Agrega dinero a la cuenta | Aumenta **Por asignar** |
 | **Gasto** | Resta dinero de la cuenta | Aumenta el **Gastado** en la categoría elegida |
 | **Transferencia** | Mueve dinero entre dos de tus cuentas | Sin efecto — el dinero se queda dentro de tu patrimonio |
-| **Crédito** | Regresa dinero a la cuenta | **Reduce** el Gastado en la categoría. **No** suma a Por presupuestar. |
+| **Crédito** | Regresa dinero a la cuenta | **Reduce** el Gastado en la categoría. **No** suma a Por asignar. |
 
 > **Por qué Crédito e Ingreso son distintos:** Un reembolso cancela un gasto previo. Tu categoría debe reflejar el costo neto (los $80 de la cuenta del super menos los $20 que devolviste), no "$80 gastados + $20 de ingreso nuevo para presupuestar." Crédito lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
@@ -144,7 +147,7 @@ Para eliminar una transacción, abre el diálogo de edición y haz clic en **Eli
 
 ## Filtros
 
-La página de Transacciones tiene una barra de filtros en la parte superior para encontrar actividad rápido:
+La página de Actividad tiene una barra de filtros en la parte superior para encontrar actividad rápido:
 
 | Filtro | Qué hace |
 |---|---|
@@ -192,4 +195,4 @@ Cada cuenta tiene una página de detalle que muestra la misma lista de transacci
 - Agregar varias transacciones para una cuenta rápidamente
 - Revisar la actividad en un periodo específico sin configurar filtros de cuenta
 
-Es la misma página de Transacciones que ya conoces — solo más estrecha.
+Es la misma página de Actividad que ya conoces — solo más estrecha.

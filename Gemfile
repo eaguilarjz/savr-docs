@@ -6,4 +6,5 @@ gem "just-the-docs"
 group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-relative-links"
+  gem "jekyll-redirect-from"
 end

@@ -21,16 +21,16 @@ It sounds boring written out like that. In practice it's surprisingly satisfying
 | Element | What it shows |
 |---|---|
 | **Month / year selector** | Move backward or forward through any month, past or future. The current month is selected by default. |
-| **To Be Budgeted (TBB)** | The headline number at the top. This is income you've received but haven't given a job to yet. |
+| **Ready to Assign** | The headline number at the top. This is income you've received but haven't given a job to yet. |
 | **Account balance total** | Sum of all your active accounts, shown alongside the budget for context. |
 | **Category groups** | Collapsible groupings of categories. Each group shows aggregated metrics. |
 | **Category rows** | Each category shows Budgeted, Spent, and Available for the selected month. |
 
 Each category row has three numbers:
 
-- **Budgeted** — what you've allocated this month
+- **Assigned** — what you've allocated this month
 - **Spent** — what you've actually spent in this category this month
-- **Available** — `Budgeted − Spent`. The number you care about.
+- **Available** — `Assigned − Spent`. The number you care about.
 
 When **Available** goes negative, the value turns red. That's not a scolding — it's a signal that you should move money in from somewhere else.
 
@@ -40,7 +40,7 @@ When **Available** goes negative, the value turns red. That's not a scolding —
 
 Click a category. Type how much you want to spend there this month. Save. Repeat.
 
-Each assignment reduces **To Be Budgeted** by the same amount. The math you're doing is dead simple:
+Each assignment reduces **Ready to Assign** by the same amount. The math you're doing is dead simple:
 
 > **Income − Allocations = 0**
 
@@ -48,11 +48,11 @@ When the right side hits zero, every dollar has a job and you're done.
 
 ### Worked example
 
-You start the month with $3,200 in your checking account, all earned this month. To Be Budgeted shows $3,200.
+You start the month with $3,200 in your checking account, all earned this month. Ready to Assign shows $3,200.
 
 You start clicking through categories:
 
-| Category | Assigned | TBB after |
+| Category | Assigned | Ready to Assign after |
 |---|---|---|
 | Rent | $1,400 | $1,800 |
 | Groceries | $500 | $1,300 |
@@ -65,20 +65,20 @@ You start clicking through categories:
 | Vacation Savings | $200 | $110 |
 | Hobbies | $110 | $0 |
 
-To Be Budgeted: $0. May is fully planned. You can spend with confidence because every dollar already knows what it's for.
+Ready to Assign: $0. May is fully planned. You can spend with confidence because every dollar already knows what it's for.
 
-### How transaction types affect TBB
+### How transaction types affect Ready to Assign
 
-How transactions affect To Be Budgeted depends on their type:
+How transactions affect Ready to Assign depends on their type:
 
-| Transaction type | Effect on TBB |
+| Transaction type | Effect on Ready to Assign |
 |---|---|
-| **Income** | Increases TBB |
+| **Income** | Increases Ready to Assign |
 | **Expense** | No direct effect (reduces Available in the category via Spent) |
-| **Credit** (refund) | No effect on TBB. Reduces category Spent only. |
+| **Credit** (refund) | No effect on Ready to Assign. Reduces category Spent only. |
 | **Transfer** | No effect — money moves between your accounts |
 
-> **Why Credit doesn't add to TBB:** A refund cancels out a previous expense. If you bought $80 of groceries and returned $20 worth, your category should reflect $60 of net spending — not $80 spent + $20 of new income. That's exactly what Credit does. Use Income for actual new money: paychecks, gifts, interest earned.
+> **Why Credit doesn't add to Ready to Assign:** A refund cancels out a previous expense. If you bought $80 of groceries and returned $20 worth, your category should reflect $60 of net spending — not $80 spent + $20 of new income. That's exactly what Credit does. Use Income for actual new money: paychecks, gifts, interest earned.
 
 ---
 
@@ -93,7 +93,7 @@ You'll overspend somewhere every month. Restaurants is a classic — you have a 
 3. Pick the destination category and the amount.
 4. Save.
 
-Both categories now show the transfer in their history. Your overall To Be Budgeted stays at zero. Nothing's broken — you just adjusted the plan.
+Both categories now show the transfer in their history. Your overall Ready to Assign stays at zero. Nothing's broken — you just adjusted the plan.
 
 > **Common scenario:** You budgeted $200 for Dining Out and ended up at $245. Available is -$45. You move $45 from Hobbies (where you've barely spent anything) into Dining Out. Both categories rebalance. Total budget unchanged.
 
@@ -111,7 +111,7 @@ savr can fill out your budget for you. Open the **Auto-Assign** menu on the Budg
 | **Assigned Last Month** | Copies last month's allocations as-is. | Predictable months where nothing changed. |
 | **Spent Last Month** | Allocates each category what was actually spent last month. | A reality-check budget against your real habits. |
 | **Zero Available** | Adds money to categories where Available is negative, bringing them back to zero. | Quick cleanup at the end of the month when a few categories are red. |
-| **Zero Budgeted** | Allocates to categories that have no budget yet this month. | Starting a new month from scratch. |
+| **Zero Assigned** | Allocates to categories that have no budget yet this month. | Starting a new month from scratch. |
 
 You can preview the total each strategy will assign before applying, and optionally cap the maximum spend.
 
@@ -162,7 +162,7 @@ A target tells savr "this is how much I want to budget for this category." Once 
 
 Each category with a target shows one of three states:
 
-- **OK** — budgeted at or above the target
+- **OK** — assigned at or above the target
 - **Underfunded** — budgeted but not enough
 - **Unfunded** — nothing budgeted this month
 
@@ -196,7 +196,7 @@ Two kinds of entries appear in the history:
 
 ## Tips from people who actually do this
 
-- **Aim for TBB = 0.** Anything in TBB is unplanned. Plan it. Even "Future Stuff" is a category you can park money in.
+- **Aim for Ready to Assign = 0.** Anything in Ready to Assign is unplanned. Plan it. Even "Future Stuff" is a category you can park money in.
 - **Don't budget money you don't have.** Only what's already in your accounts can be allocated. Future income gets budgeted next month, when it actually arrives.
 - **Adjust mid-month without guilt.** Overspending isn't failure. It's data. Move money, keep going.
 - **Use targets sparingly at first.** Get used to manual assignment for a month or two. You'll set better targets once you know your real numbers.

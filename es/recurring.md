@@ -130,7 +130,7 @@ Si una regla está vencida por varios periodos (una semanal sin ejecutar por un 
 
 Haz clic en cualquier regla recurrente para editarla. Puedes cambiar la frecuencia, las fechas, el monto, las divisiones o cualquiera de las cuentas y categorías vinculadas.
 
-Editar la regla **no** cambia retroactivamente las transacciones que ya fueron creadas por aplicaciones anteriores. Para cambiar una transacción pasada, edítala directamente en la página de Transacciones.
+Editar la regla **no** cambia retroactivamente las transacciones que ya fueron creadas por aplicaciones anteriores. Para cambiar una transacción pasada, edítala directamente en la página de Actividad.
 
 ### Eliminar una regla
 

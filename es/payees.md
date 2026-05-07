@@ -19,7 +19,7 @@ Los beneficiarios son opcionales en savr. Puedes llevar un buen presupuesto sin 
 Los beneficiarios son más útiles para:
 
 - **Preguntas sobre patrones de gasto.** "¿Cuánto gasté realmente en este restaurante el año pasado?" Un filtro, respuesta inmediata.
-- **Filtrar en la página de Transacciones.** Sigue toda la actividad con una parte específica.
+- **Filtrar en la página de Actividad.** Sigue toda la actividad con una parte específica.
 - **Encontrar duplicados.** Cuando ves "Costco" con 47 transacciones y "COSTCO WHSE #1234" con 3, son el mismo lugar — fusiónalos.
 
 Si ninguno de los dos te llama la atención, sáltate los beneficiarios. savr no te va a regañar.

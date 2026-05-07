@@ -10,11 +10,11 @@ nav_order: 1
 
 Hi. Welcome to savr.
 
-If you've ever opened your banking app at the end of the month and thought "wait, where did my money actually *go*?" — you're in the right place. savr is a zero-based budgeting app, which is a fancy way of saying: every dollar you bring in gets a job before you spend it. Rent, groceries, savings, that subscription you forgot about. By the time you're done, every dollar knows where it belongs, and you know exactly what you've got to spend on what.
+If you've ever opened your banking app at the end of the month and thought "wait, where did my money actually *go*?" — you're in the right place. savr works on one simple idea: every dollar you bring in gets a job before you spend it. Rent, groceries, savings, that subscription you forgot about. By the time you're done, every dollar knows where it belongs, and you know exactly what you've got to spend on what.
 
 Most budgeting tools tell you what you spent. savr helps you decide what you're *going* to spend. That's the difference, and it's why people stop dreading their budget and start kind of enjoying it.
 
-This guide walks you through creating an account, setting up your first month, and pointing at the rest of the docs.
+This guide walks you through creating an account, setting up your first month, and pointing at the rest of the help pages.
 
 ---
 
@@ -42,7 +42,7 @@ For two-factor authentication and other security features, jump to the [Security
 
 The first time you sign in, savr greets you with a short setup wizard. It walks you through three things:
 
-1. **Welcome** — a quick reminder of how zero-based budgeting works.
+1. **Welcome** — a quick reminder of how the budget works.
 2. **Add your accounts** — up to 5 accounts to start (you can always add more later). Pick a name, type, and current balance for each.
 3. **Pick a category template** — savr can pre-build your category list using one of three templates:
 
@@ -59,7 +59,7 @@ Want to skip the wizard and set things up manually? Click **Skip** at any point.
 
 ---
 
-## Zero-based budgeting in 90 seconds
+## How budgeting in savr works (in 90 seconds)
 
 Here's the whole concept:
 
@@ -69,21 +69,21 @@ That's it. No spreadsheets, no envelopes, no fancy formulas — just the simple 
 
 It works like this:
 
-1. Money comes in (paycheck, refund, whatever). savr puts it in a bucket called **To Be Budgeted**.
+1. Money comes in (paycheck, refund, whatever). savr puts it in a bucket called **Ready to Assign**.
 2. You go to the Budget page and decide where each dollar should live: rent, groceries, gas, savings.
-3. As you spend, the categories deplete. When **To Be Budgeted** hits zero, you know every dollar has a home.
+3. As you spend, the categories deplete. When **Ready to Assign** hits zero, you know every dollar has a home.
 4. Spend more in one category than planned? No problem — move money from another. Your overall budget stays balanced.
 
 Here are the four words you'll see everywhere:
 
 | Word | What it means |
 |---|---|
-| **To Be Budgeted (TBB)** | Money you've received but haven't given a job to yet. The goal is to keep this at zero. |
-| **Budgeted** | What you've allocated to a category for the current month. |
+| **Ready to Assign** | Money you've received but haven't given a job to yet. The goal is to keep this at zero. |
+| **Assigned** | What you've allocated to a category for the current month. |
 | **Spent** | What you've actually spent in a category this month. |
-| **Available** | What's left to spend: `Budgeted − Spent`. |
+| **Available** | What's left to spend: `Assigned − Spent`. |
 
-That's the whole vocabulary. You're now fluent in zero-based budgeting.
+That's the whole vocabulary. You're ready.
 
 ---
 
@@ -123,15 +123,15 @@ Go to **Transactions** to log what's happened. You've got four types:
 
 If you're starting from a year's worth of transactions in your bank's CSV, skip to [Import & Export](../import-export/) for the CSV import wizard.
 
-The [Transactions](../transactions/) page covers splits, debt payments, and filters in detail.
+The [Activity](../activity/) page covers splits, debt payments, and filters in detail.
 
 ### 4. Assign your money
 
 This is the fun part. Open **Budget**.
 
-The number at the top — **To Be Budgeted** — is everything you've earned that doesn't have a job yet. Click any category, type how much you want to spend there this month, save. Repeat until the number hits zero.
+The number at the top — **Ready to Assign** — is everything you've earned that doesn't have a job yet. Click any category, type how much you want to spend there this month, save. Repeat until the number hits zero.
 
-> **Walkthrough:** Say you have $3,000 to budget for May. You assign $1,200 to Rent, $400 to Groceries, $200 to Gas, $150 to Internet/Phone, $300 to Dining Out, $250 to Emergency Fund, $200 to Hobbies, $300 to Savings. To Be Budgeted: $0. You just made a budget.
+> **Walkthrough:** Say you have $3,000 to budget for May. You assign $1,200 to Rent, $400 to Groceries, $200 to Gas, $150 to Internet/Phone, $300 to Dining Out, $250 to Emergency Fund, $200 to Hobbies, $300 to Savings. Ready to Assign: $0. You just made a budget.
 
 Got recurring expenses? Set up [Recurring Transactions](../recurring/) so they fill in for you each month.
 
@@ -168,9 +168,9 @@ Most people do their initial setup on a laptop and then check in from their phon
 
 | Topic | What's covered |
 |---|---|
-| [Budget](../budget/) | Assigning money, To Be Budgeted, auto-assign strategies, targets, moving money, the detail panel |
+| [Budget](../budget/) | Assigning money, Ready to Assign, auto-assign strategies, targets, moving money, the detail panel |
 | [Accounts](../accounts/) | All six account types, loans with interest tracking, closing/reopening, drag-to-reorder |
-| [Transactions](../transactions/) | The four types, splits, debt payments, filters, cleared status |
+| [Activity](../activity/) | The four types, splits, debt payments, filters, cleared status |
 | [Categories](../categories/) | Groups, ordering, hiding, deletion with reassignment, templates |
 | [Recurring](../recurring/) | Scheduled transactions, frequencies, applying due items |
 | [Payees](../payees/) | Creating, renaming, merging, deleting |

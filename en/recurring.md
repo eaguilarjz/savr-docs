@@ -130,7 +130,7 @@ If a rule is overdue by multiple periods (a weekly rule unrun for a month), appl
 
 Click any recurring rule to edit it. You can change the frequency, dates, amount, splits, or any of the linked accounts and categories.
 
-Editing the rule does **not** retroactively change transactions that were already created from earlier applications. To change a past transaction, edit it directly on the Transactions page.
+Editing the rule does **not** retroactively change transactions that were already created from earlier applications. To change a past transaction, edit it directly on the Activity page.
 
 ### Delete a rule
 

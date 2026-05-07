@@ -21,16 +21,16 @@ Suena aburrido escrito así. En la práctica es sorprendentemente satisfactorio.
 | Elemento | Qué muestra |
 |---|---|
 | **Selector de mes / año** | Navega adelante o atrás por cualquier mes, pasado o futuro. Por defecto está el mes actual. |
-| **Por presupuestar** | El número titular en la parte superior. Son ingresos que has recibido pero aún no tienen un trabajo. |
+| **Por asignar** | El número titular en la parte superior. Son ingresos que has recibido pero aún no tienen un trabajo. |
 | **Saldo total de cuentas** | Suma de todas tus cuentas activas, mostrado junto al presupuesto como contexto. |
 | **Grupos de categorías** | Agrupaciones colapsables. Cada grupo muestra métricas agregadas. |
 | **Filas de categoría** | Cada categoría muestra Presupuestado, Gastado y Disponible para el mes seleccionado. |
 
 Cada fila de categoría tiene tres números:
 
-- **Presupuestado** — lo que has asignado este mes
+- **Asignado** — lo que has asignado este mes
 - **Gastado** — lo que realmente has gastado en esta categoría este mes
-- **Disponible** — `Presupuestado − Gastado`. El número que te importa.
+- **Disponible** — `Asignado − Gastado`. El número que te importa.
 
 Cuando **Disponible** se vuelve negativo, el valor se muestra en rojo. No es un regaño — es la señal de que debes mover dinero hacia ahí desde otra parte.
 
@@ -40,7 +40,7 @@ Cuando **Disponible** se vuelve negativo, el valor se muestra en rojo. No es un 
 
 Haz clic en una categoría. Escribe cuánto quieres gastar ahí este mes. Guarda. Repite.
 
-Cada asignación reduce **Por presupuestar** en la misma cantidad. La matemática que estás haciendo es muy simple:
+Cada asignación reduce **Por asignar** en la misma cantidad. La matemática que estás haciendo es muy simple:
 
 > **Ingresos − Asignaciones = 0**
 
@@ -48,11 +48,11 @@ Cuando el lado derecho llega a cero, cada dólar tiene un trabajo y terminaste.
 
 ### Ejemplo trabajado
 
-Empiezas el mes con $3,200 en tu cuenta corriente, todo ganado este mes. Por presupuestar muestra $3,200.
+Empiezas el mes con $3,200 en tu cuenta corriente, todo ganado este mes. Por asignar muestra $3,200.
 
 Empiezas a hacer clic en categorías:
 
-| Categoría | Presupuestado | Por presupuestar después |
+| Categoría | Asignado | Por asignar después |
 |---|---|---|
 | Renta | $1,400 | $1,800 |
 | Comida | $500 | $1,300 |
@@ -65,20 +65,20 @@ Empiezas a hacer clic en categorías:
 | Vacaciones | $200 | $110 |
 | Hobbies | $110 | $0 |
 
-Por presupuestar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada dólar ya sabe para qué es.
+Por asignar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada dólar ya sabe para qué es.
 
-### Cómo afectan los tipos de transacción a Por presupuestar
+### Cómo afectan los tipos de transacción a Por asignar
 
-Cómo afectan las transacciones a Por presupuestar depende de su tipo:
+Cómo afectan las transacciones a Por asignar depende de su tipo:
 
-| Tipo de transacción | Efecto en Por presupuestar |
+| Tipo de transacción | Efecto en Por asignar |
 |---|---|
-| **Ingreso** | Aumenta Por presupuestar |
+| **Ingreso** | Aumenta Por asignar |
 | **Gasto** | Sin efecto directo (reduce Disponible de la categoría vía Gastado) |
-| **Crédito** | Sin efecto en Por presupuestar. Solo reduce el Gastado de la categoría. |
+| **Crédito** | Sin efecto en Por asignar. Solo reduce el Gastado de la categoría. |
 | **Transferencia** | Sin efecto — el dinero se mueve entre tus cuentas |
 
-> **Por qué Crédito no se suma a Por presupuestar:** Un reembolso cancela un gasto previo. Si compraste $80 de comida y devolviste $20, tu categoría debe reflejar $60 de gasto neto — no "$80 gastados + $20 de ingreso nuevo para presupuestar." Crédito lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
+> **Por qué Crédito no se suma a Por asignar:** Un reembolso cancela un gasto previo. Si compraste $80 de comida y devolviste $20, tu categoría debe reflejar $60 de gasto neto — no "$80 gastados + $20 de ingreso nuevo para presupuestar." Crédito lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
 ---
 
@@ -93,7 +93,7 @@ Vas a excederte en algo cada mes. Restaurantes es clásico — sales un par de v
 3. Elige la categoría destino y el monto.
 4. Guarda.
 
-Ambas categorías ahora muestran la transferencia en su historial. Tu Por presupuestar general sigue en cero. Nada está roto — solo ajustaste el plan.
+Ambas categorías ahora muestran la transferencia en su historial. Tu Por asignar general sigue en cero. Nada está roto — solo ajustaste el plan.
 
 > **Escenario común:** Presupuestaste $200 para Restaurantes y terminaste en $245. Disponible es -$45. Mueves $45 desde Hobbies (donde apenas has gastado) hacia Restaurantes. Ambas categorías se rebalancean. Presupuesto total sin cambios.
 
@@ -107,11 +107,11 @@ savr puede llenar tu presupuesto automáticamente. Abre el menú **Auto-Asignar*
 
 | Estrategia | Qué hace | Cuándo usarla |
 |---|---|---|
-| **Insuficiente** | Llena cada categoría hasta su objetivo (o hasta lo ya gastado si no hay objetivo). | La más común — deja cada categoría "cubierta." |
-| **Asignado el mes anterior** | Copia las asignaciones del mes pasado tal cual. | Meses predecibles donde nada ha cambiado. |
-| **Gastado el mes anterior** | Asigna a cada categoría lo que realmente se gastó el mes pasado. | Verificación de presupuesto contra hábitos reales. |
-| **Disponible Cero** | Agrega dinero a categorías donde Disponible es negativo, llevándolas a cero. | Limpieza rápida a fin de mes cuando hay categorías rojas. |
-| **Asignado Cero** | Asigna a categorías que aún no tienen presupuesto este mes. | Empezar un mes nuevo desde cero. |
+| **Categorías con déficit** | Llena cada categoría hasta su objetivo (o hasta lo ya gastado si no hay objetivo). | La más común — deja cada categoría "cubierta." |
+| **Como el mes pasado** | Copia las asignaciones del mes pasado tal cual. | Meses predecibles donde nada ha cambiado. |
+| **Lo gastado el mes pasado** | Asigna a cada categoría lo que realmente se gastó el mes pasado. | Verificación de presupuesto contra hábitos reales. |
+| **Disponible a cero** | Agrega dinero a categorías donde Disponible es negativo, llevándolas a cero. | Limpieza rápida a fin de mes cuando hay categorías rojas. |
+| **Asignado a cero** | Asigna a categorías que aún no tienen presupuesto este mes. | Empezar un mes nuevo desde cero. |
 
 Puedes ver el total que asignará cada estrategia antes de aplicarla, y opcionalmente fijar un máximo a gastar.
 
@@ -196,7 +196,7 @@ En el historial aparecen dos tipos de entradas:
 
 ## Consejos de gente que sí hace esto
 
-- **Apunta a Por presupuestar = 0.** Cualquier cosa en Por presupuestar no tiene plan. Planéalo. Incluso "Cosas Futuras" es una categoría donde puedes estacionar dinero.
+- **Apunta a Por asignar = 0.** Cualquier cosa en Por asignar no tiene plan. Planéalo. Incluso "Cosas Futuras" es una categoría donde puedes estacionar dinero.
 - **No presupuestes dinero que no tienes.** Solo lo que ya está en tus cuentas puede asignarse. Los ingresos futuros se presupuestan el mes que llegan.
 - **Ajusta a mitad de mes sin culpa.** Sobregirar no es fracaso. Es información. Mueve dinero, sigue.
 - **Usa los objetivos con calma al inicio.** Acostúmbrate a la asignación manual un par de meses. Configurarás mejores objetivos cuando conozcas tus números reales.

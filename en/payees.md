@@ -19,7 +19,7 @@ Payees are optional in savr. You can run a fine budget without ever using them. 
 Payees are most useful for:
 
 - **Spending pattern questions.** "How much did I actually spend at this restaurant last year?" One filter, instant answer.
-- **Filtering on the Transactions page.** Track all the activity with a specific party.
+- **Filtering on the Activity page.** Track all the activity with a specific party.
 - **Finding duplicates.** When you see "Whole Foods" with 47 transactions and "WHOLE FOODS MARKET" with 3, those are the same place — merge them.
 
 If neither of those sounds compelling, skip payees. savr won't nag you.

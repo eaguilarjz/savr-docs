@@ -1,18 +1,20 @@
 ---
-title: Transactions
+title: Activity
 parent: English
 nav_order: 4
+redirect_from:
+  - /en/transactions/
 ---
 
-> {% include lang-globe.html %} Lee esta página en [Español](../../es/transactions/)
+> {% include lang-globe.html %} Lee esta página en [Español](../../es/actividad/)
 
-# Transactions
+# Activity
 
-Transactions are the receipts of your financial life. Every dollar that moves — in, out, or sideways between your own accounts — gets a transaction.
+Your **Activity** page is the receipts of your financial life. Every dollar that moves — in, out, or sideways between your own accounts — gets an entry here.
 
-savr uses transactions to drive everything else: account balances, category spending, the budget, the reports. Get these right and the rest takes care of itself.
+savr uses these entries to drive everything else: account balances, category spending, the budget, the reports. Get them right and the rest takes care of itself.
 
-You can manage transactions from the **Transactions** page or directly from any account's detail view. Both work the same way.
+You can manage activity from the **Activity** page or directly from any account's detail view. Both work the same way.
 
 ---
 
@@ -22,10 +24,10 @@ Picking the right type matters. Here's the cheat sheet:
 
 | Type | Effect on account | Effect on budget |
 |---|---|---|
-| **Income** | Adds money to the account | Increases **To Be Budgeted** |
+| **Income** | Adds money to the account | Increases **Ready to Assign** |
 | **Expense** | Removes money from the account | Increases **Spent** in the chosen category |
 | **Transfer** | Moves money between two of your accounts | No effect — money stays inside your net worth |
-| **Credit** (refund) | Adds money back to the account | **Reduces** Spent in the chosen category. Does **not** add to TBB. |
+| **Credit** (refund) | Adds money back to the account | **Reduces** Spent in the chosen category. Does **not** add to Ready to Assign. |
 
 > **Why Credit and Income are different:** A refund cancels a previous expense. Your category should reflect the net cost (the $80 grocery bill minus the $20 you returned), not "$80 spent + $20 of new income to budget." Credit gets this right. Use Income for actual new money: paychecks, gifts, interest earned.
 
@@ -44,7 +46,7 @@ Picking the right type matters. Here's the cheat sheet:
 
 ## Create a transaction
 
-1. Open **Transactions** and click **New Transaction** (or hit the same button on an account's detail page).
+1. Open **Activity** and click **New Transaction** (or hit the same button on an account's detail page).
 2. Fill in:
    - **Type** — Income, Expense, Transfer, or Credit
    - **Account** — which account this affects
@@ -144,7 +146,7 @@ To remove a transaction, open the edit dialog and click **Delete**. Deletes are 
 
 ## Filters
 
-The Transactions page has a filter bar across the top so you can find activity quickly:
+The Activity page has a filter bar across the top so you can find activity quickly:
 
 | Filter | What it does |
 |---|---|
