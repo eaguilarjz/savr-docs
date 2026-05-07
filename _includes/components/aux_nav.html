@@ -1,0 +1,22 @@
+{%- assign is_es = false -%}
+{%- if page.url contains '/es/' -%}{%- assign is_es = true -%}{%- endif -%}
+
+<nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    {% for link in site.aux_links %}
+      {%- assign label = link.first -%}
+      {%- if is_es and label == "savr app" -%}
+        {%- assign label = "App de savr" -%}
+      {%- endif -%}
+      <li class="aux-nav-list-item">
+        <a href="{{ link.last }}" class="site-button"
+          {% if site.aux_links_new_tab %}
+          target="_blank" rel="noopener noreferrer"
+          {% endif %}
+        >
+          {{ label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
