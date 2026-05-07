@@ -8,22 +8,36 @@ nav_order: 5
 
 # Categories
 
-Categories let you group your spending into meaningful buckets so the budget page stays organized and easy to read.
+Categories are the buckets you put your money in. Groceries. Rent. The Vacation Fund. The "I bought a fancy coffee setup, please don't judge me" fund.
 
-Every Expense and Credit transaction is assigned to a category, and every category lives inside a category group. The grouping is purely organizational — it has no effect on calculations.
+Every Expense and Credit transaction lives in a category, and every category lives inside a category group. Picking the right level of detail is one of those quiet skills that turns a mediocre budget into a useful one.
 
 ---
 
 ## Why categories matter
 
-Categories are the unit at which you allocate money on the Budget page and the unit at which spending is summed. Picking the right level of granularity is a balance:
+Categories are the unit you assign money to on the Budget page, and the unit your spending gets summed against. Picking the right level of granularity is a balance:
 
-- **Too few categories** → you can't see where money is actually going.
-- **Too many** → the budget becomes tedious to maintain and you stop using it.
+- **Too few categories** → you can't see where money is actually going. "Misc: $1,247" is not insight.
+- **Too many** → maintenance becomes a chore, you stop using savr, you go back to wondering where your money went.
 
-A common starting point: one category per recurring bill (rent, utilities, phone), one for each major variable expense (groceries, transportation, dining), and a few for goals and quality of life.
+A solid starting point: one category per recurring bill (rent, utilities, phone), one for each major variable expense (groceries, transportation, dining), and a few for goals and quality of life. About 15–25 total. Adjust over time.
 
-You can rename, reorder, hide, or delete categories at any time, so don't worry about getting the structure perfect upfront.
+You can rename, reorder, hide, or delete categories at any time, so don't fret over getting the structure perfect upfront.
+
+---
+
+## Category templates
+
+If you're starting fresh and want a head start, the [onboarding wizard](../getting-started/#the-onboarding-wizard) offers three pre-built templates:
+
+- **Simple** — 8 groups, 1–2 categories each. The minimum viable budget.
+- **Standard** — 8 groups, 3–4 categories each. Probably what you want.
+- **Detailed** — 8 groups, 5–6 categories each. For people who like granular tracking.
+
+You can edit, rename, or delete anything the template creates. The template just saves you from staring at an empty Categories page on day one.
+
+If you missed the wizard or want to start over, you can always create groups and categories manually.
 
 ---
 
@@ -36,11 +50,13 @@ Groups are how categories are organized visually. Examples:
 - **Goals** — Emergency Fund, Vacation, New Car
 - **Quality of Life** — Entertainment, Subscriptions, Hobbies
 
+Groups are purely organizational. They don't affect math. They just keep your Budget and Categories pages from looking like a long unsorted list.
+
 ### Create a group
 
 1. Open **Categories**.
 2. Click **New group**.
-3. Enter a name and save.
+3. Type a name and save.
 
 ### Edit a group
 
@@ -48,11 +64,11 @@ Click the group name to rename it. You can also hide a group from the **edit** m
 
 ### Reorder groups
 
-Drag a group's header up or down to change its position. The order applies everywhere groups are displayed (Budget, Categories, transaction selectors).
+Drag a group's header up or down. The order applies everywhere groups are shown (Budget, Categories, transaction selectors).
 
 ### Delete a group
 
-To delete a group, every category inside it must first be deleted or moved to another group. savr will warn you if a group still contains categories.
+To delete a group, every category inside it has to be deleted or moved out first. savr will warn you if a group still has categories in it.
 
 ---
 
@@ -61,11 +77,11 @@ To delete a group, every category inside it must first be deleted or moved to an
 ### Create a category
 
 1. Open **Categories**.
-2. Pick the group where the category belongs.
+2. Pick the group it belongs in.
 3. Click **New category** in that group.
 4. Type the name and save.
 
-> Category names support emoji. A leading 🛒 or 🏠 is a quick way to scan a long list.
+> **Pro tip:** Category names support emoji. A leading 🛒 or 🏠 turns a long list into something you can scan at a glance. Use sparingly — emoji on every category is more chaotic than charming.
 
 ### Edit a category
 
@@ -75,7 +91,7 @@ To move a category to a different group, drag it across to the destination group
 
 ### Reorder categories
 
-Drag categories within a group to change their order. Order persists across sessions and is reflected on the Budget page.
+Drag categories within a group to change their order. The order persists across sessions and is reflected on the Budget page.
 
 ### Delete a category
 
@@ -86,38 +102,45 @@ If the category **has transactions**, savr opens a **reassign** modal:
 1. Pick another category to receive all the existing transactions.
 2. Confirm.
 
-savr moves every transaction to the new category and then deletes the old one. This keeps your history intact — no spending data is lost.
+savr moves every transaction to the new category and then deletes the old one. Your history stays intact — no spending data is lost, it just moves homes.
+
+> **Common scenario:** You have separate categories for "Coffee" and "Dining Out" and realize you don't actually want to track them separately. Delete "Coffee" and reassign its 47 transactions to "Dining Out." Done. The Coffee category is gone but the spending is preserved.
 
 ---
 
 ## Hiding categories and groups
 
-Sometimes a category isn't relevant anymore (a one-time goal you finished, a service you canceled), but you want to keep its history. Instead of deleting:
+Sometimes a category isn't relevant anymore (a one-time goal you finished, a service you canceled), but you want to keep its history. Hide it instead of deleting:
 
 1. Open the category's actions and toggle **Hide**.
 
-Hidden categories don't appear on the Budget page, in transaction selectors, or in auto-assign strategies. The data is preserved, and you can unhide them at any time. The same applies to entire groups.
+Hidden categories don't appear on the Budget page, in transaction selectors, or in auto-assign strategies. The data is preserved. Show them again any time you want.
 
-This is the cleanest way to retire a category that's served its purpose.
+The same goes for entire groups.
+
+This is the cleanest way to retire a category that's served its purpose without losing the history.
+
+> **For example:** You ran a 6-month Wedding Fund and now you're married. Hide the category — the spending stays in your records, but it's not cluttering this month's Budget page.
 
 ---
 
 ## How spending and budgeting interact
 
-A few things to know about how categories behave:
+A few things worth knowing about how categories behave:
 
 - **Spending** in a category is the sum of Expense transactions less any Credit (refund) transactions for the selected month.
-- **Budgeted** is the amount you've allocated this month — independent of spending.
+- **Budgeted** is what you've allocated this month — independent of spending.
 - **Available** = Budgeted − Spent. When negative, the category is overspent.
-- **Targets** can be set on any category to indicate what you want to budget. Targets drive auto-assign and the Fill by Targets shortcut. See [Budget → Targets](../budget/#targets-goals).
+- **Targets** can be set on any category to indicate what you want to budget. They power auto-assign and the Fill by Targets shortcut. See [Budget → Targets](../budget/#targets-a-k-a-goals).
 
-Hidden categories don't appear in the budget, but they still receive the transactions you've already assigned to them. To stop posting new transactions to a category, simply don't pick it when creating new ones — or delete it (with reassignment).
+Hidden categories don't appear in the budget, but they still receive any transactions already assigned to them. To stop posting new transactions to a category, simply don't pick it when creating new ones — or delete it (with reassignment).
 
 ---
 
 ## Tips
 
-- **Start with broad categories.** Add detail later if you find yourself wanting to track something specific.
-- **Use groups for hierarchy, not categories.** It's tempting to make sub-categories like "Dining Out → Lunch" and "Dining Out → Dinner" — but a single "Dining Out" category with notes on each transaction is usually enough.
-- **One category per real-world budget commitment.** If you have a fixed monthly bill, give it its own category so a target can track it cleanly.
-- **Hide instead of delete** if you're unsure. Hiding is reversible; deletion (with reassignment) merges history into another category permanently.
+- **Start broad.** Add detail later if you find yourself wanting to track something specific. A "Personal Care" category that aggregates haircuts, soap, and skincare is fine — until the day you actually want to know how much you spent on haircuts. Then you split it.
+- **Use groups for hierarchy, not categories.** It's tempting to make sub-categories like "Dining Out → Lunch" and "Dining Out → Dinner." Don't. Use a single Dining Out category with notes on each transaction. Way easier to maintain.
+- **One category per real-world commitment.** If you have a fixed monthly bill, give it its own category. A clean target on Rent works because rent is one thing. A target on "Bills" muddies it.
+- **Hide before delete.** Hiding is reversible. Deletion (with reassignment) merges history into another category permanently. When in doubt, hide.
+- **Review your category list every six months.** Some will feel obvious to remove. Others will feel obvious to add. Your spending changes — your categories should keep up.

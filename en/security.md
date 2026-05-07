@@ -1,14 +1,16 @@
 ---
 title: Security
 parent: English
-nav_order: 9
+nav_order: 13
 ---
 
 > 🌐 Lee esta página en [Español](../../es/security/)
 
 # Security
 
-This page covers everything related to keeping your savr account secure: passwords, two-factor authentication, recovery codes, and sessions.
+Your savr account contains a comprehensive picture of your finances. We take that seriously, and you should too.
+
+This page covers everything you can do to keep your account secure: passwords, two-factor authentication, recovery codes, and how sessions work. Most of it is two-minute one-time setup that pays off forever.
 
 You'll find these settings under **Profile → Security**.
 
@@ -21,9 +23,9 @@ You'll find these settings under **Profile → Security**.
 3. Enter your **current password**, then a **new password** (8 characters minimum), and confirm.
 4. Click **Save**.
 
-Once changed, every signed-in session continues to work, but any signed-out session will require the new password.
+Once changed, every signed-in session continues to work, but any signed-out session (a different device, an old browser) will require the new password.
 
-> **Tip:** Use a password manager. The strongest password is one you don't have to remember.
+> **Pro tip:** Use a password manager. The strongest password is one you don't have to remember — long, random, unique to savr. 1Password, Bitwarden, Apple's iCloud Keychain, your browser's built-in manager: all fine. Pick one and let it do its job.
 
 ---
 
@@ -39,8 +41,8 @@ savr supports **TOTP** (time-based one-time passwords) — the same standard use
 2. A modal walks you through three steps:
 
    **Step 1 — Scan the QR code**
-   - Open your authenticator app (Google Authenticator, Authy, 1Password, Bitwarden, etc.).
-   - Add a new account by scanning the QR code shown on screen.
+   - Open your authenticator app.
+   - Add a new account by scanning the QR code on screen.
    - If you can't scan, click **Show secret** and enter the 32-character key manually.
 
    **Step 2 — Verify**
@@ -50,9 +52,11 @@ savr supports **TOTP** (time-based one-time passwords) — the same standard use
    **Step 3 — Save your recovery codes**
    - savr generates **8 recovery codes**.
    - **Download** them as a `.txt` file or copy them to your password manager.
-   - These codes are your fallback if you lose access to your authenticator. Keep them somewhere you'll find again — but not on the same device as your authenticator.
+   - These codes are your fallback if you lose access to your authenticator. Keep them somewhere you'll find again — but **not on the same device as your authenticator**.
 
-3. Click **Done**. MFA is now active on your account.
+3. Click **Done**. MFA is now active.
+
+> **The five-minute setup that pays off forever.** Most account compromises start with a stolen or reused password. MFA neutralizes the attack. The whole setup is under five minutes. Just do it.
 
 ### Sign in with MFA
 
@@ -61,23 +65,23 @@ After entering your email and password on the sign-in page, savr asks for a seco
 - Open your authenticator app and enter the current 6-digit code, **or**
 - Click **Use a recovery code** and enter one of the codes you saved during setup.
 
-The 6-digit codes refresh every 30 seconds. If a code is rejected, wait for the next one and try again — the most common cause is the previous code having expired.
+The 6-digit codes refresh every 30 seconds. If a code is rejected, wait for the next one and try again — the most common cause is the previous code having expired between you reading it and typing it.
 
 ### Recovery codes
 
 Each recovery code is **single-use**. Once used, that code can't be used again.
 
 - You receive **8 codes at setup**.
-- Use them only when you don't have access to your authenticator (lost phone, switched devices without migrating codes, app deleted by mistake).
+- Use them when you don't have access to your authenticator (lost phone, switched devices without migrating codes, app deleted by mistake).
 - If you've used most of them and want fresh codes, regenerate them from **Profile → Security → Regenerate recovery codes**. Regenerating invalidates the old set.
 
-> **Treat recovery codes like a backup key.** If someone has your codes and your password, they have full access. Store them in a password manager or somewhere physically secure.
+> **Treat recovery codes like a backup key.** If someone has your codes and your password, they have full access. Store them in a password manager or somewhere physically secure (like a printed copy in a safe). Don't email them to yourself.
 
 ### What if I lose my phone *and* my recovery codes?
 
-If both are gone, you'll need to contact support to verify your identity and recover access. This is a manual process, intentionally — it's the safety net that prevents an attacker from social-engineering their way back in.
+If both are gone, contact support to verify your identity and recover access. This is intentionally manual — it's the safety net that prevents someone from social-engineering their way back into your account.
 
-This is also why we recommend keeping recovery codes in a separate location from your phone (e.g. a password manager that's not synced to that phone, or a printed copy in a safe).
+The fix for this scenario is to never get into it: keep recovery codes somewhere separate from your phone. A password manager that's not synced to that phone, or a printed copy in a drawer, both work.
 
 ### Disable MFA
 
@@ -85,7 +89,7 @@ This is also why we recommend keeping recovery codes in a separate location from
 2. Enter your password to confirm.
 3. MFA is removed from your account.
 
-You can re-enable it any time. New recovery codes are generated each time you set up MFA from scratch — old codes are not preserved.
+You can re-enable it any time. New recovery codes are generated each time you set up MFA from scratch — old codes don't carry over.
 
 ---
 
@@ -103,12 +107,16 @@ Both cookies are HTTP-only (so JavaScript on the page can't read them) and SameS
 In practice this means:
 
 - You stay signed in across browser restarts for up to 30 days.
-- Idle for a long time? You'll be signed out silently if your refresh token expires while you weren't using the app.
+- Idle for a long time? You'll be signed out silently if your refresh token expires while you weren't using the app. No drama; just sign in again.
 - **Sign out** clears both cookies on this device.
 
 ### Multiple devices
 
-You can be signed in on multiple devices at once — each device has its own pair of cookies. Signing out on one device doesn't sign you out on others. There's no "active sessions" list to view at the moment.
+You can be signed in on multiple devices at once — each device has its own pair of cookies. Signing out on one device doesn't sign you out on the others.
+
+> **For example:** You're signed in on your laptop and your phone. You hand the phone to a friend (who doesn't see savr — they're using a different app), then sign out on the laptop. Your phone session is unaffected.
+
+There's no "active sessions" list yet. If you ever lose a device and want to make absolutely sure all sessions are killed, change your password — it doesn't invalidate existing sessions, but new ones will require the new password.
 
 ---
 
@@ -124,12 +132,19 @@ To protect your account from brute-force attacks, certain endpoints are rate-lim
 
 If you hit a limit, you'll see an error asking you to wait. Limits reset automatically.
 
+Most users will never see one of these messages. They exist to slow down attackers who'd otherwise try thousands of password guesses against your account.
+
 ---
 
 ## Best practices
 
-- **Enable MFA.** Almost every account compromise starts with a stolen or reused password. MFA defeats this.
-- **Use a password manager.** Generate a unique, long password for savr and let your password manager remember it.
-- **Save recovery codes somewhere you can actually find them.** A password manager entry, a paper copy in a safe, or both.
-- **Don't store recovery codes on the same device as your authenticator.** If you lose the device, you've lost both.
-- **Sign out on shared devices.** Don't rely on the "remember me" cookie if anyone else uses that browser.
+A short list, in order of importance:
+
+1. **Enable MFA.** Almost every account compromise starts with a stolen or reused password. MFA defeats this. (Two minutes. Just do it.)
+2. **Use a password manager.** Generate a unique, long password for savr and let your password manager remember it. Don't reuse a password from another site.
+3. **Save recovery codes somewhere you can actually find them.** A password manager entry, a paper copy in a safe, or both. Don't put them in an email or in a Notes app on the same device as your authenticator.
+4. **Don't store recovery codes on the same device as your authenticator.** If you lose the device, you've lost both — and you lose the safety net.
+5. **Sign out on shared devices.** Don't rely on the "remember me" cookie if anyone else uses that browser.
+6. **Treat the trial-end and renewal emails as security checkpoints too.** They confirm your email is still working and your account is still active. If you stop receiving expected emails from savr, check your spam folder and consider whether your email account has been compromised.
+
+You'll never regret these. You might regret skipping them.

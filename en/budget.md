@@ -8,7 +8,11 @@ nav_order: 2
 
 # Budget
 
-The Budget page is the heart of savr. Each month you decide how every unit of money is spent before it leaves your account. When the **To Be Budgeted** value reaches zero, every dollar has a job.
+The Budget page is the heart of savr. It's where you make decisions instead of reacting to them.
+
+Every month, you take what you have and tell each dollar what it's going to do. Rent. Groceries. Savings. The dentist appointment you've been putting off. By the time you're done, every dollar has a job, and you know — with actual numbers, not vibes — what's available for what.
+
+It sounds boring written out like that. In practice it's surprisingly satisfying. Like organizing a closet, but for your money.
 
 ---
 
@@ -16,95 +20,135 @@ The Budget page is the heart of savr. Each month you decide how every unit of mo
 
 | Element | What it shows |
 |---|---|
-| **Month / year selector** | Navigate to any past or future month. The current month is selected by default. |
-| **To Be Budgeted (TBB)** | Income you've received but haven't assigned to a category yet. The goal is to keep this at zero. |
-| **Account balance total** | Sum of all your active account balances, displayed alongside the budget for context. |
-| **Category groups** | Collapsible groupings of categories (e.g. "Bills", "Goals"). Each group shows aggregated metrics. |
+| **Month / year selector** | Move backward or forward through any month, past or future. The current month is selected by default. |
+| **To Be Budgeted (TBB)** | The headline number at the top. This is income you've received but haven't given a job to yet. |
+| **Account balance total** | Sum of all your active accounts, shown alongside the budget for context. |
+| **Category groups** | Collapsible groupings of categories. Each group shows aggregated metrics. |
 | **Category rows** | Each category shows Budgeted, Spent, and Available for the selected month. |
 
-Each category row has three core values:
+Each category row has three numbers:
 
 - **Budgeted** — what you've allocated this month
-- **Spent** — total transactions in this category this month
-- **Available** — `Budgeted − Spent`. What you can still spend.
+- **Spent** — what you've actually spent in this category this month
+- **Available** — `Budgeted − Spent`. The number you care about.
 
-When **Available** is negative, the value turns red. That's a signal to move money in.
+When **Available** goes negative, the value turns red. That's not a scolding — it's a signal that you should move money in from somewhere else.
 
 ---
 
 ## Assigning money to categories
 
-Click any category and enter the amount you want to budget for the month. Each assignment reduces **To Be Budgeted** by the same amount.
+Click a category. Type how much you want to spend there this month. Save. Repeat.
 
-The objective for the month is simple:
+Each assignment reduces **To Be Budgeted** by the same amount. The math you're doing is dead simple:
 
 > **Income − Allocations = 0**
 
-If you have a balance left in TBB, you haven't planned for everything. If TBB goes negative, you've over-allocated and need to reduce somewhere.
+When the right side hits zero, every dollar has a job and you're done.
 
-### Income classification
+### Worked example
 
-How transactions affect TBB depends on their type:
+You start the month with $3,200 in your checking account, all earned this month. To Be Budgeted shows $3,200.
+
+You start clicking through categories:
+
+| Category | Assigned | TBB after |
+|---|---|---|
+| Rent | $1,400 | $1,800 |
+| Groceries | $500 | $1,300 |
+| Utilities | $150 | $1,150 |
+| Phone & Internet | $120 | $1,030 |
+| Gas | $180 | $850 |
+| Dining Out | $200 | $650 |
+| Subscriptions | $40 | $610 |
+| Emergency Fund | $300 | $310 |
+| Vacation Savings | $200 | $110 |
+| Hobbies | $110 | $0 |
+
+To Be Budgeted: $0. May is fully planned. You can spend with confidence because every dollar already knows what it's for.
+
+### How transaction types affect TBB
+
+How transactions affect To Be Budgeted depends on their type:
 
 | Transaction type | Effect on TBB |
 |---|---|
 | **Income** | Increases TBB |
-| **Expense** | No direct effect (reduces category Available via Spent) |
+| **Expense** | No direct effect (reduces Available in the category via Spent) |
 | **Credit** (refund) | No effect on TBB. Reduces category Spent only. |
 | **Transfer** | No effect — money moves between your accounts |
 
-This means a refund correctly cancels out a previous purchase in your category, without inflating your income for the month.
+> **Why Credit doesn't add to TBB:** A refund cancels out a previous expense. If you bought $80 of groceries and returned $20 worth, your category should reflect $60 of net spending — not $80 spent + $20 of new income. That's exactly what Credit does. Use Income for actual new money: paychecks, gifts, interest earned.
 
 ---
 
 ## Moving money between categories
 
-When one category is overspent and another has a surplus, you don't need to break the budget — you just move money.
+Here's the key insight that makes budgeting bearable: **you don't have to be perfect**.
 
-1. Click the source category in the budget list.
-2. Use the **Move money** action and pick the destination category and amount.
-3. The transfer is recorded in the budget history of both categories.
+You'll overspend somewhere every month. Restaurants is a classic — you have a couple of nights out, the category goes red. That's not a moral failing. It's information. The fix is one click:
 
-Your overall **To Be Budgeted** stays at zero. Only the internal allocation changes.
+1. Click the source category (the one with surplus).
+2. Use the **Move money** action.
+3. Pick the destination category and the amount.
+4. Save.
+
+Both categories now show the transfer in their history. Your overall To Be Budgeted stays at zero. Nothing's broken — you just adjusted the plan.
+
+> **Common scenario:** You budgeted $200 for Dining Out and ended up at $245. Available is -$45. You move $45 from Hobbies (where you've barely spent anything) into Dining Out. Both categories rebalance. Total budget unchanged.
+
+This is the move that keeps people from ditching their budget mid-month. Embrace it.
 
 ---
 
 ## Auto-assign strategies
 
-savr can fill out your budget automatically. Open the **Auto-Assign** menu on the Budget page and choose a strategy:
+savr can fill out your budget for you. Open the **Auto-Assign** menu on the Budget page and pick one of five strategies:
 
-| Strategy | What it does | When it's useful |
+| Strategy | What it does | When to reach for it |
 |---|---|---|
-| **Underfunded** | Fills each category up to its target (or up to what's already spent if no target). | Most common — gets every category to "covered" |
-| **Assigned Last Month** | Copies the previous month's allocations. | Predictable months where nothing has changed. |
-| **Spent Last Month** | Allocates each category what was actually spent last month. | Sanity-check budget against real spending. |
-| **Zero Available** | Adds money to categories where Available is negative, bringing them back to zero. | Quick fix for overspending late in the month. |
-| **Zero Budgeted** | Allocates to categories that have no budget yet this month. | Onboarding a new month from scratch. |
+| **Underfunded** | Fills each category up to its target (or up to what's already spent if no target). | Most common — gets every category to "covered." |
+| **Assigned Last Month** | Copies last month's allocations as-is. | Predictable months where nothing changed. |
+| **Spent Last Month** | Allocates each category what was actually spent last month. | A reality-check budget against your real habits. |
+| **Zero Available** | Adds money to categories where Available is negative, bringing them back to zero. | Quick cleanup at the end of the month when a few categories are red. |
+| **Zero Budgeted** | Allocates to categories that have no budget yet this month. | Starting a new month from scratch. |
 
-You can preview the total each strategy will assign before applying, and optionally cap the maximum amount to spend.
+You can preview the total each strategy will assign before applying, and optionally cap the maximum spend.
 
 ### Fill by Targets
 
-The **Fill by Targets** button is a one-click shortcut: it fills every category that has a target with that target's suggested amount for the current month. Categories without a target are left untouched.
+The **Fill by Targets** button is a one-click shortcut: it funds every category that has a target with that target's suggested amount. Categories without a target are left alone.
+
+This is most people's "set it and forget it" workflow once they've been at it a few months. Set targets on your real categories, click Fill by Targets at the start of each month, adjust the leftovers manually.
 
 ### Single-category auto-assign
 
-You can also auto-assign a single category from its action menu. savr uses the category's target — or its previous spending — to suggest an amount.
+Each category also has its own auto-assign action — useful when you just want to fill in one spot. savr suggests an amount based on the target (or your previous spending if there's no target).
 
 ---
 
-## Targets (goals)
+## Targets (a.k.a. goals)
 
-A target tells savr how much you want to budget for a category, so it can give you an at-a-glance status (on track, underfunded, unfunded) and power features like Fill by Targets.
+A target tells savr "this is how much I want to budget for this category." Once a target is set, savr can:
+
+- Show you a status (on track, underfunded, unfunded) at a glance
+- Power Fill by Targets for one-click monthly funding
+- Suggest amounts in auto-assign
 
 ### Target types
 
 | Type | Behavior |
 |---|---|
-| **Monthly** | Recurring each month. Optionally tied to a specific day-of-month. |
-| **Weekly** | Recurs each week on a chosen day (Sunday through Saturday). |
-| **Yearly** | Recurs annually on a specific month and day. |
+| **Monthly** | Recurs every month. Optionally tied to a specific day-of-month. |
+| **Weekly** | Recurs each week on a specific day (Sunday through Saturday). |
+| **Yearly** | Recurs annually on a specific month + day. |
 | **Custom** | Save a total amount by a target date. Can repeat every N months / years, or be one-time. |
+
+> **For example:**
+> - Rent — Monthly target of $1,400, due on the 1st.
+> - Groceries — Weekly target of $125 (savr knows that's ~$540/month).
+> - Car insurance — Yearly target of $720, due in October.
+> - Vacation — Custom target of $2,400 by next August. savr suggests ~$200/month.
 
 ### Setting a target
 
@@ -114,27 +158,29 @@ A target tells savr how much you want to budget for a category, so it can give y
 4. For Custom targets, set the target date and (optionally) a repeat interval.
 5. For Monthly targets, optionally enable **Rollover** so unspent budget carries over to next month.
 
-### Status
+### Target status
 
-Each category with a target shows one of three statuses:
+Each category with a target shows one of three states:
 
-- **OK** — Budget meets or exceeds target
-- **Underfunded** — Budget is less than the target
-- **Unfunded** — Nothing budgeted yet this month
+- **OK** — budgeted at or above the target
+- **Underfunded** — budgeted but not enough
+- **Unfunded** — nothing budgeted this month
 
 ### Removing a target
 
-Open the category's target modal and click **Remove target**. The category remains; only the goal is cleared.
+Open the category's target modal and click **Remove target**. The category sticks around; only the goal is cleared.
+
+> **Pro tip:** Don't set targets on every category right away. Start with the boring fixed bills (rent, utilities, subscriptions). Add targets to variable categories only after you've watched your real spending for a couple months and have realistic numbers.
 
 ---
 
-## Category detail panel
+## The category detail panel
 
 Click any category to open its detail panel. You'll see:
 
-- **Budget history** — every allocation and money transfer for this category, oldest to newest
-- **Cash vs. credit breakdown** — spending split between cash-style accounts (checking, savings, cash) and credit cards. Useful when reconciling a category against actual cash flow.
-- **Recent transactions** — quick view of the activity driving the Spent value
+- **Budget history** — every allocation and money transfer for this category, oldest to newest. The audit trail of how this category got to where it is today.
+- **Cash vs. credit breakdown** — spending split between cash-style accounts (checking, savings, cash) and credit cards. Useful when you want to know "okay, but how much of this is going to actually leave my checking account this month?"
+- **Recent transactions** — quick view of what's been driving the Spent value
 - **Target status** — if a target is set
 
 ### Budget history entries
@@ -148,10 +194,11 @@ Two kinds of entries appear in the history:
 
 ---
 
-## Tips for a healthy budget
+## Tips from people who actually do this
 
-- **Aim for TBB = 0.** Anything in TBB is unplanned money. Assign it.
-- **Don't budget money you don't have.** Only what's already in your accounts can be allocated. Future income gets budgeted next month.
-- **Adjust mid-month.** Overspending isn't failure — it's information. Move money from a flexible category (e.g. Entertainment) to cover it.
-- **Use targets sparingly at first.** Get comfortable with manual assignment before relying on auto-fill.
-- **Review at month-end.** A quick look at categories with a positive Available helps you decide whether to roll the surplus forward or reallocate it.
+- **Aim for TBB = 0.** Anything in TBB is unplanned. Plan it. Even "Future Stuff" is a category you can park money in.
+- **Don't budget money you don't have.** Only what's already in your accounts can be allocated. Future income gets budgeted next month, when it actually arrives.
+- **Adjust mid-month without guilt.** Overspending isn't failure. It's data. Move money, keep going.
+- **Use targets sparingly at first.** Get used to manual assignment for a month or two. You'll set better targets once you know your real numbers.
+- **Review at month-end.** Spend two minutes looking at categories with surplus. Roll it into next month, throw it at savings, or move it to wherever you're behind. The leftover money is a gift to your future self — don't waste it.
+- **Boring categories deserve love too.** A monthly target on rent feels pointless because you always pay it. But it makes Fill by Targets work without you having to think. Worth it.

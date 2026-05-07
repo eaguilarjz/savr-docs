@@ -8,88 +8,159 @@ nav_order: 1
 
 # Primeros pasos con savr
 
-savr es una aplicación de presupuesto de base cero. Cada unidad de tus ingresos recibe un propósito antes de gastarse: renta, comida, ahorros, entretenimiento. Cuando tu presupuesto está balanceado, el monto **Por Asignar** llega a cero y sabes exactamente a dónde va cada peso.
+Hola. Bienvenido a savr.
 
-Esta guía te lleva paso a paso por crear tu cuenta, conocer los conceptos centrales y configurar tu primer mes.
+Si alguna vez abriste tu app del banco a fin de mes y pensaste "espera, ¿a *dónde* se me fue exactamente el dinero?" — estás en el lugar correcto. savr es una aplicación de presupuesto de base cero, que es una forma elegante de decir: cada peso que entra recibe un trabajo antes de gastarse. Renta, comida, ahorros, esa suscripción que olvidaste cancelar. Para cuando terminas, cada peso sabe a dónde pertenece y tú sabes exactamente con cuánto cuentas para cada cosa.
+
+La mayoría de las herramientas de presupuesto te dicen qué *gastaste*. savr te ayuda a decidir qué *vas* a gastar. Esa es la diferencia, y es por eso que la gente deja de odiar su presupuesto y empieza, sin darse cuenta, a disfrutarlo un poco.
+
+Esta guía te lleva paso a paso por crear tu cuenta, configurar tu primer mes y conocer el resto de la documentación.
 
 ---
 
-## Crea tu cuenta
+## Crea tu cuenta (y empieza tu prueba gratuita)
+
+Cada cuenta nueva en savr recibe **90 días de prueba gratuita**. No se requiere tarjeta de crédito al inicio, sin cargos sorpresa. Úsalos para conocer la herramienta. Elige un plan cuando estés listo, o no — savr te recordará cerca del final de la prueba.
 
 1. Abre la aplicación y haz clic en **Registrarse**.
-2. Ingresa tu correo electrónico y haz clic en **Continuar**.
-3. Revisa tu bandeja de entrada para encontrar el correo de verificación de savr. Haz clic en el enlace.
-   - Si no lo ves en un minuto, revisa tu carpeta de spam.
-   - El enlace de verificación expira en 15 minutos. Si expira, vuelve a **Registrarse** y solicita uno nuevo.
+2. Ingresa tu correo y haz clic en **Continuar**.
+3. Revisa tu bandeja de entrada para encontrar el enlace de verificación de savr. Haz clic.
+   - ¿No lo ves en un minuto? Revisa la carpeta de spam.
+   - El enlace expira en 15 minutos. Si pasa, solo solicita otro — sin drama.
 4. En la pantalla de finalización, configura tu **nombre**, elige una **contraseña** (mínimo 8 caracteres) y acepta los **Términos de Servicio**.
 5. Listo, ya estás dentro.
 
-> **¿Olvidaste tu contraseña?** Desde la pantalla de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de recuperación válido por una hora. Ábrelo y configura una nueva contraseña.
+> **Pro tip:** Usa un administrador de contraseñas. La contraseña más fuerte es la que no tienes que recordar. Consulta [Seguridad](../security/) para más sobre cómo proteger tu cuenta.
 
-Para opciones de seguridad como la autenticación de dos factores, consulta la página [Seguridad](../security/).
+**¿Olvidaste tu contraseña?** Desde la pantalla de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de recuperación válido por una hora. Ábrelo y elige una nueva.
+
+Para autenticación de dos factores y otras funciones de seguridad, salta a la página [Seguridad](../security/) cuando estés listo.
 
 ---
 
-## El método de presupuesto de base cero
+## El asistente de configuración
 
-La idea central: **ingresos menos egresos es igual a cero.** Cada peso que ganas se asigna a una categoría — comida, renta, ahorros, entretenimiento — hasta que no queda nada sin asignar. Cuando gastas, el saldo de la categoría disminuye. Si te excedes en una categoría, mueves dinero de otra.
+La primera vez que inicias sesión, savr te recibe con un breve asistente de configuración. Te lleva por tres cosas:
 
-Este método funciona porque te obliga a tomar decisiones de gasto con anticipación, no después del hecho.
+1. **Bienvenida** — un recordatorio rápido de cómo funciona el presupuesto de base cero.
+2. **Agrega tus cuentas** — hasta 5 cuentas para empezar (siempre puedes agregar más después). Elige nombre, tipo y saldo actual de cada una.
+3. **Elige una plantilla de categorías** — savr puede pre-armar tu lista de categorías usando una de tres plantillas:
 
-| Concepto | Significado |
+| Plantilla | Lo que obtienes | Buena para |
+|---|---|---|
+| **Ninguna** | Lienzo en blanco | Sabes exactamente qué quieres |
+| **Simple** | 8 grupos, 1–2 categorías cada uno | Primerizos, vidas simples |
+| **Estándar** | 8 grupos, 3–4 categorías cada uno | La mayoría de la gente |
+| **Detallada** | 8 grupos, 5–6 categorías cada uno | Te gusta el detalle |
+
+Puedes editar, renombrar o eliminar cualquier cosa que cree la plantilla. No lo pienses demasiado — elige **Estándar** si no estás seguro.
+
+¿Quieres saltarte el asistente y configurar todo manualmente? Haz clic en **Saltar** en cualquier momento. El asistente solo aparece una vez por cuenta.
+
+---
+
+## Presupuesto de base cero en 90 segundos
+
+Aquí está todo el concepto:
+
+> **Cada peso que tienes recibe un trabajo antes de gastarlo.**
+
+Eso es todo. Sin hojas de cálculo, sin sobres, sin fórmulas elegantes — solo la regla simple de que el dinero en tu cuenta ya debe estar asignado a algo específico.
+
+Funciona así:
+
+1. Llega dinero (sueldo, reembolso, lo que sea). savr lo pone en una cubeta llamada **Por Asignar**.
+2. Vas a la página de Presupuesto y decides a dónde debe ir cada peso: renta, comida, gasolina, ahorros.
+3. Conforme gastas, las categorías bajan. Cuando **Por Asignar** llega a cero, sabes que cada peso tiene un hogar.
+4. ¿Gastaste más en una categoría de lo planeado? Sin problema — mueves dinero de otra. Tu presupuesto general sigue balanceado.
+
+Aquí están las cuatro palabras que verás en todos lados:
+
+| Palabra | Qué significa |
 |---|---|
-| **Por Asignar** | Dinero que has recibido pero que aún no has asignado a ninguna categoría. La meta es mantenerlo en cero. |
-| **Asignado** | Cantidad que has asignado a una categoría específica para el mes actual. |
-| **Gastado** | Total de transacciones registradas en una categoría este mes. |
-| **Disponible** | Lo que queda en la categoría: `Asignado − Gastado`. Es lo que aún puedes gastar. |
+| **Por Asignar** | Dinero que has recibido pero al que aún no le has dado un trabajo. La meta es mantenerlo en cero. |
+| **Asignado** | Lo que has asignado a una categoría para el mes actual. |
+| **Gastado** | Lo que realmente has gastado en una categoría este mes. |
+| **Disponible** | Lo que queda por gastar: `Asignado − Gastado`. |
+
+Ese es todo el vocabulario. Ya hablas presupuesto de base cero.
 
 ---
 
-## Configura tu primer mes
+## Tu primer mes, paso a paso
 
-Sigue este orden la primera vez que uses savr. Puedes regresar a cada sección conforme vayan creciendo tus necesidades.
+Aquí está el orden que recomendaría la primera vez. Cada paso enlaza a la guía detallada si quieres profundizar.
 
 ### 1. Agrega tus cuentas
 
-Ve a **Cuentas → Agregar Cuenta** y crea una entrada por cada cuenta real: cheques, ahorros, tarjetas de crédito, efectivo, inversiones y préstamos. Ingresa el saldo actual como el **saldo inicial**.
+Abre **Cuentas → Agregar Cuenta** y crea una entrada por cada cuenta real que tengas: cheques, ahorros, tarjetas de crédito, efectivo, inversiones, préstamos. Ingresa el saldo de hoy como el **saldo inicial**.
 
-savr soporta seis tipos de cuenta — consulta la página [Cuentas](../accounts/) para saber qué hace cada uno.
+> **Por ejemplo:** ¿Tu cuenta de cheques muestra $34,847.13 ahora mismo? Eso escribes. savr crea una entrada de "Saldo Inicial" que no afecta tu presupuesto — solo le dice a savr desde dónde estás empezando.
+
+savr soporta seis tipos de cuenta y cada uno se comporta un poco distinto. Las cuentas de préstamo en particular tienen detalles que vale la pena conocer — [revisa la página de Cuentas](../accounts/) cuando configures las tuyas.
 
 ### 2. Construye tu lista de categorías
 
-Abre **Categorías** y crea las cubetas de gasto que realmente usas. Agrúpalas como tenga sentido para ti (Bills, Variable, Goals, etc.). Un punto de partida típico:
+Si usaste la plantilla del asistente, ya tienes categorías. Si no, ve a **Categorías** y crea las cubetas que realmente usas.
+
+Un punto de partida sólido se ve algo así:
 
 - **Servicios y Renta**: Renta / Hipoteca, Servicios, Teléfono, Internet
 - **Variables**: Comida, Transporte, Restaurantes
 - **Metas**: Fondo de Emergencia, Vacaciones
 - **Calidad de Vida**: Entretenimiento, Suscripciones, Hobbies
 
-No te preocupes por dejarlo perfecto — puedes renombrar, reordenar, ocultar o eliminar categorías en cualquier momento.
+No te estreses con la estructura. Puedes renombrar, reordenar, ocultar o eliminar cualquier cosa después. Consulta [Categorías](../categories/) para grupos, ocultar y soporte de emojis (sí, tu barra lateral puede tener un 🛒 junto a Comida).
 
 ### 3. Registra tus transacciones
 
-Ve a **Transacciones** para registrar ingresos y gastos. Elige el tipo correcto:
+Ve a **Transacciones** para registrar lo que ha pasado. Tienes cuatro tipos:
 
-- **Ingreso** — sueldos, reembolsos en efectivo, regalos
+- **Ingreso** — sueldos, reembolsos en efectivo, regalos, esos $200 que te mandó tu tía
 - **Gasto** — cualquier cosa que hayas gastado
-- **Transferencia** — mover dinero entre dos de tus cuentas
-- **Reembolso** — devoluciones de una compra anterior (reducen el gasto de la categoría sin contar como ingreso nuevo)
+- **Transferencia** — mover dinero entre dos de tus cuentas (p. ej. pagar una tarjeta de crédito)
+- **Reembolso** — devoluciones de una compra previa (cancela un gasto; no cuenta como ingreso nuevo)
 
-Consulta la página [Transacciones](../transactions/) para divisiones, pagos de deuda y filtros.
+Si vas a empezar con un año de transacciones del CSV de tu banco, salta a [Importar y Exportar](../import-export/) para el asistente de importación CSV.
+
+La página de [Transacciones](../transactions/) cubre divisiones, pagos de deuda y filtros en detalle.
 
 ### 4. Asigna tu dinero
 
-Ve a **Presupuesto**. El monto **Por Asignar** muestra todo lo que has ganado y aún no has comprometido. Haz clic en cualquier categoría e ingresa cuánto quieres asignarle este mes. Continúa hasta que **Por Asignar = 0**.
+Esta es la parte divertida. Abre **Presupuesto**.
 
-Si tienes gastos recurrentes (renta, suscripciones, sueldos), configura [Transacciones Recurrentes](../recurring/) para que se llenen automáticamente cada mes.
+El número en la parte superior — **Por Asignar** — es todo lo que has ganado y aún no tiene un trabajo. Haz clic en cualquier categoría, escribe cuánto quieres gastar ahí este mes, guarda. Repite hasta que el número llegue a cero.
 
-### 5. Revisa y ajusta
+> **Recorrido:** Digamos que tienes $30,000 para presupuestar en mayo. Asignas $12,000 a Renta, $4,000 a Comida, $2,000 a Gasolina, $1,500 a Internet/Teléfono, $3,000 a Restaurantes, $2,500 a Fondo de Emergencia, $2,000 a Hobbies, $3,000 a Ahorros. Por Asignar: $0. Acabas de hacer un presupuesto.
 
-Conforme avanza el mes:
+¿Tienes gastos recurrentes? Configura [Transacciones Recurrentes](../recurring/) para que se llenen solas cada mes.
 
-- Cuando te excedas en una categoría, el valor **Disponible** se pondrá en rojo. Mueve dinero de otra categoría para cubrirlo — tu presupuesto general queda balanceado.
-- Llegan ingresos nuevos → caen en **Por Asignar**, listos para ser asignados.
-- ¿Quieres planear a futuro? Agrega **Objetivos** a tus categorías para que savr te sugiera montos cada mes.
+### 5. Vive con él una semana
+
+Gasta como siempre. Revisa savr a diario o cada par de días. Pasarán dos cosas:
+
+- **Te excederás en una categoría.** Totalmente normal. Mueve dinero de otra para cubrirla. El presupuesto se rebalancea. Sin drama.
+- **Descubrirás una categoría que olvidaste.** Agrégala. Mueve dinero. Listo.
+
+Ninguna de las dos es un fracaso — es el presupuesto funcionando. Estás aprendiendo cómo se ve tu gasto real, en detalle, por primera vez.
+
+### 6. Fin de mes: revisa
+
+Abre [Reportes](../reports/) y mira el mes. ¿A dónde se fue realmente tu dinero? ¿Algo te sorprendió? Lleva lo que funcionó al siguiente mes, cambia lo que no.
+
+Aquí empieza la adicción. Saber se siente bien.
+
+---
+
+## Usar savr en tu teléfono
+
+savr es completamente responsivo — cada página funciona en teléfono, tablet o computadora. En móvil:
+
+- La barra lateral está oculta por defecto. Toca el ícono **☰** arriba a la izquierda para abrirla.
+- Toca tu avatar (arriba a la derecha) para el menú de usuario.
+- Los formularios y tablas se adaptan a la pantalla más pequeña — algunas columnas menos críticas pueden ocultarse.
+
+La mayoría de la gente hace la configuración inicial en una laptop y luego revisa desde el teléfono durante el día. Ambas funcionan. Usa lo que tengas enfrente.
 
 ---
 
@@ -97,11 +168,17 @@ Conforme avanza el mes:
 
 | Tema | Qué cubre |
 |---|---|
-| [Presupuesto](../budget/) | Asignar dinero, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
-| [Cuentas](../accounts/) | Los seis tipos de cuenta, préstamos, cerrar/reabrir, reordenar |
-| [Transacciones](../transactions/) | Ingreso, gasto, transferencia, reembolso, divisiones, pagos de deuda, filtros |
-| [Categorías](../categories/) | Grupos, orden, ocultar, eliminar con reasignación |
+| [Presupuesto](../budget/) | Asignar dinero, Por Asignar, estrategias de auto-asignación, objetivos, mover dinero, panel de detalle |
+| [Cuentas](../accounts/) | Los seis tipos de cuenta, préstamos con seguimiento de interés, cerrar/reabrir, reordenar |
+| [Transacciones](../transactions/) | Los cuatro tipos, divisiones, pagos de deuda, filtros, estado conciliada |
+| [Categorías](../categories/) | Grupos, orden, ocultar, eliminar con reasignación, plantillas |
 | [Recurrentes](../recurring/) | Transacciones programadas, frecuencias, aplicar vencimientos |
 | [Beneficiarios](../payees/) | Crear, renombrar, fusionar, eliminar |
+| [Reportes](../reports/) | Tendencias mensuales, gastos por categoría, beneficiarios principales |
+| [Conciliación](../reconcile/) | Hacer coincidir savr con tu estado de cuenta, encontrar discrepancias |
+| [Importar y Exportar](../import-export/) | Asistente de importación CSV, exportaciones |
 | [Perfil y Ajustes](../profile/) | Nombre, idioma, tema, zona horaria, moneda |
-| [Seguridad](../security/) | Autenticación de dos factores, cambio de contraseña, códigos de recuperación |
+| [Planes y Facturación](../billing/) | Prueba, planes, facturas, cancelación, fallos de pago |
+| [Seguridad](../security/) | Autenticación de dos factores, códigos de recuperación, cambio de contraseña, sesiones |
+
+Bienvenido. Ahora ve y dale a cada peso un trabajo.

@@ -1,14 +1,16 @@
 ---
 title: Seguridad
 parent: Español
-nav_order: 9
+nav_order: 13
 ---
 
 > 🌐 Read this page in [English](../../en/security/)
 
 # Seguridad
 
-Esta página cubre todo lo relacionado con mantener tu cuenta de savr segura: contraseñas, autenticación de dos factores, códigos de recuperación y sesiones.
+Tu cuenta de savr contiene una imagen completa de tus finanzas. Lo tomamos en serio, y tú también deberías.
+
+Esta página cubre todo lo que puedes hacer para mantener tu cuenta segura: contraseñas, autenticación de dos factores, códigos de recuperación y cómo funcionan las sesiones. La mayoría es configuración única de dos minutos que paga dividendos para siempre.
 
 Encontrarás estos ajustes en **Perfil → Seguridad**.
 
@@ -21,9 +23,9 @@ Encontrarás estos ajustes en **Perfil → Seguridad**.
 3. Ingresa tu **contraseña actual**, luego una **contraseña nueva** (mínimo 8 caracteres) y confírmala.
 4. Haz clic en **Guardar**.
 
-Una vez cambiada, cada sesión actualmente abierta sigue funcionando, pero cualquier sesión cerrada requerirá la nueva contraseña.
+Una vez cambiada, cada sesión actualmente abierta sigue funcionando, pero cualquier sesión cerrada (otro dispositivo, un navegador viejo) requerirá la nueva contraseña.
 
-> **Consejo:** Usa un administrador de contraseñas. La contraseña más fuerte es la que no tienes que recordar.
+> **Pro tip:** Usa un administrador de contraseñas. La contraseña más fuerte es la que no tienes que recordar — larga, aleatoria, única para savr. 1Password, Bitwarden, iCloud Keychain de Apple, el administrador integrado de tu navegador: todos están bien. Elige uno y déjalo hacer su trabajo.
 
 ---
 
@@ -39,8 +41,8 @@ savr soporta **TOTP** (contraseñas de un solo uso basadas en tiempo) — el mis
 2. Un modal te lleva por tres pasos:
 
    **Paso 1 — Escanea el código QR**
-   - Abre tu aplicación autenticadora (Google Authenticator, Authy, 1Password, Bitwarden, etc.).
-   - Agrega una nueva cuenta escaneando el código QR que aparece en pantalla.
+   - Abre tu aplicación autenticadora.
+   - Agrega una nueva cuenta escaneando el código QR en pantalla.
    - Si no puedes escanear, haz clic en **Mostrar secreto** e ingresa la clave de 32 caracteres manualmente.
 
    **Paso 2 — Verifica**
@@ -50,34 +52,36 @@ savr soporta **TOTP** (contraseñas de un solo uso basadas en tiempo) — el mis
    **Paso 3 — Guarda tus códigos de recuperación**
    - savr genera **8 códigos de recuperación**.
    - **Descárgalos** como archivo `.txt` o cópialos a tu administrador de contraseñas.
-   - Estos códigos son tu respaldo si pierdes acceso a tu autenticador. Guárdalos en un lugar donde puedas encontrarlos otra vez — pero no en el mismo dispositivo que tu autenticador.
+   - Estos códigos son tu respaldo si pierdes acceso a tu autenticador. Guárdalos en un lugar donde puedas encontrarlos otra vez — pero **no en el mismo dispositivo que tu autenticador**.
 
-3. Haz clic en **Listo**. MFA está activo en tu cuenta.
+3. Haz clic en **Listo**. MFA está activo.
+
+> **La configuración de cinco minutos que paga para siempre.** La mayoría de los compromisos de cuenta empiezan con una contraseña robada o reutilizada. MFA neutraliza el ataque. Toda la configuración toma menos de cinco minutos. Solo hazlo.
 
 ### Iniciar sesión con MFA
 
-Después de ingresar tu correo y contraseña en la pantalla de inicio de sesión, savr te pide un segundo factor:
+Después de ingresar tu correo y contraseña en la pantalla de inicio de sesión, savr pide un segundo factor:
 
 - Abre tu aplicación autenticadora e ingresa el código actual de 6 dígitos, **o**
 - Haz clic en **Usar un código de recuperación** e ingresa uno de los códigos que guardaste durante la configuración.
 
-Los códigos de 6 dígitos se renuevan cada 30 segundos. Si un código es rechazado, espera al siguiente e inténtalo de nuevo — la causa más común es que el código anterior ya expiró.
+Los códigos de 6 dígitos se renuevan cada 30 segundos. Si un código es rechazado, espera al siguiente e intenta de nuevo — la causa más común es que el código anterior expiró entre que lo leíste y lo escribiste.
 
 ### Códigos de recuperación
 
 Cada código de recuperación es de **un solo uso**. Una vez usado, ese código no puede usarse de nuevo.
 
 - Recibes **8 códigos al configurar**.
-- Úsalos solo cuando no tengas acceso a tu autenticador (teléfono perdido, cambio de dispositivo sin migrar los códigos, app eliminada por error).
+- Úsalos cuando no tengas acceso a tu autenticador (teléfono perdido, cambio de dispositivo sin migrar los códigos, app eliminada por error).
 - Si has usado la mayoría y quieres códigos nuevos, regenéralos desde **Perfil → Seguridad → Regenerar códigos de recuperación**. Regenerar invalida el conjunto anterior.
 
-> **Trata los códigos de recuperación como una llave de respaldo.** Si alguien tiene tus códigos y tu contraseña, tiene acceso completo. Guárdalos en un administrador de contraseñas o en algún lugar físicamente seguro.
+> **Trata los códigos de recuperación como una llave de respaldo.** Si alguien tiene tus códigos y tu contraseña, tiene acceso completo. Guárdalos en un administrador de contraseñas o en algún lugar físicamente seguro (como una copia impresa en una caja fuerte). No te los mandes por correo a ti mismo.
 
 ### ¿Y si pierdo mi teléfono *y* mis códigos de recuperación?
 
-Si ambos se han perdido, necesitarás contactar soporte para verificar tu identidad y recuperar acceso. Es un proceso manual, intencionalmente — es la red de seguridad que evita que un atacante use ingeniería social para regresar a entrar.
+Si ambos se han perdido, contacta soporte para verificar tu identidad y recuperar acceso. Es intencionalmente manual — es la red de seguridad que evita que alguien use ingeniería social para regresar a tu cuenta.
 
-Por eso recomendamos guardar los códigos de recuperación en un lugar separado de tu teléfono (p. ej. un administrador de contraseñas que no esté sincronizado con ese teléfono, o una copia impresa en un lugar seguro).
+La solución para este escenario es nunca llegar a él: guarda los códigos de recuperación en un lugar separado de tu teléfono. Un administrador de contraseñas no sincronizado con ese teléfono, o una copia impresa en un cajón, ambos funcionan.
 
 ### Desactivar MFA
 
@@ -85,7 +89,7 @@ Por eso recomendamos guardar los códigos de recuperación en un lugar separado 
 2. Ingresa tu contraseña para confirmar.
 3. MFA se elimina de tu cuenta.
 
-Puedes reactivarlo en cualquier momento. Se generan códigos de recuperación nuevos cada vez que configuras MFA desde cero — los códigos antiguos no se preservan.
+Puedes reactivarlo en cualquier momento. Se generan códigos de recuperación nuevos cada vez que configuras MFA desde cero — los códigos antiguos no se conservan.
 
 ---
 
@@ -103,12 +107,16 @@ Ambas cookies son HTTP-only (así que JavaScript en la página no puede leerlas)
 En la práctica esto significa:
 
 - Te mantienes con sesión iniciada entre reinicios del navegador hasta por 30 días.
-- ¿Inactivo por mucho tiempo? Se cerrará tu sesión silenciosamente si tu token de refresco expiró mientras no usabas la app.
+- ¿Inactivo por mucho tiempo? Se cerrará tu sesión silenciosamente si tu token de refresco expiró mientras no usabas la app. Sin drama; solo inicia sesión otra vez.
 - **Cerrar sesión** limpia ambas cookies en este dispositivo.
 
 ### Múltiples dispositivos
 
-Puedes tener sesión iniciada en varios dispositivos al mismo tiempo — cada dispositivo tiene su propio par de cookies. Cerrar sesión en un dispositivo no cierra los demás. Por ahora no hay una lista de "sesiones activas" para revisar.
+Puedes tener sesión iniciada en varios dispositivos al mismo tiempo — cada dispositivo tiene su propio par de cookies. Cerrar sesión en un dispositivo no cierra los demás.
+
+> **Por ejemplo:** Estás con sesión iniciada en tu laptop y tu teléfono. Le pasas el teléfono a un amigo (que no ve savr — está usando otra app), luego cierras sesión en la laptop. La sesión en tu teléfono no se afecta.
+
+Aún no hay una lista de "sesiones activas". Si alguna vez pierdes un dispositivo y quieres asegurarte absolutamente de que todas las sesiones se cierren, cambia tu contraseña — no invalida sesiones existentes, pero las nuevas requerirán la nueva contraseña.
 
 ---
 
@@ -124,12 +132,19 @@ Para proteger tu cuenta de ataques de fuerza bruta, ciertos endpoints están lim
 
 Si alcanzas un límite, verás un error pidiendo que esperes. Los límites se reinician automáticamente.
 
+La mayoría de los usuarios nunca verán uno de estos mensajes. Existen para frenar a los atacantes que de otra forma intentarían miles de adivinanzas de contraseña contra tu cuenta.
+
 ---
 
 ## Buenas prácticas
 
-- **Activa MFA.** Casi todo compromiso de cuenta empieza con una contraseña robada o reutilizada. MFA lo derrota.
-- **Usa un administrador de contraseñas.** Genera una contraseña única y larga para savr y deja que tu administrador la recuerde.
-- **Guarda los códigos de recuperación donde realmente los puedas encontrar.** Una entrada en tu administrador de contraseñas, una copia en papel en una caja fuerte, o ambas.
-- **No guardes los códigos de recuperación en el mismo dispositivo que tu autenticador.** Si pierdes el dispositivo, perdiste ambos.
-- **Cierra sesión en dispositivos compartidos.** No confíes en la cookie de "recordar" si alguien más usa ese navegador.
+Una lista corta, en orden de importancia:
+
+1. **Activa MFA.** Casi todo compromiso de cuenta empieza con una contraseña robada o reutilizada. MFA lo derrota. (Dos minutos. Solo hazlo.)
+2. **Usa un administrador de contraseñas.** Genera una contraseña única y larga para savr y deja que tu administrador la recuerde. No reutilices una contraseña de otro sitio.
+3. **Guarda los códigos de recuperación donde realmente los puedas encontrar.** Una entrada en tu administrador de contraseñas, una copia en papel en una caja fuerte, o ambas. No los pongas en un correo o en una app de Notas en el mismo dispositivo que tu autenticador.
+4. **No guardes los códigos de recuperación en el mismo dispositivo que tu autenticador.** Si pierdes el dispositivo, perdiste ambos — y pierdes la red de seguridad.
+5. **Cierra sesión en dispositivos compartidos.** No confíes en la cookie de "recordar" si alguien más usa ese navegador.
+6. **Trata los correos de fin de prueba y renovación como puntos de control de seguridad también.** Confirman que tu correo sigue funcionando y tu cuenta sigue activa. Si dejas de recibir los correos esperados de savr, revisa tu carpeta de spam y considera si tu cuenta de correo ha sido comprometida.
+
+Nunca te arrepentirás de estos. Podrías arrepentirte de saltártelos.

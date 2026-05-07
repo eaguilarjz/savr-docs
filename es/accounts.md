@@ -8,26 +8,26 @@ nav_order: 3
 
 # Cuentas
 
-Las cuentas representan las cuentas financieras reales que quieres dar seguimiento en savr: cuentas bancarias, tarjetas de crédito, efectivo, cuentas de inversión y préstamos.
+Las cuentas en savr reflejan los lugares reales donde vive tu dinero: cuentas bancarias, tarjetas de crédito, el efectivo de tu cartera, tu portafolio de inversión, el préstamo que se va achicando lentamente. Cada transacción pertenece a una cuenta y el saldo de cada cuenta se actualiza en el momento que registras actividad — así los totales en savr se mantienen en sintonía con la realidad.
 
-Cada transacción pertenece a una cuenta. Los saldos de las cuentas se actualizan automáticamente conforme registras actividad, así que los totales en savr siempre reflejan la realidad.
+Configúralas una vez. Mantenlas con dos minutos por semana.
 
 ---
 
 ## Tipos de cuenta
 
-savr soporta seis tipos de cuenta. Elegir el tipo correcto importa porque afecta cómo se agrupa la cuenta, cómo se interpreta su saldo y qué funciones aplican.
+savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuenta en la página, cómo se interpreta su saldo y qué funciones aparecen.
 
 | Tipo | Úsalo para | Notas |
 |---|---|---|
-| **Cheques** | Gastos del día a día | Aquí vive la mayoría de las transacciones |
+| **Cheques** | Gastos del día a día | Donde vive la mayoría de las transacciones |
 | **Ahorros** | Dinero apartado | Se trata como Cheques para fines de presupuesto |
-| **Tarjeta de Crédito** | Tarjetas de crédito | Gastar aquí no reduce una cuenta de efectivo; usa Transferencia para registrar pagos |
-| **Efectivo** | Efectivo en mano | Útil para llevar el control del dinero de bolsillo |
-| **Inversión** | Brokerages, retiro, cripto | Sigue saldos; no está pensado para detalle por operación |
-| **Préstamo** | Hipotecas, créditos automotrices, créditos personales, créditos educativos | Incluye tasa de interés, pago mensual y categoría de pago vinculada |
+| **Tarjeta de Crédito** | Tarjetas de crédito | Gastar aquí no reduce una cuenta de efectivo; registra los pagos como Transferencias |
+| **Efectivo** | Efectivo en mano | Dinero de bolsillo, ese sobre en el cajón |
+| **Inversión** | Brokerage, retiro, cripto | Sigue el saldo; no está pensado para detalle por operación |
+| **Préstamo** | Hipotecas, créditos automotrices, créditos personales, créditos educativos | Tasa de interés, pago mensual, categoría de pago vinculada |
 
-> Los préstamos son especiales — consulta [Cuentas de préstamo](#cuentas-de-préstamo) abajo.
+> Los préstamos son especiales — consulta [Cuentas de préstamo](#cuentas-de-préstamo) abajo para el tratamiento completo.
 
 ---
 
@@ -35,31 +35,35 @@ savr soporta seis tipos de cuenta. Elegir el tipo correcto importa porque afecta
 
 1. Abre **Cuentas** y haz clic en **Agregar Cuenta**.
 2. Ingresa:
-   - **Nombre** — cómo aparece la cuenta en todo savr (p. ej. "BBVA Cheques")
+   - **Nombre** — cómo aparece en todo savr (p. ej. "BBVA Cheques")
    - **Tipo** — elige uno de los seis
-   - **Saldo inicial** — el saldo actual. savr lo usa para inicializar la cuenta.
-3. Para préstamos, completa los campos específicos del préstamo (ver abajo).
+   - **Saldo inicial** — lo que tiene la cuenta ahora mismo
+3. Para préstamos, completa los campos específicos.
 4. Haz clic en **Guardar**.
 
-savr crea automáticamente una transacción de **Saldo Inicial** igual al valor que ingresaste. Esta transacción está marcada de forma especial: establece el saldo de la cuenta pero no afecta tu presupuesto ni el gasto de las categorías.
+savr crea automáticamente una transacción de **Saldo Inicial** igual al monto que ingresaste. Está marcada de forma especial: establece el saldo de la cuenta pero no afecta tu presupuesto ni el gasto de las categorías.
+
+> **Por ejemplo:** Agregaste una cuenta de cheques con saldo inicial de $34,847.13. savr crea una transacción con esa fecha, marcada como Saldo Inicial, con ese monto. Tu cuenta muestra $34,847.13. Tu presupuesto no se afecta — ese dinero simplemente existe, listo para ser asignado.
 
 ---
 
 ## Cuentas de préstamo
 
-Las cuentas de préstamo tienen campos y funciones extra para que puedas dar seguimiento al capital, los intereses y el avance con el tiempo.
+Las cuentas de préstamo son donde savr se gana su sueldo. Te dan un lugar para llevar el control del saldo del capital, la tasa de interés y el pago para que la matemática se mantenga honesta cada mes.
 
 Al crear o editar un préstamo, puedes configurar:
 
 | Campo | Significado |
 |---|---|
-| **Tasa de interés** | Tasa anual en porcentaje. Se usa para reportes y pagos recurrentes de deuda. |
-| **Pago mensual** | El pago periódico esperado. Se usa como valor por defecto al aplicar pagos recurrentes. |
-| **Categoría de pago vinculada** | La categoría a la que se cargan los intereses y comisiones del préstamo cuando registras un pago. |
+| **Tasa de interés** | Tasa anual en porcentaje. Se usa en reportes y pagos recurrentes de deuda. |
+| **Pago mensual** | El pago periódico esperado — se usa como valor por defecto al registrar pagos. |
+| **Categoría de pago vinculada** | La categoría donde se cargan los intereses y comisiones del préstamo cuando registras un pago. |
 
-Al crear un préstamo, puedes vincularlo a una **categoría existente** o pedir a savr que **cree una categoría nueva** (y opcionalmente la coloque en un grupo nuevo, como "Deuda"). Esto mantiene los intereses visibles en tu presupuesto sin configuración manual.
+Al crear un préstamo, puedes vincularlo a una **categoría existente** o pedir a savr que **cree una categoría nueva** (y opcionalmente la coloque en un grupo nuevo, como "Deuda"). De cualquier forma, los intereses caen en tu presupuesto como cualquier otro gasto — visibles, reales, planeados.
 
-Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](../transactions/#pagos-de-deuda).
+Para registrar pagos de préstamo con desglose de capital, intereses y comisiones, consulta [Pagos de deuda](../transactions/#pagos-de-deuda). Para pagos mensuales que se ejecutan en calendario, consulta [Pagos de deuda recurrentes](../recurring/#pagos-de-deuda-recurrentes).
+
+> **Pro tip:** Cuando el préstamo esté pagado, [cierra la cuenta](#cerrar-una-cuenta) en lugar de eliminarla. El historial es parte de tu historia — querrás mirar atrás y ver el día que esa hipoteca llegó a cero.
 
 ---
 
@@ -67,7 +71,13 @@ Para registrar pagos de préstamo con desglose de capital, intereses y comisione
 
 ### Editar una cuenta
 
-Haz clic en la fila de la cuenta para abrir su editor. Puedes cambiar el nombre, el tipo y (para préstamos) la tasa de interés y el pago mensual. El saldo inicial se establece al crear — para ajustar saldos históricos, edita o agrega una transacción.
+Haz clic en la fila de la cuenta para abrir su editor. Puedes cambiar:
+
+- El nombre
+- El tipo
+- (Para préstamos) la tasa de interés y el pago mensual
+
+El saldo inicial se establece al crear. Para ajustar saldos históricos, edita o agrega una transacción directamente.
 
 ### Cerrar una cuenta
 
@@ -76,18 +86,38 @@ Cuando termines de usar una cuenta pero quieras conservar su historial:
 1. Abre la vista de detalle de la cuenta.
 2. Haz clic en **Cerrar**.
 
-Las cuentas cerradas se ocultan de la lista principal y no aparecen en los selectores de transacción, pero todas las transacciones se conservan. Es la opción correcta para tarjetas de crédito liquidadas, inversiones vendidas y cuentas que ya no usas.
+Las cuentas cerradas se ocultan de la lista principal y no aparecen en los selectores de transacción, pero todas las transacciones se conservan. Es la opción correcta para tarjetas de crédito liquidadas, inversiones vendidas y cuentas en bancos que ya no usas.
 
 ### Reabrir una cuenta
 
-En la sección de cuentas cerradas de la página Cuentas, haz clic en **Reabrir** para regresarla. Todo el historial se preserva.
+En la sección de cuentas cerradas de la página Cuentas, haz clic en **Reabrir**. Todo regresa exactamente como lo dejaste.
 
 ### Eliminar una cuenta
 
 Solo puedes eliminar una cuenta de forma permanente si no tiene transacciones más allá del saldo inicial. Si necesitas eliminar una cuenta con actividad, tienes dos opciones:
 
 1. Eliminar o reasignar cada transacción primero, o
-2. Cerrar la cuenta — al cerrar, se preserva el historial.
+2. Cerrar la cuenta — al cerrar se preserva el historial.
+
+Cerrar es casi siempre lo que quieres. Eliminar es para cuando creaste una cuenta por error.
+
+---
+
+## Conciliación
+
+Cada cuenta tiene un botón **Conciliar** que te lleva paso a paso a hacer coincidir savr con el estado de cuenta de tu banco. Es el movimiento que detecta errores de captura, transacciones perdidas y el ocasional cobro doble del banco.
+
+Si el saldo de la cuenta en savr empieza a separarse de la realidad, corre una conciliación. Es la forma más limpia de ponerte al día.
+
+→ Guía completa: [Conciliación](../reconcile/)
+
+---
+
+## Importación CSV
+
+¿Tienes un año de transacciones en un CSV de tu banco? No las captures todas a mano. savr tiene un asistente de importación de tres pasos que maneja lo complicado (formatos de fecha, convenciones de signo, mapeo de columnas) por ti.
+
+→ Guía completa: [Importar y Exportar](../import-export/)
 
 ---
 
@@ -95,20 +125,22 @@ Solo puedes eliminar una cuenta de forma permanente si no tiene transacciones m�
 
 ### Agrupación por tipo
 
-Las cuentas se agrupan automáticamente por tipo. Cada grupo (Cheques, Ahorros, Tarjeta de Crédito, etc.) tiene un encabezado que muestra el saldo total del tipo.
+Las cuentas se agrupan automáticamente por tipo. Cada grupo (Cheques, Ahorros, Tarjeta de Crédito, etc.) tiene un encabezado que muestra el saldo total del tipo — útil para "¿cuánto efectivo tengo en realidad ahora mismo?" de un vistazo.
 
 ### Colapsar y expandir
 
-Haz clic en cualquier encabezado de grupo para colapsarlo. Úsalo para enfocarte en las cuentas con las que estás trabajando activamente.
+Haz clic en cualquier encabezado de grupo para colapsarlo. Úsalo para enfocarte en las cuentas con las que estás trabajando activamente. Los préstamos cerrados y las tarjetas que apenas tocas no necesitan saturar tu vista.
 
 ### Reordenar cuentas
 
 savr permite arrastrar y soltar en dos niveles:
 
-- **Dentro de un grupo** — arrastra cuentas individuales para cambiar su orden.
-- **Entre grupos** — arrastra el encabezado del grupo para cambiar el orden de los tipos.
+- **Dentro de un grupo** — arrastra cuentas individuales para cambiar su orden
+- **Entre grupos** — arrastra el encabezado del grupo para cambiar el orden de los tipos
 
 Tu orden se guarda automáticamente y persiste entre sesiones.
+
+> **Por ejemplo:** Tienes tres cuentas de cheques y siempre piensas en "BBVA Cheques" primero. Arrástrala al inicio del grupo Cheques. Ahora siempre es la primera al registrar una transacción.
 
 ---
 
@@ -117,17 +149,21 @@ Tu orden se guarda automáticamente y persiste entre sesiones.
 Haz clic en el nombre de una cuenta para abrir su página de detalle. Verás:
 
 - El saldo actual y los metadatos de la cuenta (tipo, saldo inicial, fecha de creación)
-- Todas las transacciones de esta cuenta, con los mismos filtros disponibles en la página principal de Transacciones
-- Un botón **Nueva Transacción** para registrar actividad directamente contra la cuenta
+- Todas las transacciones de esta cuenta, con los mismos filtros que la página principal de Transacciones
+- Un botón **Nueva Transacción** para registrar actividad directamente
+- Un botón **Conciliar** para coincidir con un estado de cuenta
+- Una opción **Importar CSV** para agregar transacciones en bloque
 
-Es la forma más rápida de conciliar una cuenta contra un estado de cuenta.
+Es la forma más rápida de conciliar contra un estado de cuenta físico o en línea, o de agregar varias transacciones de una sola cuenta seguidas.
 
 ---
 
 ## Saldos de cuenta explicados
 
-Los saldos se almacenan con dos decimales de precisión. Cada vez que creas, actualizas o eliminas una transacción, el saldo de la cuenta afectada se recalcula de forma atómica — así que el número en la página de Cuentas siempre coincide con la suma de su actividad.
+Los saldos se almacenan con dos decimales de precisión. Cada vez que creas, actualizas o eliminas una transacción, el saldo de la cuenta afectada se recalcula de forma atómica — así que el número en la página de Cuentas siempre coincide con la suma de su actividad. Sin discrepancias, sin "déjame cerrar y reabrir la app para refrescar."
 
 Las transferencias entre dos cuentas registran un par enlazado: un débito y un crédito. Ambas cuentas se actualizan juntas.
 
-Para tarjetas de crédito, el saldo refleja lo que debes (un número positivo significa que hay un saldo pendiente). Cuando registras un pago, transfiere dinero desde una cuenta de cheques a la cuenta de tarjeta — el saldo de la tarjeta baja, el de cheques baja, y tu patrimonio neto general no cambia.
+Para tarjetas de crédito, el saldo refleja lo que debes. Un saldo positivo significa que tienes un monto pendiente. Cuando registras un pago, transfiere dinero desde una cuenta de cheques a la cuenta de tarjeta — el saldo de la tarjeta baja, el de cheques baja, y tu patrimonio neto general no cambia.
+
+> **Escenario común:** Tu Banamex Platino muestra un saldo de $8,432. Lo pagas transfiriendo $8,432 desde Cheques. Ahora la Platino muestra $0 y Cheques tiene $8,432 menos. La transferencia es una acción en savr, dos transacciones enlazadas, cero matemática de tu lado.
