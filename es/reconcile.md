@@ -10,7 +10,7 @@ nav_order: 9
 
 Conciliar es el acto de decir: "el registro de savr de esta cuenta coincide con la realidad."
 
-Tomas tu estado de cuenta del banco (o el "saldo actual" en línea de tu banco), lo comparas con lo que savr cree que debería ser el saldo y resuelves cualquier diferencia. Cuando los números cuadran, marcas como conciliado y sigues con tu vida.
+Tomas tu extracto del banco (o el "saldo actual" en línea de tu banco), lo comparas con lo que savr cree que debería ser el saldo y resuelves cualquier diferencia. Cuando los números cuadran, marcas como conciliado y sigues con tu vida.
 
 Si nunca has conciliado — no te intimides. savr hace casi todo el trabajo. Tú solo estás haciendo clic en casillas hasta que dos números coincidan.
 
@@ -34,18 +34,18 @@ La recompensa por gastar dos minutos al mes por cuenta es confianza total en cad
 2. En la página de detalle, haz clic en **Conciliar**.
 3. Estás en la página de conciliación. Tres cosas que hacer:
 
-### Paso 1 — Ingresa el estado de cuenta
+### Paso 1 — Ingresa el extracto
 
 Arriba:
 
-- **Fecha del estado de cuenta** — la fecha en el estado de cuenta del banco (o solo hoy, si usas el saldo en línea en tiempo real)
-- **Saldo del estado de cuenta** — el saldo que el banco dice que tenía la cuenta en esa fecha
+- **Fecha del extracto** — la fecha en el extracto del banco (o solo hoy, si usas el saldo en línea en tiempo real)
+- **Saldo del extracto** — el saldo que el banco dice que tenía la cuenta en esa fecha
 
 Ingresa ambos. savr los guarda cuando termines.
 
 ### Paso 2 — Concilia las transacciones que coinciden
 
-Abajo, savr muestra una tabla de cada transacción no conciliada de la cuenta. Haz clic en filas (o usa las casillas) para marcar cuáles aparecen en el estado de cuenta.
+Abajo, savr muestra una tabla de cada transacción no conciliada de la cuenta. Haz clic en filas (o usa las casillas) para marcar cuáles aparecen en el extracto.
 
 Mientras haces clic, tres números se actualizan en la parte inferior de la página:
 
@@ -62,7 +62,7 @@ Cuando **Diferencia = $0** (o dentro de medio centavo), el botón **Finalizar** 
 Haz clic en **Finalizar**. savr:
 
 - Marca cada transacción seleccionada como conciliada y conciliada
-- Registra la fecha y saldo del estado de cuenta
+- Registra la fecha y saldo del extracto
 - Te regresa a la página de detalle de la cuenta
 
 Listo. La cuenta está conciliada.
@@ -75,18 +75,18 @@ Esta es la parte que hace que conciliar parezca aterrador. Es realmente la parte
 
 Si la **Diferencia** no es cero, algo está mal. O:
 
-- Una transacción está en tu estado de cuenta pero no en savr (transacción faltante)
-- Una transacción está en savr pero no en el estado de cuenta (transacción extra, o cuenta equivocada)
+- Una transacción está en tu extracto pero no en savr (transacción faltante)
+- Una transacción está en savr pero no en el extracto (transacción extra, o cuenta equivocada)
 - Una transacción tiene el monto equivocado en algún lado
 
-savr no auto-sugiere dónde está el problema — eso solo tú puedes resolverlo, porque depende de qué hay en tu estado de cuenta. Pero aquí está el flujo:
+savr no auto-sugiere dónde está el problema — eso solo tú puedes resolverlo, porque depende de qué hay en tu extracto. Pero aquí está el flujo:
 
 1. **Mira el tamaño de la diferencia.** Si son $43.21, probablemente buscas una sola transacción de $43.21.
-2. **Escanea tu estado de cuenta por transacciones que no marcaste.** ¿Algo en el estado de cuenta pero no en tu pantalla? Esa es la transacción faltante. Agrégala (abre una nueva pestaña y usa la página de Transacciones) y regresa.
-3. **Escanea tus transacciones marcadas por las que no estén en el estado de cuenta.** ¿Algo marcado pero no en el estado de cuenta? O no se ha publicado todavía (desmárcala e intenta de nuevo el siguiente mes) o no pertenece aquí (elimínala o corrígela).
+2. **Escanea tu extracto por transacciones que no marcaste.** ¿Algo en el extracto pero no en tu pantalla? Esa es la transacción faltante. Agrégala (abre una nueva pestaña y usa la página de Transacciones) y regresa.
+3. **Escanea tus transacciones marcadas por las que no estén en el extracto.** ¿Algo marcado pero no en el extracto? O no se ha publicado todavía (desmárcala e intenta de nuevo el siguiente mes) o no pertenece aquí (elimínala o corrígela).
 4. **Vigila errores de signo y de monto.** Un cargo de $51 capturado como $15 producirá una diferencia de $36. Un débito capturado como crédito producirá una diferencia de dos veces el monto (porque está mal por -$X y +$X).
 
-> **Escenario común:** Esperabas que la conciliación cuadrara y está a $25 de diferencia. Mirando el estado de cuenta, ves un retiro de cajero de $25 que olvidaste capturar. Abres una nueva pestaña, agregas la transacción, regresas a la página de conciliación (estará ahí esperando), marcas la transacción nueva, y la diferencia llega a cero. Haces clic en Finalizar.
+> **Escenario común:** Esperabas que la conciliación cuadrara y está a $25 de diferencia. Mirando el extracto, ves un retiro de cajero de $25 que olvidaste capturar. Abres una nueva pestaña, agregas la transacción, regresas a la página de conciliación (estará ahí esperando), marcas la transacción nueva, y la diferencia llega a cero. Haces clic en Finalizar.
 
 ---
 
@@ -94,42 +94,42 @@ savr no auto-sugiere dónde está el problema — eso solo tú puedes resolverlo
 
 Dos cadencias razonables:
 
-- **Mensual**, contra el estado de cuenta oficial del banco. A la antigua pero sólido. El estado de cuenta es autoritativo.
+- **Mensual**, contra el extracto oficial del banco. A la antigua pero sólido. El extracto es autoritativo.
 - **Semanal o quincenal**, contra el "saldo actual" en línea del banco. Retroalimentación más rápida, menos transacciones por sesión, problemas más pequeños si algo está mal.
 
 Elige la que sí vayas a hacer. Un hábito mensual que mantienes le gana a uno semanal que no.
 
-> **Pro tip:** Configura un recordatorio de calendario recurrente para el día después de que termine tu periodo de estado de cuenta. "Conciliar cheques" — máximo cinco minutos. Tu yo futuro se lo agradecerá a tu yo presente.
+> **Pro tip:** Configura un recordatorio de calendario recurrente para el día después de que termine tu periodo de extracto. "Conciliar cuenta corriente" — máximo cinco minutos. Tu yo futuro se lo agradecerá a tu yo presente.
 
 ---
 
 ## Conciliando tipos específicos de cuenta
 
-### Cheques y ahorros
+### Cuenta corriente y ahorros
 
-El pan y mantequilla de la conciliación. Hazla mensualmente contra el estado de cuenta. La mayoría de los meses cuadra al primer intento en menos de cinco minutos.
+El pan y mantequilla de la conciliación. Hazla mensualmente contra el extracto. La mayoría de los meses cuadra al primer intento en menos de cinco minutos.
 
 ### Tarjetas de crédito
 
-Mismo flujo que cheques. Nota que el saldo de una tarjeta de crédito es lo que debes (un número positivo). El saldo del estado de cuenta de la tarjeta es lo que te están facturando por ese periodo — que puede no coincidir con tu saldo actual, ya que has seguido gastando después de la fecha del estado de cuenta. Coincide contra el saldo del estado de cuenta para el periodo que cubre, ignorando transacciones después de esa fecha.
+Mismo flujo que cuenta corriente. Nota que el saldo de una tarjeta de crédito es lo que debes (un número positivo). El saldo del extracto de la tarjeta es lo que te están facturando por ese periodo — que puede no coincidir con tu saldo actual, ya que has seguido gastando después de la fecha del extracto. Coincide contra el saldo del extracto para el periodo que cubre, ignorando transacciones después de esa fecha.
 
 ### Efectivo
 
-El efectivo es difícil de conciliar porque no hay estado de cuenta. Mejor práctica: cuenta el efectivo en tu cartera, ingresa eso como el saldo del estado de cuenta y marca todas las transacciones que están en savr. Si no cuadra, olvidaste registrar un café por ahí. Agrégalo, finaliza, sigue.
+El efectivo es difícil de conciliar porque no hay extracto. Mejor práctica: cuenta el efectivo en tu cartera, ingresa eso como el saldo del extracto y marca todas las transacciones que están en savr. Si no cuadra, olvidaste registrar un café por ahí. Agrégalo, finaliza, sigue.
 
 ### Cuentas de inversión
 
-Los saldos de inversión se mueven diariamente con el valor de mercado. Conciliarlos contra un estado de cuenta es principalmente confirmar depósitos y retiros — los cambios impulsados por mercado son complicados de capturar transacción por transacción. Mucha gente solo actualiza el saldo inicial cada trimestre y no se molesta con conciliación completa.
+Los saldos de inversión se mueven diariamente con el valor de mercado. Conciliarlos contra un extracto es principalmente confirmar depósitos y retiros — los cambios impulsados por mercado son complicados de capturar transacción por transacción. Mucha gente solo actualiza el saldo inicial cada trimestre y no se molesta con conciliación completa.
 
 ### Préstamos
 
-Los préstamos típicamente tienen una sola transacción al mes (el pago) más acumulación de intereses. Si usas transacciones de [pago de deuda](../transactions/#pagos-de-deuda), el saldo debería seguir el estado de cuenta del prestamista de cerca. Concilia cuando el prestamista mande un estado de cuenta de fin de año, o cuando los números se sientan raros.
+Los préstamos típicamente tienen una sola transacción al mes (el pago) más acumulación de intereses. Si usas transacciones de [pago de deuda](../transactions/#pagos-de-deuda), el saldo debería seguir el extracto del prestamista de cerca. Concilia cuando el prestamista mande un extracto de fin de año, o cuando los números se sientan raros.
 
 ---
 
 ## Historial de conciliación
 
-Cada conciliación se registra contra la cuenta, incluyendo la fecha del estado de cuenta, el saldo y qué transacciones se marcaron. Las conciliaciones futuras se construyen encima — el "saldo previo del estado de cuenta" mostrado en la página de conciliación es la última terminada.
+Cada conciliación se registra contra la cuenta, incluyendo la fecha del extracto, el saldo y qué transacciones se marcaron. Las conciliaciones futuras se construyen encima — el "saldo previo del extracto" mostrado en la página de conciliación es la última terminada.
 
 No necesitas mirar el historial seguido. Solo está ahí para el registro.
 
@@ -137,7 +137,7 @@ No necesitas mirar el historial seguido. Solo está ahí para el registro.
 
 ## Consejos
 
-- **Concilia una cuenta a la vez.** No intentes conciliar cheques y ahorros al mismo tiempo — termina una antes de empezar la otra.
+- **Concilia una cuenta a la vez.** No intentes conciliar cuenta corriente y ahorros al mismo tiempo — termina una antes de empezar la otra.
 - **No fuerces un cuadre.** Si la diferencia es $0.34 y no la encuentras, no des clic en Finalizar de todas formas. El flujo de conciliación ni siquiera te dejará (Finalizar está deshabilitado hasta que la diferencia sea cero) — y eso es una característica. Encuentra el problema real. Casi siempre es una transacción real que necesita agregarse o corregirse.
 - **Una conciliación fallida es información.** Si no puedes llegar a cero, savr te está diciendo "tus registros y la realidad están desincronizados en algún lado." Ese es un problema que vale la pena arreglar ahora, no ignorar.
 - **La primera vez es la más difícil.** Si estás empezando una conciliación en una cuenta que no se ha conciliado en un año, tomará más de cinco minutos. Es normal. Después de la primera, es rápido.

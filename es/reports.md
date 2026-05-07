@@ -1,14 +1,14 @@
 ---
-title: Reportes
+title: Informes
 parent: Español
 nav_order: 8
 ---
 
 > 🌐 Read this page in [English](../../en/reports/)
 
-# Reportes
+# Informes
 
-La página de Reportes es donde el presupuesto deja de ser una tarea y empieza a ser interesante.
+La página de Informes es donde el presupuesto deja de ser una tarea y empieza a ser interesante.
 
 Son cuatro gráficas, actualizadas en vivo conforme registras transacciones, que responden las preguntas que has tenido silenciosamente por años:
 
@@ -17,7 +17,7 @@ Son cuatro gráficas, actualizadas en vivo conforme registras transacciones, que
 - "¿A quién le estoy dando más dinero?"
 - "¿Las cosas están mejorando o empeorando?"
 
-Abre **Reportes** desde la navegación. Elige un mes con los botones de anterior/siguiente arriba. Los cuatro reportes de abajo se actualizan para ese mes.
+Abre **Informes** desde la navegación. Elige un mes con los botones de anterior/siguiente arriba. Los cuatro informes de abajo se actualizan para ese mes.
 
 ---
 
@@ -101,23 +101,23 @@ Puedes navegar tan atrás como tengas datos. **Siguiente** se desactiva cuando l
 
 ---
 
-## Reportes vs. Presupuesto
+## Informes vs. Presupuesto
 
 Distinción rápida:
 
 | Página | Pregunta que responde |
 |---|---|
 | **Presupuesto** | "¿A dónde voy a gastar mi dinero este mes?" — hacia adelante |
-| **Reportes** | "¿A dónde gasté realmente mi dinero?" — hacia atrás |
+| **Informes** | "¿A dónde gasté realmente mi dinero?" — hacia atrás |
 
-Usarás Presupuesto más seguido (probablemente diario). Usarás Reportes menos pero sacarás más provecho (probablemente semanal o mensual). Se alimentan uno al otro: los reportes de este mes informan los objetivos de presupuesto del siguiente.
+Usarás Presupuesto más seguido (probablemente diario). Usarás Informes menos pero sacarás más provecho (probablemente semanal o mensual). Se alimentan uno al otro: los informes de este mes informan los objetivos de presupuesto del siguiente.
 
 ---
 
 ## Consejos
 
-- **No abras Reportes en los primeros días de un mes nuevo.** Un mes de dos días de antigüedad es una muestra de dos días. Espera una semana antes de sacar conclusiones.
+- **No abras Informes en los primeros días de un mes nuevo.** Un mes de dos días de antigüedad es una muestra de dos días. Espera una semana antes de sacar conclusiones.
 - **La línea de "tendencia" es más útil que el número de cualquier mes individual.** La varianza es normal. La dirección es significativa.
 - **Usa la dona para limpiar tus categorías.** Si una rebanada es "Otros" con 30% de tu gasto, tu estructura de categorías no está haciendo su trabajo. Agrega categorías reales y reasigna.
 - **Toma una captura de pantalla al final de cada mes.** Es sorprendentemente motivador mirar atrás seis meses de estas gráficas y ver tu línea de tendencia subiendo.
-- **No moralices.** Los reportes te muestran qué es, no qué debería ser. Úsalos como datos, no como juicio.
+- **No moralices.** Los informes te muestran qué es, no qué debería ser. Úsalos como datos, no como juicio.

@@ -21,16 +21,16 @@ Suena aburrido escrito así. En la práctica es sorprendentemente satisfactorio.
 | Elemento | Qué muestra |
 |---|---|
 | **Selector de mes / año** | Navega adelante o atrás por cualquier mes, pasado o futuro. Por defecto está el mes actual. |
-| **Por Asignar** | El número titular en la parte superior. Son ingresos que has recibido pero aún no tienen un trabajo. |
+| **Por presupuestar** | El número titular en la parte superior. Son ingresos que has recibido pero aún no tienen un trabajo. |
 | **Saldo total de cuentas** | Suma de todas tus cuentas activas, mostrado junto al presupuesto como contexto. |
 | **Grupos de categorías** | Agrupaciones colapsables. Cada grupo muestra métricas agregadas. |
-| **Filas de categoría** | Cada categoría muestra Asignado, Gastado y Disponible para el mes seleccionado. |
+| **Filas de categoría** | Cada categoría muestra Presupuestado, Gastado y Disponible para el mes seleccionado. |
 
 Cada fila de categoría tiene tres números:
 
-- **Asignado** — lo que has asignado este mes
+- **Presupuestado** — lo que has asignado este mes
 - **Gastado** — lo que realmente has gastado en esta categoría este mes
-- **Disponible** — `Asignado − Gastado`. El número que te importa.
+- **Disponible** — `Presupuestado − Gastado`. El número que te importa.
 
 Cuando **Disponible** se vuelve negativo, el valor se muestra en rojo. No es un regaño — es la señal de que debes mover dinero hacia ahí desde otra parte.
 
@@ -40,7 +40,7 @@ Cuando **Disponible** se vuelve negativo, el valor se muestra en rojo. No es un 
 
 Haz clic en una categoría. Escribe cuánto quieres gastar ahí este mes. Guarda. Repite.
 
-Cada asignación reduce **Por Asignar** en la misma cantidad. La matemática que estás haciendo es muy simple:
+Cada asignación reduce **Por presupuestar** en la misma cantidad. La matemática que estás haciendo es muy simple:
 
 > **Ingresos − Asignaciones = 0**
 
@@ -48,11 +48,11 @@ Cuando el lado derecho llega a cero, cada dólar tiene un trabajo y terminaste.
 
 ### Ejemplo trabajado
 
-Empiezas el mes con $3,200 en tu cuenta de cheques, todo ganado este mes. Por Asignar muestra $3,200.
+Empiezas el mes con $3,200 en tu cuenta corriente, todo ganado este mes. Por presupuestar muestra $3,200.
 
 Empiezas a hacer clic en categorías:
 
-| Categoría | Asignado | Por Asignar después |
+| Categoría | Presupuestado | Por presupuestar después |
 |---|---|---|
 | Renta | $1,400 | $1,800 |
 | Comida | $500 | $1,300 |
@@ -65,20 +65,20 @@ Empiezas a hacer clic en categorías:
 | Vacaciones | $200 | $110 |
 | Hobbies | $110 | $0 |
 
-Por Asignar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada dólar ya sabe para qué es.
+Por presupuestar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada dólar ya sabe para qué es.
 
-### Cómo afectan los tipos de transacción a Por Asignar
+### Cómo afectan los tipos de transacción a Por presupuestar
 
-Cómo afectan las transacciones a Por Asignar depende de su tipo:
+Cómo afectan las transacciones a Por presupuestar depende de su tipo:
 
-| Tipo de transacción | Efecto en Por Asignar |
+| Tipo de transacción | Efecto en Por presupuestar |
 |---|---|
-| **Ingreso** | Aumenta Por Asignar |
+| **Ingreso** | Aumenta Por presupuestar |
 | **Gasto** | Sin efecto directo (reduce Disponible de la categoría vía Gastado) |
-| **Reembolso** | Sin efecto en Por Asignar. Solo reduce el Gastado de la categoría. |
+| **Crédito** | Sin efecto en Por presupuestar. Solo reduce el Gastado de la categoría. |
 | **Transferencia** | Sin efecto — el dinero se mueve entre tus cuentas |
 
-> **Por qué Reembolso no se suma a Por Asignar:** Un reembolso cancela un gasto previo. Si compraste $80 de comida y devolviste $20, tu categoría debe reflejar $60 de gasto neto — no "$80 gastados + $20 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
+> **Por qué Crédito no se suma a Por presupuestar:** Un reembolso cancela un gasto previo. Si compraste $80 de comida y devolviste $20, tu categoría debe reflejar $60 de gasto neto — no "$80 gastados + $20 de ingreso nuevo para presupuestar." Crédito lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
 ---
 
@@ -93,7 +93,7 @@ Vas a excederte en algo cada mes. Restaurantes es clásico — sales un par de v
 3. Elige la categoría destino y el monto.
 4. Guarda.
 
-Ambas categorías ahora muestran la transferencia en su historial. Tu Por Asignar general sigue en cero. Nada está roto — solo ajustaste el plan.
+Ambas categorías ahora muestran la transferencia en su historial. Tu Por presupuestar general sigue en cero. Nada está roto — solo ajustaste el plan.
 
 > **Escenario común:** Presupuestaste $200 para Restaurantes y terminaste en $245. Disponible es -$45. Mueves $45 desde Hobbies (donde apenas has gastado) hacia Restaurantes. Ambas categorías se rebalancean. Presupuesto total sin cambios.
 
@@ -156,7 +156,7 @@ Un objetivo le dice a savr "esto es lo que quiero presupuestar para esta categor
 2. Haz clic en **Establecer objetivo**.
 3. Elige el tipo y monto.
 4. Para Personalizados, configura la fecha objetivo y (opcionalmente) intervalo de repetición.
-5. Para Mensuales, opcionalmente activa **Acumular** para que el saldo no usado pase al siguiente mes.
+5. Para Mensuales, opcionalmente activa **Arrastre** para que el saldo no usado pase al siguiente mes.
 
 ### Estado del objetivo
 
@@ -179,7 +179,7 @@ Abre el modal de objetivo de la categoría y haz clic en **Eliminar objetivo**. 
 Haz clic en cualquier categoría para abrir su panel de detalle. Verás:
 
 - **Historial de presupuesto** — cada asignación y transferencia de dinero de esta categoría, del más antiguo al más reciente. La pista de auditoría de cómo llegó esta categoría a donde está hoy.
-- **Desglose efectivo vs crédito** — gasto dividido entre cuentas tipo efectivo (cheques, ahorros, efectivo) y tarjetas de crédito. Útil cuando quieres saber "okay, ¿pero cuánto va a salir realmente de mi cuenta de cheques este mes?"
+- **Desglose efectivo vs crédito** — gasto dividido entre cuentas tipo efectivo (cuenta corriente, ahorros, efectivo) y tarjetas de crédito. Útil cuando quieres saber "okay, ¿pero cuánto va a salir realmente de mi cuenta corriente este mes?"
 - **Transacciones recientes** — vista rápida de lo que está moviendo el valor Gastado
 - **Estado del objetivo** — si hay objetivo configurado
 
@@ -196,7 +196,7 @@ En el historial aparecen dos tipos de entradas:
 
 ## Consejos de gente que sí hace esto
 
-- **Apunta a Por Asignar = 0.** Cualquier cosa en Por Asignar no tiene plan. Planéalo. Incluso "Cosas Futuras" es una categoría donde puedes estacionar dinero.
+- **Apunta a Por presupuestar = 0.** Cualquier cosa en Por presupuestar no tiene plan. Planéalo. Incluso "Cosas Futuras" es una categoría donde puedes estacionar dinero.
 - **No presupuestes dinero que no tienes.** Solo lo que ya está en tus cuentas puede asignarse. Los ingresos futuros se presupuestan el mes que llegan.
 - **Ajusta a mitad de mes sin culpa.** Sobregirar no es fracaso. Es información. Mueve dinero, sigue.
 - **Usa los objetivos con calma al inicio.** Acostúmbrate a la asignación manual un par de meses. Configurarás mejores objetivos cuando conozcas tus números reales.

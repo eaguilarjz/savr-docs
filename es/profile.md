@@ -12,7 +12,7 @@ La página de Perfil es donde administras tu información personal y cómo se ve
 
 Esta página cubre los temas personales del día a día. Para:
 
-- **Planes, prueba, facturación, facturas** → [Planes y Facturación](../billing/)
+- **Planes, prueba, facturación, facturas** → [Plan y Facturación](../billing/)
 - **Cambio de contraseña, autenticación de dos factores, códigos de recuperación** → [Seguridad](../security/)
 
 ---
@@ -48,7 +48,7 @@ Elige la apariencia de la app:
 | **Claro** | Modo claro sin importar la configuración de tu dispositivo |
 | **Oscuro** | Modo oscuro sin importar la configuración de tu dispositivo |
 
-Gráficas, tablas, formularios — todo respeta el tema. La página de Reportes en modo oscuro es particularmente satisfactoria de ver.
+Gráficas, tablas, formularios — todo respeta el tema. La página de Informes en modo oscuro es particularmente satisfactoria de ver.
 
 ### Zona horaria
 
@@ -86,7 +86,7 @@ Algunas cosas que a veces se esperan en una página de perfil viven en otro lado
 
 | Ajuste | Dónde encontrarlo |
 |---|---|
-| **Plan, estado de prueba, facturas, cancelación** | [Planes y Facturación](../billing/) |
+| **Plan, estado de prueba, facturas, cancelación** | [Plan y Facturación](../billing/) |
 | **Cambio de contraseña** | [Seguridad → Cambia tu contraseña](../security/#cambia-tu-contraseña) |
 | **Autenticación de dos factores** | [Seguridad → Autenticación de dos factores](../security/#autenticación-de-dos-factores-mfa) |
 | **Códigos de recuperación** | [Seguridad → Códigos de recuperación](../security/#códigos-de-recuperación) |

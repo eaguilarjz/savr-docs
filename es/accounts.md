@@ -20,11 +20,11 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 
 | Tipo | Úsalo para | Notas |
 |---|---|---|
-| **Cheques** | Gastos del día a día | Donde vive la mayoría de las transacciones |
-| **Ahorros** | Dinero apartado | Se trata como Cheques para fines de presupuesto |
+| **Cuenta corriente** | Gastos del día a día | Donde vive la mayoría de las transacciones |
+| **Ahorro** | Dinero apartado | Se trata como Cuenta corriente para fines de presupuesto |
 | **Tarjeta de Crédito** | Tarjetas de crédito | Gastar aquí no reduce una cuenta de efectivo; registra los pagos como Transferencias |
 | **Efectivo** | Efectivo en mano | Dinero de bolsillo, ese sobre en el cajón |
-| **Inversión** | Brokerage, retiro, cripto | Sigue el saldo; no está pensado para detalle por operación |
+| **Inversiones** | Brokerage, retiro, cripto | Sigue el saldo; no está pensado para detalle por operación |
 | **Préstamo** | Hipotecas, créditos automotrices, créditos personales, créditos educativos | Tasa de interés, pago mensual, categoría de pago vinculada |
 
 > Los préstamos son especiales — consulta [Cuentas de préstamo](#cuentas-de-préstamo) abajo para el tratamiento completo.
@@ -35,7 +35,7 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 
 1. Abre **Cuentas** y haz clic en **Agregar Cuenta**.
 2. Ingresa:
-   - **Nombre** — cómo aparece en todo savr (p. ej. "Chase Cheques")
+   - **Nombre** — cómo aparece en todo savr (p. ej. "Chase Corriente")
    - **Tipo** — elige uno de los seis
    - **Saldo inicial** — lo que tiene la cuenta ahora mismo
 3. Para préstamos, completa los campos específicos.
@@ -43,7 +43,7 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 
 savr crea automáticamente una transacción de **Saldo Inicial** igual al monto que ingresaste. Está marcada de forma especial: establece el saldo de la cuenta pero no afecta tu presupuesto ni el gasto de las categorías.
 
-> **Por ejemplo:** Agregaste una cuenta de cheques con saldo inicial de $2,847.13. savr crea una transacción con esa fecha, marcada como Saldo Inicial, con ese monto. Tu cuenta muestra $2,847.13. Tu presupuesto no se afecta — ese dinero simplemente existe, listo para ser asignado.
+> **Por ejemplo:** Agregaste una cuenta corriente con saldo inicial de $2,847.13. savr crea una transacción con esa fecha, marcada como Saldo Inicial, con ese monto. Tu cuenta muestra $2,847.13. Tu presupuesto no se afecta — ese dinero simplemente existe, listo para ser asignado.
 
 ---
 
@@ -55,7 +55,7 @@ Al crear o editar un préstamo, puedes configurar:
 
 | Campo | Significado |
 |---|---|
-| **Tasa de interés** | Tasa anual en porcentaje. Se usa en reportes y pagos recurrentes de deuda. |
+| **Tasa de interés** | Tasa anual en porcentaje. Se usa en informes y pagos recurrentes de deuda. |
 | **Pago mensual** | El pago periódico esperado — se usa como valor por defecto al registrar pagos. |
 | **Categoría de pago vinculada** | La categoría donde se cargan los intereses y comisiones del préstamo cuando registras un pago. |
 
@@ -105,7 +105,7 @@ Cerrar es casi siempre lo que quieres. Eliminar es para cuando creaste una cuent
 
 ## Conciliación
 
-Cada cuenta tiene un botón **Conciliar** que te lleva paso a paso a hacer coincidir savr con el estado de cuenta de tu banco. Es el movimiento que detecta errores de captura, transacciones perdidas y el ocasional cobro doble del banco.
+Cada cuenta tiene un botón **Conciliar** que te lleva paso a paso a hacer coincidir savr con el extracto de tu banco. Es el movimiento que detecta errores de captura, transacciones perdidas y el ocasional cobro doble del banco.
 
 Si el saldo de la cuenta en savr empieza a separarse de la realidad, corre una conciliación. Es la forma más limpia de ponerte al día.
 
@@ -125,7 +125,7 @@ Si el saldo de la cuenta en savr empieza a separarse de la realidad, corre una c
 
 ### Agrupación por tipo
 
-Las cuentas se agrupan automáticamente por tipo. Cada grupo (Cheques, Ahorros, Tarjeta de Crédito, etc.) tiene un encabezado que muestra el saldo total del tipo — útil para "¿cuánto efectivo tengo en realidad ahora mismo?" de un vistazo.
+Las cuentas se agrupan automáticamente por tipo. Cada grupo (Cuenta corriente, Ahorro, Tarjeta de Crédito, etc.) tiene un encabezado que muestra el saldo total del tipo — útil para "¿cuánto efectivo tengo en realidad ahora mismo?" de un vistazo.
 
 ### Colapsar y expandir
 
@@ -140,7 +140,7 @@ savr permite arrastrar y soltar en dos niveles:
 
 Tu orden se guarda automáticamente y persiste entre sesiones.
 
-> **Por ejemplo:** Tienes tres cuentas de cheques y siempre piensas en "Chase Cheques" primero. Arrástrala al inicio del grupo Cheques. Ahora siempre es la primera al registrar una transacción.
+> **Por ejemplo:** Tienes tres cuentas corrientes y siempre piensas en "Chase Corriente" primero. Arrástrala al inicio del grupo Cuenta corriente. Ahora siempre es la primera al registrar una transacción.
 
 ---
 
@@ -151,10 +151,10 @@ Haz clic en el nombre de una cuenta para abrir su página de detalle. Verás:
 - El saldo actual y los metadatos de la cuenta (tipo, saldo inicial, fecha de creación)
 - Todas las transacciones de esta cuenta, con los mismos filtros que la página principal de Transacciones
 - Un botón **Nueva Transacción** para registrar actividad directamente
-- Un botón **Conciliar** para coincidir con un estado de cuenta
+- Un botón **Conciliar** para coincidir con un extracto
 - Una opción **Importar CSV** para agregar transacciones en bloque
 
-Es la forma más rápida de conciliar contra un estado de cuenta físico o en línea, o de agregar varias transacciones de una sola cuenta seguidas.
+Es la forma más rápida de conciliar contra un extracto físico o en línea, o de agregar varias transacciones de una sola cuenta seguidas.
 
 ---
 
@@ -164,6 +164,6 @@ Los saldos se almacenan con dos decimales de precisión. Cada vez que creas, act
 
 Las transferencias entre dos cuentas registran un par enlazado: un débito y un crédito. Ambas cuentas se actualizan juntas.
 
-Para tarjetas de crédito, el saldo refleja lo que debes. Un saldo positivo significa que tienes un monto pendiente. Cuando registras un pago, transfiere dinero desde una cuenta de cheques a la cuenta de tarjeta — el saldo de la tarjeta baja, el de cheques baja, y tu patrimonio neto general no cambia.
+Para tarjetas de crédito, el saldo refleja lo que debes. Un saldo positivo significa que tienes un monto pendiente. Cuando registras un pago, transfiere dinero desde una cuenta corriente a la cuenta de tarjeta — el saldo de la tarjeta baja, el de cuenta corriente baja, y tu patrimonio neto general no cambia.
 
-> **Escenario común:** Tu Chase Sapphire muestra un saldo de $843.21. La pagas transfiriendo $843.21 desde Cheques. Ahora la Sapphire muestra $0 y Cheques tiene $843.21 menos. La transferencia es una acción en savr, dos transacciones enlazadas, cero matemática de tu lado.
+> **Escenario común:** Tu Chase Sapphire muestra un saldo de $843.21. La pagas transfiriendo $843.21 desde Cuenta corriente. Ahora la Sapphire muestra $0 y Cuenta corriente tiene $843.21 menos. La transferencia es una acción en savr, dos transacciones enlazadas, cero matemática de tu lado.

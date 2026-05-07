@@ -1,12 +1,12 @@
 ---
-title: Planes y Facturación
+title: Plan y Facturación
 parent: Español
 nav_order: 12
 ---
 
 > 🌐 Read this page in [English](../../en/billing/)
 
-# Planes y Facturación
+# Plan y Facturación
 
 savr es un producto por suscripción. Tres planes, una meta directa: mantener las luces encendidas para seguir construyendo cosas que de verdad uses, dándote precios justos y transparentes sin patrones oscuros.
 
@@ -41,15 +41,15 @@ Tres opciones, mismas funciones. Elige la cadencia que te funcione:
 | **Trimestral** | Cargado cada tres meses | Un pequeño descuento a cambio de cobros menos frecuentes |
 | **Anual** | Cargado una vez al año | El mejor descuento; el mejor precio por mes |
 
-Los precios exactos aparecen en la [página de precios](https://savr.pro) y en la sección **Perfil → Planes y Facturación** de la app.
+Los precios exactos aparecen en la [página de precios](https://savr.pro) y en la sección **Perfil → Plan y Facturación** de la app.
 
-> **Un producto, un nivel.** Todos los planes obtienen la app completa — todos los tipos de cuenta, categorías ilimitadas, reportes, conciliación, importación/exportación CSV, MFA, acceso móvil, ambos idiomas, soporte de tema. Lo único que cambia entre planes es qué tan seguido te cobran y la tarifa por mes que viene con cada cadencia.
+> **Un producto, un nivel.** Todos los planes obtienen la app completa — todos los tipos de cuenta, categorías ilimitadas, informes, conciliación, importación/exportación CSV, MFA, acceso móvil, ambos idiomas, soporte de tema. Lo único que cambia entre planes es qué tan seguido te cobran y la tarifa por mes que viene con cada cadencia.
 
 ---
 
 ## Suscribirse
 
-1. Abre **Perfil → Planes y Facturación**.
+1. Abre **Perfil → Plan y Facturación**.
 2. Haz clic en el plan que quieres.
 3. savr abre el portal seguro de facturación en una nueva pestaña.
 4. Ingresa los datos de tu pago y confirma.
@@ -61,7 +61,7 @@ El primer cargo sucede de inmediato. Los cargos futuros suceden automáticamente
 
 ### Cambiar planes (subir o bajar)
 
-¿Quieres cambiar de Mensual a Anual para ahorrar? ¿O bajar de Anual a Mensual? Abre **Perfil → Planes y Facturación → Administrar Facturación**. El portal de facturación maneja los cambios de plan, incluyendo cualquier reembolso o cargo prorrateado.
+¿Quieres cambiar de Mensual a Anual para ahorrar? ¿O bajar de Anual a Mensual? Abre **Perfil → Plan y Facturación → Administrar Facturación**. El portal de facturación maneja los cambios de plan, incluyendo cualquier reembolso o cargo prorrateado.
 
 Puedes cambiar tan seguido como quieras. Sin penalización, sin llamada incómoda.
 
@@ -72,7 +72,7 @@ Puedes cambiar tan seguido como quieras. Sin penalización, sin llamada incómod
 savr usa un portal de facturación de terceros (potenciado por **LemonSqueezy**) para procesar pagos. Esto significa:
 
 - Los datos de tu tarjeta nunca tocan los servidores de savr — viven con el procesador de pagos, que se especializa en esto.
-- Cambios de plan, actualizaciones de método de pago y cancelaciones todos suceden en el mismo portal, accesible desde **Perfil → Planes y Facturación → Administrar Facturación**.
+- Cambios de plan, actualizaciones de método de pago y cancelaciones todos suceden en el mismo portal, accesible desde **Perfil → Plan y Facturación → Administrar Facturación**.
 - Los recibos y facturas vienen de LemonSqueezy por correo y también están disponibles en tu cuenta de savr (ver abajo).
 
 Si alguna vez has administrado una suscripción SaaS, el portal te resultará familiar.
@@ -81,7 +81,7 @@ Si alguna vez has administrado una suscripción SaaS, el portal te resultará fa
 
 ## Facturas y recibos
 
-Cada cargo genera una factura. Abre **Perfil → Planes y Facturación → Facturas** para ver tus últimas 24 facturas, incluyendo:
+Cada cargo genera una factura. Abre **Perfil → Plan y Facturación → Facturas** para ver tus últimas 24 facturas, incluyendo:
 
 - La fecha
 - El monto
@@ -98,7 +98,7 @@ Cada cargo genera una factura. Abre **Perfil → Planes y Facturación → Factu
 
 Preferimos saber por qué a hacerlo difícil. No hay llamada de retención, no hay laberinto de cinco pasos de "¿estás seguro?".
 
-1. Abre **Perfil → Planes y Facturación → Administrar Facturación**.
+1. Abre **Perfil → Plan y Facturación → Administrar Facturación**.
 2. En el portal de facturación, haz clic en **Cancelar suscripción**.
 3. Confirma.
 
@@ -127,7 +127,7 @@ A veces una tarjeta expira, se reemplaza o simplemente es declinada. Cuando pasa
 3. Recibirás un correo pidiendo que actualices tu método de pago.
 4. Si el problema no se resuelve, tu suscripción eventualmente se mueve a **Sin pagar** y el acceso se vuelve de solo lectura.
 
-Para arreglarlo: abre **Perfil → Planes y Facturación → Administrar Facturación** y actualiza tu tarjeta. El siguiente reintento será exitoso y tu suscripción se reactivará.
+Para arreglarlo: abre **Perfil → Plan y Facturación → Administrar Facturación** y actualiza tu tarjeta. El siguiente reintento será exitoso y tu suscripción se reactivará.
 
 > **Atención:** Si tienes un saldo pendiente, savr no te dejará eliminar tu cuenta hasta que el saldo se liquide. Esto es para evitar pérdida accidental de datos mientras la facturación está sin resolver. Liquida la cuenta (o contacta soporte si crees que es un error) y la opción de eliminar se reactiva.
 
@@ -153,5 +153,5 @@ Algunos escenarios menos comunes:
 - **Anual es el más barato.** Si confías en que estarás usando savr en un año (la mayoría de la gente lo está después de unos meses), anual ahorra dinero.
 - **Actualiza tu método de pago antes de que expire.** Una tarea de dos minutos antes de que la tarjeta llegue a su fecha de expiración te ahorra los días incómodos de cargos declinados.
 - **Cancelar ≠ eliminar.** Cancelar detiene la facturación. Tus datos se quedan. Eliminar tu cuenta es una acción separada (irreversible).
-- **Revisa Planes y Facturación una vez por trimestre.** Asegúrate de que tu plan sigue encajando y que tu método de pago está al día. Dos minutos, cuatro veces al año.
+- **Revisa Plan y Facturación una vez por trimestre.** Asegúrate de que tu plan sigue encajando y que tu método de pago está al día. Dos minutos, cuatro veces al año.
 - **Lee el correo recordatorio de la prueba.** Dos semanas antes de que termine tu prueba, recibirás un correo con la fecha y un enlace de un clic para suscribirte. Es un empujón útil — mucha gente lo usa como su momento de decisión.

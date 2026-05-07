@@ -10,7 +10,7 @@ nav_order: 4
 
 Las transacciones son los recibos de tu vida financiera. Cada dólar que se mueve — entra, sale, o se mueve lateralmente entre tus cuentas — recibe una transacción.
 
-savr usa las transacciones para mover todo lo demás: saldos de cuenta, gasto de categorías, el presupuesto, los reportes. Si las haces bien, el resto se cuida solo.
+savr usa las transacciones para mover todo lo demás: saldos de cuenta, gasto de categorías, el presupuesto, los informes. Si las haces bien, el resto se cuida solo.
 
 Puedes administrar transacciones desde la página **Transacciones** o directamente desde la vista de detalle de cualquier cuenta. Ambas funcionan igual.
 
@@ -22,12 +22,12 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 
 | Tipo | Efecto en la cuenta | Efecto en el presupuesto |
 |---|---|---|
-| **Ingreso** | Agrega dinero a la cuenta | Aumenta **Por Asignar** |
+| **Ingreso** | Agrega dinero a la cuenta | Aumenta **Por presupuestar** |
 | **Gasto** | Resta dinero de la cuenta | Aumenta el **Gastado** en la categoría elegida |
 | **Transferencia** | Mueve dinero entre dos de tus cuentas | Sin efecto — el dinero se queda dentro de tu patrimonio |
-| **Reembolso** | Regresa dinero a la cuenta | **Reduce** el Gastado en la categoría. **No** suma a Por Asignar. |
+| **Crédito** | Regresa dinero a la cuenta | **Reduce** el Gastado en la categoría. **No** suma a Por presupuestar. |
 
-> **Por qué Reembolso e Ingreso son distintos:** Un reembolso cancela un gasto previo. Tu categoría debe reflejar el costo neto (los $80 de la cuenta del super menos los $20 que devolviste), no "$80 gastados + $20 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
+> **Por qué Crédito e Ingreso son distintos:** Un reembolso cancela un gasto previo. Tu categoría debe reflejar el costo neto (los $80 de la cuenta del super menos los $20 que devolviste), no "$80 gastados + $20 de ingreso nuevo para presupuestar." Crédito lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
 ### Ejemplos rápidos
 
@@ -35,10 +35,10 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 |---|---|
 | Te pagó tu empleador | Ingreso |
 | Compraste comida | Gasto |
-| Devolviste una camisa de $30 | Reembolso (contra tu categoría Ropa) |
-| Pagaste la tarjeta de crédito desde cheques | Transferencia |
+| Devolviste una camisa de $30 | Crédito (contra tu categoría Ropa) |
+| Pagaste la tarjeta de crédito desde cuenta corriente | Transferencia |
 | Te llegó un cheque de $50 de cumpleaños de la abuela | Ingreso |
-| Te reembolsaron un vuelo cancelado | Reembolso (contra tu categoría Viajes) |
+| Te reembolsaron un vuelo cancelado | Crédito (contra tu categoría Viajes) |
 
 ---
 
@@ -46,25 +46,25 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 
 1. Abre **Transacciones** y haz clic en **Nueva Transacción** (o presiona el mismo botón en la página de detalle de una cuenta).
 2. Llena:
-   - **Tipo** — Ingreso, Gasto, Transferencia o Reembolso
+   - **Tipo** — Ingreso, Gasto, Transferencia o Crédito
    - **Cuenta** — qué cuenta afecta
    - **Monto** — siempre positivo; el tipo le dice a savr la dirección
    - **Fecha** — por defecto hoy
-   - **Categoría** — requerida para Gasto y Reembolso
+   - **Categoría** — requerida para Gasto y Crédito
    - **Beneficiario** — opcional, pero útil para análisis de gasto
    - **Memo** — notas opcionales
-   - **Conciliada** — actívalo si ya está conciliada con tu estado de cuenta
+   - **Compensada** — actívalo si ya está confirmada en tu extracto
 3. Haz clic en **Guardar**.
 
 ### Transferencias
 
 Para una Transferencia, savr pide tanto la cuenta **origen** como la cuenta **destino**. Crea un par enlazado de transacciones — un débito y un crédito — que siempre se mueven juntas. Si editas una, la otra se actualiza. Si eliminas una, la otra se va también.
 
-> **Por ejemplo:** Mueves $500 de Cheques a Ahorros. savr registra:
-> - Cheques: -$500 (Transferencia a Ahorros)
-> - Ahorros: +$500 (Transferencia desde Cheques)
+> **Por ejemplo:** Mueves $500 de Cuenta corriente a Ahorro. savr registra:
+> - Cuenta corriente: -$500 (Transferencia a Ahorro)
+> - Ahorro: +$500 (Transferencia desde Cuenta corriente)
 > 
-> Ambas transacciones comparten un emparejamiento interno. Tu patrimonio no cambia; el saldo de Cheques bajó, el de Ahorros subió.
+> Ambas transacciones comparten un emparejamiento interno. Tu patrimonio no cambia; el saldo de Cuenta corriente bajó, el de Ahorro subió.
 
 ---
 
@@ -100,16 +100,16 @@ Los pagos de deuda son un tipo especializado de transacción para abonar a una c
 Para registrar un pago de deuda:
 
 1. Abre **Nueva Transacción** y cambia a modo **Pago de Deuda**.
-2. Elige la **cuenta origen** (de dónde sale el dinero — usualmente cheques).
+2. Elige la **cuenta origen** (de dónde sale el dinero — usualmente cuenta corriente).
 3. Elige la **cuenta de préstamo** que se está pagando.
 4. Ingresa los montos de **capital**, **interés** y **comisiones**.
 5. Confirma la categoría de pago (por defecto, la vinculada al préstamo).
 6. Guarda.
 
-Tu saldo de cheques baja por el pago total, el saldo del préstamo baja por el capital, y los intereses más comisiones aparecen como gasto en la categoría de pago. Sin matemática mental.
+Tu saldo de cuenta corriente baja por el pago total, el saldo del préstamo baja por el capital, y los intereses más comisiones aparecen como gasto en la categoría de pago. Sin matemática mental.
 
 > **Ejemplo trabajado:** Tu pago hipotecario de $1,247 son $983 capital + $251 intereses + $13 comisiones. Registras el pago como Pago de Deuda:
-> - Cheques: -$1,247
+> - Cuenta corriente: -$1,247
 > - Saldo de la hipoteca: -$983
 > - Categoría Intereses Hipoteca, Gastado: +$264 (intereses + comisiones)
 > 
@@ -119,16 +119,16 @@ Para pagos en calendario, consulta [Pagos de deuda recurrentes](../recurring/#pa
 
 ---
 
-## Estado conciliada
+## Estado compensada
 
-Cada transacción tiene una bandera de **conciliada**. Es una forma simple de marcar transacciones confirmadas por tu banco — útil cuando estás haciendo coincidir tus registros con un estado de cuenta.
+Cada transacción tiene una bandera de **compensada**. Es una forma simple de marcar transacciones confirmadas por tu banco — útil cuando estás haciendo coincidir tus registros con un extracto.
 
 Dos flujos comunes:
 
-- Concilia contra un estado de cuenta una vez al mes, marcando cada línea conforme avanzas. (El flujo de [Conciliación](../reconcile/) de savr lo hace automáticamente — recomendado.)
-- Deja las transacciones recientes sin conciliar hasta que se publiquen del lado del banco.
+- Concilia contra un extracto una vez al mes, marcando cada línea conforme avanzas. (El flujo de [Conciliación](../reconcile/) de savr lo hace automáticamente — recomendado.)
+- Deja las transacciones recientes sin compensar hasta que se publiquen del lado del banco.
 
-La bandera de conciliada es solo informativa — no cambia los cálculos de saldo.
+La bandera de compensada es solo informativa — no cambia los cálculos de saldo.
 
 ---
 
@@ -151,7 +151,7 @@ La página de Transacciones tiene una barra de filtros en la parte superior para
 | **Cuenta** | Muestra las transacciones de una cuenta específica |
 | **Categoría** | Muestra las transacciones de una categoría específica |
 | **Beneficiario** | Muestra las transacciones de un beneficiario específico |
-| **Tipo** | Restringe a Ingreso, Gasto, Transferencia o Reembolso |
+| **Tipo** | Restringe a Ingreso, Gasto, Transferencia o Crédito |
 | **Rango de fechas** | Elige una fecha de inicio y fin |
 
 Los filtros se combinan con lógica **Y** — todas las restricciones aplican. Para limpiar, presiona el botón de reinicio o quítalos uno a uno.
@@ -188,7 +188,7 @@ La página de [Importar y Exportar](../import-export/) cubre el asistente de imp
 
 Cada cuenta tiene una página de detalle que muestra la misma lista de transacciones, restringida a solo esa cuenta. Úsala para:
 
-- Conciliar contra un estado de cuenta físico o en línea (o haz clic en **Conciliar** para el flujo guiado)
+- Conciliar contra un extracto físico o en línea (o haz clic en **Conciliar** para el flujo guiado)
 - Agregar varias transacciones para una cuenta rápidamente
 - Revisar la actividad en un periodo específico sin configurar filtros de cuenta
 

@@ -10,7 +10,7 @@ nav_order: 5
 
 Las categorías son las cubetas donde pones tu dinero. Comida. Renta. El Fondo de Vacaciones. El "compré una cafetera elaborada, por favor no me juzguen" fund.
 
-Cada transacción de Gasto y Reembolso vive en una categoría, y cada categoría vive dentro de un grupo de categorías. Elegir el nivel de detalle correcto es una de esas habilidades silenciosas que convierten un presupuesto mediocre en uno útil.
+Cada transacción de Gasto y Crédito vive en una categoría, y cada categoría vive dentro de un grupo de categorías. Elegir el nivel de detalle correcto es una de esas habilidades silenciosas que convierten un presupuesto mediocre en uno útil.
 
 ---
 
@@ -128,7 +128,7 @@ Es la forma más limpia de retirar una categoría que ya cumplió su propósito 
 
 Algunas cosas que vale saber sobre cómo se comportan las categorías:
 
-- El **Gasto** en una categoría es la suma de transacciones de Gasto menos cualquier transacción de Reembolso para el mes seleccionado.
+- El **Gasto** en una categoría es la suma de transacciones de Gasto menos cualquier transacción de Crédito para el mes seleccionado.
 - **Asignado** es lo que asignaste este mes — independiente del gasto.
 - **Disponible** = Asignado − Gastado. Cuando es negativo, la categoría está sobregirada.
 - Los **Objetivos** se pueden configurar en cualquier categoría para indicar cuánto quieres presupuestar. Potencian la auto-asignación y el atajo Llenar por Objetivos. Consulta [Presupuesto → Objetivos](../budget/#objetivos-también-llamados-metas).

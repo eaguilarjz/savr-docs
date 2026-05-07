@@ -37,7 +37,7 @@ También puedes configurar una **fecha de fin** opcional para detener una recurr
    - **Ingreso** — sueldo, regalía recurrente, esa transferencia regular de tu roomie
    - **Gasto** — cuenta recurrente, suscripción, membresía del gimnasio
    - **Transferencia** — movimiento automático entre dos de tus cuentas (p. ej. sueldo → ahorros)
-   - **Reembolso** — devolución o rebaja recurrente
+   - **Crédito** — devolución o rebaja recurrente
    - **Pago de Deuda** — pago de préstamo con desglose de capital/interés/comisiones
 3. Configura el calendario:
    - **Frecuencia**
@@ -57,7 +57,7 @@ La regla se guarda con una **siguiente fecha** igual a tu fecha de inicio. A par
 > - Tipo: Ingreso
 > - Frecuencia: Quincenal
 > - Fecha de inicio: este viernes
-> - Cuenta: Cheques
+> - Cuenta: Cuenta corriente
 > - Monto: $2,400
 > - Beneficiario: Acme Corp Nómina
 > 
@@ -71,7 +71,7 @@ Las reglas recurrentes soportan divisiones, igual que las transacciones puntuale
 
 Cuando la regla se ejecuta, la transacción resultante hereda las divisiones.
 
-> **Por ejemplo:** Tu sueldo tiene $1,800 a cuenta de cheques y $600 yendo a una sub-cuenta de ahorros. Configuras la regla de ingreso con dos divisiones — $1,800 a "Sueldo → Cheques" y $600 a "Sueldo → Ahorros." Cada periodo de pago, ambos aterrizan en sus lugares correctos.
+> **Por ejemplo:** Tu sueldo tiene $1,800 a cuenta corriente y $600 yendo a una sub-cuenta de ahorro. Configuras la regla de ingreso con dos divisiones — $1,800 a "Sueldo → Cuenta corriente" y $600 a "Sueldo → Ahorro." Cada periodo de pago, ambos aterrizan en sus lugares correctos.
 
 ---
 
@@ -79,7 +79,7 @@ Cuando la regla se ejecuta, la transacción resultante hereda las divisiones.
 
 Para pagos de préstamos, configura el tipo como **Pago de Deuda** y proporciona:
 
-- **Cuenta origen** — de dónde sale el dinero (típicamente Cheques)
+- **Cuenta origen** — de dónde sale el dinero (típicamente Cuenta corriente)
 - **Cuenta de préstamo** — el préstamo que se está pagando
 - **Capital** — monto que reduce el saldo del préstamo
 - **Interés** — monto registrado como gasto en la categoría de pago

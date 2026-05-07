@@ -21,7 +21,7 @@ savr maneja ambos con CSV — el formato confiable y universalmente soportado qu
 
 El asistente de importación vive en **Detalle de Cuenta → Importar CSV**. Es un flujo de tres pasos diseñado para manejar la realidad caótica de las exportaciones bancarias.
 
-> **Atención:** Las importaciones se hacen para una cuenta a la vez. Para traer un año de actividad de cheques, ahorros y una tarjeta de crédito, corre el asistente tres veces.
+> **Atención:** Las importaciones se hacen para una cuenta a la vez. Para traer un año de actividad de cuenta corriente, ahorros y una tarjeta de crédito, corre el asistente tres veces.
 
 ### Paso 1 — Subir y configurar
 
@@ -68,7 +68,7 @@ Haz clic en **Importar** para ejecutar. savr crea las transacciones nuevas, enla
 
 ## Ejemplo trabajado de importación
 
-Digamos que exportaste un año de actividad de tu banco como `chase-cheques-2024.csv`. Las primeras filas se ven así:
+Digamos que exportaste un año de actividad de tu banco como `chase-corriente-2024.csv`. Las primeras filas se ven así:
 
 ```
 Transaction Date,Description,Amount,Type
@@ -78,7 +78,7 @@ Transaction Date,Description,Amount,Type
 ...
 ```
 
-Inicias el asistente con **Cuenta = Chase Cheques** y subes el archivo. En el Paso 1:
+Inicias el asistente con **Cuenta = Chase Corriente** y subes el archivo. En el Paso 1:
 
 - Columna de fecha: `Transaction Date`, formato `mdy`
 - Columna de beneficiario: `Description`
@@ -90,7 +90,7 @@ La vista previa confirma que el primer sueldo aparece como +$2,400 ingreso, el c
 
 Paso 2 — savr no encuentra transacciones existentes con qué coincidir (es tu primera importación para esta cuenta). Creará todas las filas como nuevas.
 
-Paso 3 — savr dice que creará 247 transacciones totalizando $34,820 entrada y $32,108 salida. Haces clic en Importar. Unos segundos después, tu cuenta Chase Cheques tiene un año de historial.
+Paso 3 — savr dice que creará 247 transacciones totalizando $34,820 entrada y $32,108 salida. Haces clic en Importar. Unos segundos después, tu cuenta Chase Corriente tiene un año de historial.
 
 Querrás pasar unos minutos después de la importación:
 - Categorizando las transacciones nuevas (se importaron con categoría vacía — savr no adivina)
@@ -104,7 +104,7 @@ Ambos son más fáciles en bloque que transacción por transacción.
 
 Solo para fijar expectativas:
 
-- **No auto-categoriza.** savr no adivina que "COSTCO" va en Comida — tú asignas categorías. (Es una característica, no una limitación: un auto-categorizador entusiasmado se equivocará en formas sutiles y hará que tus reportes mientan.)
+- **No auto-categoriza.** savr no adivina que "COSTCO" va en Comida — tú asignas categorías. (Es una característica, no una limitación: un auto-categorizador entusiasmado se equivocará en formas sutiles y hará que tus informes mientan.)
 - **Solo maneja CSV.** Si tu banco solo ofrece OFX o QIF, necesitarás convertirlo primero (Excel, un convertidor CSV, o una plantilla de hoja de cálculo).
 - **Importa una cuenta a la vez.** Sin CSVs multi-cuenta.
 - **No es "sincronización en vivo" con tu banco.** savr intencionalmente no es un screen-scraper o agregador de open-banking. Tú decides cuándo importar. Tú mantienes control sobre qué se registra.
@@ -117,12 +117,12 @@ Cada vista de lista en savr tiene una exportación CSV. Haz clic en el botón de
 
 | Exportación | Qué obtienes |
 |---|---|
-| **Transacciones** | Fecha, Cuenta, Beneficiario, Categoría, Memo, Salida, Entrada, Conciliada — una fila por transacción (las divisiones se expanden a una fila por división) |
+| **Transacciones** | Fecha, Cuenta, Beneficiario, Categoría, Memo, Salida, Entrada, Compensada, Conciliada — una fila por transacción (las divisiones se expanden a una fila por división) |
 | **Cuentas** | Nombre, Tipo, Saldo, Bandera Cerrada |
 | **Categorías** | Grupo, Categoría, Bandera Oculta |
 | **Beneficiarios** | Nombre |
 
-La exportación de transacciones es la grande. Abre limpia en cualquier app de hoja de cálculo, y es la base para cualquier análisis que la página de [Reportes](../reports/) de savr no cubra.
+La exportación de transacciones es la grande. Abre limpia en cualquier app de hoja de cálculo, y es la base para cualquier análisis que la página de [Informes](../reports/) de savr no cubra.
 
 > **Por ejemplo:** ¿Quieres ver tu gasto por categoría desglosado trimestre por trimestre? Exporta transacciones, abre en tu hoja de cálculo favorita, tabla dinámica por categoría y trimestre, listo. La exportación es todo lo que necesitas.
 

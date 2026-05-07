@@ -20,17 +20,17 @@ Si apenas empiezas, ve a [Primeros pasos](getting-started/). Si ya conoces savr 
 | Guía | Qué cubre |
 |---|---|
 | [Primeros pasos](getting-started/) | Registro, prueba gratuita de 90 días, asistente de configuración, conceptos clave, primer mes |
-| [Presupuesto](budget/) | Asignar dinero, Por Asignar, estrategias de auto-asignación, objetivos, mover dinero |
+| [Presupuesto](budget/) | Asignar dinero, Por presupuestar, estrategias de auto-asignación, objetivos, mover dinero |
 | [Cuentas](accounts/) | Seis tipos de cuenta, préstamos con seguimiento de interés, cerrar/reabrir, reordenar |
-| [Transacciones](transactions/) | Ingreso, Gasto, Transferencia, Reembolso, divisiones, pagos de deuda, filtros |
+| [Transacciones](transactions/) | Ingreso, Gasto, Transferencia, Crédito, divisiones, pagos de deuda, filtros |
 | [Categorías](categories/) | Grupos, plantillas, reordenar, ocultar, eliminar con reasignación |
 | [Recurrentes](recurring/) | Cinco frecuencias, divisiones, pagos de deuda recurrentes, aplicar vencimientos |
 | [Beneficiarios](payees/) | Crear, renombrar, fusionar, eliminar con reasignación |
-| [Reportes](reports/) | Tendencias mensuales, ahorros netos, gastos por categoría, beneficiarios principales |
-| [Conciliación](reconcile/) | Hacer coincidir savr con tu estado de cuenta, encontrar discrepancias |
+| [Informes](reports/) | Tendencias mensuales, ahorros netos, gastos por categoría, beneficiarios principales |
+| [Conciliación](reconcile/) | Hacer coincidir savr con tu extracto, encontrar discrepancias |
 | [Importar y Exportar](import-export/) | Asistente de importación CSV, exportaciones de transacciones, cuentas, categorías, beneficiarios |
 | [Perfil y Ajustes](profile/) | Nombre, idioma, tema, zona horaria, moneda |
-| [Planes y Facturación](billing/) | Prueba, planes, facturas, cancelación, fallos de pago |
+| [Plan y Facturación](billing/) | Prueba, planes, facturas, cancelación, fallos de pago |
 | [Seguridad](security/) | Autenticación de dos factores, códigos de recuperación, cambio de contraseña, sesiones |
 
 ---
