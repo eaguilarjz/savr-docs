@@ -156,7 +156,7 @@ La página de Transacciones tiene una barra de filtros en la parte superior para
 
 Los filtros se combinan con lógica **Y** — todas las restricciones aplican. Para limpiar, presiona el botón de reinicio o quítalos uno a uno.
 
-> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Whole Foods" este año? Filtra Beneficiario = Whole Foods, Tipo = Gasto, Rango de fechas = enero 1 a hoy. Ahí está tu número.
+> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Costco" este año? Filtra Beneficiario = Costco, Tipo = Gasto, Rango de fechas = enero 1 a hoy. Ahí está tu número.
 
 ---
 

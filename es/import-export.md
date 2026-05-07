@@ -72,7 +72,7 @@ Digamos que exportaste un año de actividad de tu banco como `chase-cheques-2024
 
 ```
 Transaction Date,Description,Amount,Type
-01/02/2024,WHOLE FOODS MARKET 2374,-87.43,DEBIT
+01/02/2024,COSTCO WHSE #1234,-87.43,DEBIT
 01/03/2024,DIRECT DEPOSIT ACME CORP,2400.00,CREDIT
 01/05/2024,STARBUCKS #4112,-6.75,DEBIT
 ...
@@ -86,7 +86,7 @@ Inicias el asistente con **Cuenta = Chase Cheques** y subes el archivo. En el Pa
 - Decimal: `.`, Miles: `,`
 - Signo: positivo = entrada
 
-La vista previa confirma que el primer sueldo aparece como +$2,400 ingreso, el cargo de Whole Foods como -$87.43 gasto. Se ve bien.
+La vista previa confirma que el primer sueldo aparece como +$2,400 ingreso, el cargo de Costco como -$87.43 gasto. Se ve bien.
 
 Paso 2 — savr no encuentra transacciones existentes con qué coincidir (es tu primera importación para esta cuenta). Creará todas las filas como nuevas.
 

@@ -89,7 +89,7 @@ Esta es la gráfica que produce esos momentos de "espera, ¿*tanto* en Amazon??"
 
 Las transacciones de ingreso se excluyen — esto es sobre a dónde se fue tu dinero, no de dónde vino.
 
-> **Por ejemplo:** Whole Foods es tu beneficiario #1 con $487. Trader Joe's es #4 con $108. Gasto total en supermercado entre ambos: $595, que es $95 sobre tu presupuesto de Comida de $500. La gráfica no presupuestó por ti, pero te mostró la verdad — rápido.
+> **Por ejemplo:** Costco es tu beneficiario #1 con $487. Walmart es #4 con $108. Gasto total en supermercado entre ambos: $595, que es $95 sobre tu presupuesto de Comida de $500. La gráfica no presupuestó por ti, pero te mostró la verdad — rápido.
 
 ---
 
