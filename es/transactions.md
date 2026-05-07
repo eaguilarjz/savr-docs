@@ -8,7 +8,7 @@ nav_order: 4
 
 # Transacciones
 
-Las transacciones son los recibos de tu vida financiera. Cada peso que se mueve — entra, sale, o se mueve lateralmente entre tus cuentas — recibe una transacción.
+Las transacciones son los recibos de tu vida financiera. Cada dólar que se mueve — entra, sale, o se mueve lateralmente entre tus cuentas — recibe una transacción.
 
 savr usa las transacciones para mover todo lo demás: saldos de cuenta, gasto de categorías, el presupuesto, los reportes. Si las haces bien, el resto se cuida solo.
 
@@ -27,7 +27,7 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 | **Transferencia** | Mueve dinero entre dos de tus cuentas | Sin efecto — el dinero se queda dentro de tu patrimonio |
 | **Reembolso** | Regresa dinero a la cuenta | **Reduce** el Gastado en la categoría. **No** suma a Por Asignar. |
 
-> **Por qué Reembolso e Ingreso son distintos:** Un reembolso cancela un gasto previo. Tu categoría debe reflejar el costo neto (los $800 de la cuenta del super menos los $200 que devolviste), no "$800 gastados + $200 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
+> **Por qué Reembolso e Ingreso son distintos:** Un reembolso cancela un gasto previo. Tu categoría debe reflejar el costo neto (los $80 de la cuenta del super menos los $20 que devolviste), no "$80 gastados + $20 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
 ### Ejemplos rápidos
 
@@ -35,9 +35,9 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 |---|---|
 | Te pagó tu empleador | Ingreso |
 | Compraste comida | Gasto |
-| Devolviste una camisa de $300 | Reembolso (contra tu categoría Ropa) |
+| Devolviste una camisa de $30 | Reembolso (contra tu categoría Ropa) |
 | Pagaste la tarjeta de crédito desde cheques | Transferencia |
-| Te llegó un cheque de $500 de cumpleaños de la abuela | Ingreso |
+| Te llegó un cheque de $50 de cumpleaños de la abuela | Ingreso |
 | Te reembolsaron un vuelo cancelado | Reembolso (contra tu categoría Viajes) |
 
 ---
@@ -60,9 +60,9 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 
 Para una Transferencia, savr pide tanto la cuenta **origen** como la cuenta **destino**. Crea un par enlazado de transacciones — un débito y un crédito — que siempre se mueven juntas. Si editas una, la otra se actualiza. Si eliminas una, la otra se va también.
 
-> **Por ejemplo:** Mueves $5,000 de Cheques a Ahorros. savr registra:
-> - Cheques: -$5,000 (Transferencia a Ahorros)
-> - Ahorros: +$5,000 (Transferencia desde Cheques)
+> **Por ejemplo:** Mueves $500 de Cheques a Ahorros. savr registra:
+> - Cheques: -$500 (Transferencia a Ahorros)
+> - Ahorros: +$500 (Transferencia desde Cheques)
 > 
 > Ambas transacciones comparten un emparejamiento interno. Tu patrimonio no cambia; el saldo de Cheques bajó, el de Ahorros subió.
 
@@ -81,7 +81,7 @@ Para dividir:
    - **Memo** (opcional)
 3. La suma de las divisiones debe coincidir con el monto total de la transacción.
 
-> **Ejemplo trabajado:** Visita a Costco, $874.30 total. De eso, $540 fueron comida y $334.30 artículos de hogar (productos de limpieza, foco, esa cosa para el gato). Una transacción, dos divisiones, dos categorías. savr muestra el monto correcto en cada categoría.
+> **Ejemplo trabajado:** Visita a Target, $87.43 total. De eso, $54 fueron comida y $33.43 artículos de hogar (productos de limpieza, foco, esa cosa para el gato). Una transacción, dos divisiones, dos categorías. savr muestra el monto correcto en cada categoría.
 
 Puedes tener tantas divisiones como necesites. Quita una división eliminando su fila — si solo queda una, savr convierte la transacción de regreso a una transacción normal (no dividida).
 
@@ -108,10 +108,10 @@ Para registrar un pago de deuda:
 
 Tu saldo de cheques baja por el pago total, el saldo del préstamo baja por el capital, y los intereses más comisiones aparecen como gasto en la categoría de pago. Sin matemática mental.
 
-> **Ejemplo trabajado:** Tu pago hipotecario de $12,470 son $9,830 capital + $2,510 intereses + $130 comisiones. Registras el pago como Pago de Deuda:
-> - Cheques: -$12,470
-> - Saldo de la hipoteca: -$9,830
-> - Categoría Intereses Hipoteca, Gastado: +$2,640 (intereses + comisiones)
+> **Ejemplo trabajado:** Tu pago hipotecario de $1,247 son $983 capital + $251 intereses + $13 comisiones. Registras el pago como Pago de Deuda:
+> - Cheques: -$1,247
+> - Saldo de la hipoteca: -$983
+> - Categoría Intereses Hipoteca, Gastado: +$264 (intereses + comisiones)
 > 
 > El siguiente mes el capital sube un poquito y los intereses bajan. savr captura esto fielmente sin que rehagas la matemática.
 
@@ -156,7 +156,7 @@ La página de Transacciones tiene una barra de filtros en la parte superior para
 
 Los filtros se combinan con lógica **Y** — todas las restricciones aplican. Para limpiar, presiona el botón de reinicio o quítalos uno a uno.
 
-> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Costco" este año? Filtra Beneficiario = Costco, Tipo = Gasto, Rango de fechas = enero 1 a hoy. Ahí está tu número.
+> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Whole Foods" este año? Filtra Beneficiario = Whole Foods, Tipo = Gasto, Rango de fechas = enero 1 a hoy. Ahí está tu número.
 
 ---
 

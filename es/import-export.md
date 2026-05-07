@@ -68,29 +68,29 @@ Haz clic en **Importar** para ejecutar. savr crea las transacciones nuevas, enla
 
 ## Ejemplo trabajado de importación
 
-Digamos que exportaste un año de actividad de tu banco como `bbva-cheques-2024.csv`. Las primeras filas se ven así:
+Digamos que exportaste un año de actividad de tu banco como `chase-cheques-2024.csv`. Las primeras filas se ven así:
 
 ```
-Fecha,Descripción,Monto,Tipo
-01/02/2024,COSTCO MEXICO 2374,-874.30,DEBITO
-01/03/2024,DEPOSITO ACME CORP NOMINA,24000.00,CREDITO
-01/05/2024,STARBUCKS #4112,-67.50,DEBITO
+Transaction Date,Description,Amount,Type
+01/02/2024,WHOLE FOODS MARKET 2374,-87.43,DEBIT
+01/03/2024,DIRECT DEPOSIT ACME CORP,2400.00,CREDIT
+01/05/2024,STARBUCKS #4112,-6.75,DEBIT
 ...
 ```
 
-Inicias el asistente con **Cuenta = BBVA Cheques** y subes el archivo. En el Paso 1:
+Inicias el asistente con **Cuenta = Chase Cheques** y subes el archivo. En el Paso 1:
 
-- Columna de fecha: `Fecha`, formato `dmy`
-- Columna de beneficiario: `Descripción`
-- Columna de monto: `Monto` (una sola columna signada)
+- Columna de fecha: `Transaction Date`, formato `mdy`
+- Columna de beneficiario: `Description`
+- Columna de monto: `Amount` (una sola columna signada)
 - Decimal: `.`, Miles: `,`
 - Signo: positivo = entrada
 
-La vista previa confirma que el primer sueldo aparece como +$24,000 ingreso, el cargo de Costco como -$874.30 gasto. Se ve bien.
+La vista previa confirma que el primer sueldo aparece como +$2,400 ingreso, el cargo de Whole Foods como -$87.43 gasto. Se ve bien.
 
 Paso 2 — savr no encuentra transacciones existentes con qué coincidir (es tu primera importación para esta cuenta). Creará todas las filas como nuevas.
 
-Paso 3 — savr dice que creará 247 transacciones totalizando $348,200 entrada y $321,080 salida. Haces clic en Importar. Unos segundos después, tu cuenta BBVA Cheques tiene un año de historial.
+Paso 3 — savr dice que creará 247 transacciones totalizando $34,820 entrada y $32,108 salida. Haces clic en Importar. Unos segundos después, tu cuenta Chase Cheques tiene un año de historial.
 
 Querrás pasar unos minutos después de la importación:
 - Categorizando las transacciones nuevas (se importaron con categoría vacía — savr no adivina)

@@ -9,7 +9,7 @@ permalink: /es/
 
 # Documentación de savr
 
-Bienvenido. savr es una aplicación de presupuesto de base cero — a cada peso le das un trabajo antes de gastarlo — diseñada para ser el tipo de herramienta que sigues usando seis meses después. Esta guía cubre todo lo que necesitas para configurar tus cuentas, construir un presupuesto real y aprovechar las funciones de savr con confianza.
+Bienvenido. savr es una aplicación de presupuesto de base cero — a cada dólar le das un trabajo antes de gastarlo — diseñada para ser el tipo de herramienta que sigues usando seis meses después. Esta guía cubre todo lo que necesitas para configurar tus cuentas, construir un presupuesto real y aprovechar las funciones de savr con confianza.
 
 Si apenas empiezas, ve a [Primeros pasos](getting-started/). Si ya conoces savr y solo vienes a buscar algo específico, la tabla de abajo es tu amiga.
 
@@ -37,7 +37,7 @@ Si apenas empiezas, ve a [Primeros pasos](getting-started/). Si ya conoces savr 
 
 ## El método de presupuesto de base cero
 
-La idea central: **ingresos menos egresos es igual a cero**. Cada peso que ganas se asigna a una categoría — comida, renta, ahorros, entretenimiento — hasta que no queda nada sin asignar. Cuando gastas, el saldo de la categoría disminuye. Si te excedes, mueves dinero de otra parte.
+La idea central: **ingresos menos egresos es igual a cero**. Cada dólar que ganas se asigna a una categoría — comida, renta, ahorros, entretenimiento — hasta que no queda nada sin asignar. Cuando gastas, el saldo de la categoría disminuye. Si te excedes, mueves dinero de otra parte.
 
 Funciona porque te obliga a tomar decisiones de gasto con anticipación, no después del hecho. El resultado: en todo momento sabes exactamente qué tienes disponible para todo lo que te importa.
 

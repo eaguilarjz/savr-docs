@@ -35,7 +35,7 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 
 1. Abre **Cuentas** y haz clic en **Agregar Cuenta**.
 2. Ingresa:
-   - **Nombre** — cómo aparece en todo savr (p. ej. "BBVA Cheques")
+   - **Nombre** — cómo aparece en todo savr (p. ej. "Chase Cheques")
    - **Tipo** — elige uno de los seis
    - **Saldo inicial** — lo que tiene la cuenta ahora mismo
 3. Para préstamos, completa los campos específicos.
@@ -43,7 +43,7 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 
 savr crea automáticamente una transacción de **Saldo Inicial** igual al monto que ingresaste. Está marcada de forma especial: establece el saldo de la cuenta pero no afecta tu presupuesto ni el gasto de las categorías.
 
-> **Por ejemplo:** Agregaste una cuenta de cheques con saldo inicial de $34,847.13. savr crea una transacción con esa fecha, marcada como Saldo Inicial, con ese monto. Tu cuenta muestra $34,847.13. Tu presupuesto no se afecta — ese dinero simplemente existe, listo para ser asignado.
+> **Por ejemplo:** Agregaste una cuenta de cheques con saldo inicial de $2,847.13. savr crea una transacción con esa fecha, marcada como Saldo Inicial, con ese monto. Tu cuenta muestra $2,847.13. Tu presupuesto no se afecta — ese dinero simplemente existe, listo para ser asignado.
 
 ---
 
@@ -140,7 +140,7 @@ savr permite arrastrar y soltar en dos niveles:
 
 Tu orden se guarda automáticamente y persiste entre sesiones.
 
-> **Por ejemplo:** Tienes tres cuentas de cheques y siempre piensas en "BBVA Cheques" primero. Arrástrala al inicio del grupo Cheques. Ahora siempre es la primera al registrar una transacción.
+> **Por ejemplo:** Tienes tres cuentas de cheques y siempre piensas en "Chase Cheques" primero. Arrástrala al inicio del grupo Cheques. Ahora siempre es la primera al registrar una transacción.
 
 ---
 
@@ -166,4 +166,4 @@ Las transferencias entre dos cuentas registran un par enlazado: un débito y un 
 
 Para tarjetas de crédito, el saldo refleja lo que debes. Un saldo positivo significa que tienes un monto pendiente. Cuando registras un pago, transfiere dinero desde una cuenta de cheques a la cuenta de tarjeta — el saldo de la tarjeta baja, el de cheques baja, y tu patrimonio neto general no cambia.
 
-> **Escenario común:** Tu Banamex Platino muestra un saldo de $8,432. Lo pagas transfiriendo $8,432 desde Cheques. Ahora la Platino muestra $0 y Cheques tiene $8,432 menos. La transferencia es una acción en savr, dos transacciones enlazadas, cero matemática de tu lado.
+> **Escenario común:** Tu Chase Sapphire muestra un saldo de $843.21. La pagas transfiriendo $843.21 desde Cheques. Ahora la Sapphire muestra $0 y Cheques tiene $843.21 menos. La transferencia es una acción en savr, dos transacciones enlazadas, cero matemática de tu lado.

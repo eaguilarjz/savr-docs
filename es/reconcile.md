@@ -20,7 +20,7 @@ Si nunca has conciliado — no te intimides. savr hace casi todo el trabajo. Tú
 
 Tres razones:
 
-1. **Atrapar tus propios errores de captura.** Escribiste $510 en lugar de $150. Pasa. La conciliación los saca a la luz en el momento que rompen la matemática.
+1. **Atrapar tus propios errores de captura.** Escribiste $51 en lugar de $15. Pasa. La conciliación los saca a la luz en el momento que rompen la matemática.
 2. **Atrapar errores del banco.** Raros pero reales. Un cargo duplicado, un crédito olvidado, una comisión que no sabías — aparecen cuando el número de savr difiere del banco.
 3. **Construir confianza en tus propios datos.** Cuando el saldo en savr es el saldo real de tu cuenta, dejas de hedgear tus decisiones con "bueno, más o menos."
 
@@ -81,12 +81,12 @@ Si la **Diferencia** no es cero, algo está mal. O:
 
 savr no auto-sugiere dónde está el problema — eso solo tú puedes resolverlo, porque depende de qué hay en tu estado de cuenta. Pero aquí está el flujo:
 
-1. **Mira el tamaño de la diferencia.** Si son $432.10, probablemente buscas una sola transacción de $432.10.
+1. **Mira el tamaño de la diferencia.** Si son $43.21, probablemente buscas una sola transacción de $43.21.
 2. **Escanea tu estado de cuenta por transacciones que no marcaste.** ¿Algo en el estado de cuenta pero no en tu pantalla? Esa es la transacción faltante. Agrégala (abre una nueva pestaña y usa la página de Transacciones) y regresa.
 3. **Escanea tus transacciones marcadas por las que no estén en el estado de cuenta.** ¿Algo marcado pero no en el estado de cuenta? O no se ha publicado todavía (desmárcala e intenta de nuevo el siguiente mes) o no pertenece aquí (elimínala o corrígela).
-4. **Vigila errores de signo y de monto.** Un cargo de $510 capturado como $150 producirá una diferencia de $360. Un débito capturado como crédito producirá una diferencia de dos veces el monto (porque está mal por -$X y +$X).
+4. **Vigila errores de signo y de monto.** Un cargo de $51 capturado como $15 producirá una diferencia de $36. Un débito capturado como crédito producirá una diferencia de dos veces el monto (porque está mal por -$X y +$X).
 
-> **Escenario común:** Esperabas que la conciliación cuadrara y está a $250 de diferencia. Mirando el estado de cuenta, ves un retiro de cajero de $250 que olvidaste capturar. Abres una nueva pestaña, agregas la transacción, regresas a la página de conciliación (estará ahí esperando), marcas la transacción nueva, y la diferencia llega a cero. Haces clic en Finalizar.
+> **Escenario común:** Esperabas que la conciliación cuadrara y está a $25 de diferencia. Mirando el estado de cuenta, ves un retiro de cajero de $25 que olvidaste capturar. Abres una nueva pestaña, agregas la transacción, regresas a la página de conciliación (estará ahí esperando), marcas la transacción nueva, y la diferencia llega a cero. Haces clic en Finalizar.
 
 ---
 

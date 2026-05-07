@@ -20,7 +20,7 @@ Los beneficiarios son más útiles para:
 
 - **Preguntas sobre patrones de gasto.** "¿Cuánto gasté realmente en este restaurante el año pasado?" Un filtro, respuesta inmediata.
 - **Filtrar en la página de Transacciones.** Sigue toda la actividad con una parte específica.
-- **Encontrar duplicados.** Cuando ves "Costco" con 47 transacciones y "COSTCO MEXICO 234" con 3, son el mismo lugar — fusiónalos.
+- **Encontrar duplicados.** Cuando ves "Whole Foods" con 47 transacciones y "WHOLE FOODS MARKET" con 3, son el mismo lugar — fusiónalos.
 
 Si ninguno de los dos te llama la atención, sáltate los beneficiarios. savr no te va a regañar.
 
@@ -40,7 +40,7 @@ En el campo **Beneficiario** del diálogo de transacción, simplemente escribe u
 2. Usa el formulario **Nuevo beneficiario** en la parte superior.
 3. Escribe un nombre y guarda.
 
-Los nombres distinguen mayúsculas y minúsculas pero por lo demás son libres. Apunta a la forma que reconocerías de un vistazo: "Costco", "Spotify", "Acme Corp Nómina", no "WHL FDS MKT 2374 NW PORTLAND OR" (te vimos, exportación bancaria).
+Los nombres distinguen mayúsculas y minúsculas pero por lo demás son libres. Apunta a la forma que reconocerías de un vistazo: "Whole Foods", "Spotify", "Acme Corp Nómina", no "WHL FDS MKT 2374 NW PORTLAND OR" (te vimos, exportación bancaria).
 
 ---
 
@@ -65,7 +65,7 @@ En ambos casos, no se pierde ninguna transacción — solo se relinquean. Luego 
 
 > **Fusionando duplicados:** ¿Quieres fusionar "Whole Foods Market" en "Whole Foods"? Elimina "Whole Foods Market" y reasigna sus transacciones a "Whole Foods". Ambas listas se actualizan. Las transacciones se quedan donde estaban (en sus categorías correctas, con sus montos correctos) pero ahora todas están bajo un beneficiario canónico.
 
-> **Ejemplo trabajado:** Importas un año de transacciones del banco y terminas con 14 variantes de Amazon: "Amazon", "AMAZON.COM", "Amazon Prime", "Amzn Mktp", "AMAZON DIGITAL", y así. Pasa cinco minutos eliminando cada una con reasignación a un solo beneficiario canónico "Amazon". Ahora puedes ver de un vistazo que gastaste — gulp — $38,470 en Amazon el año pasado. (De nada.)
+> **Ejemplo trabajado:** Importas un año de transacciones del banco y terminas con 14 variantes de Amazon: "Amazon", "AMAZON.COM", "Amazon Prime", "Amzn Mktp", "AMAZON DIGITAL", y así. Pasa cinco minutos eliminando cada una con reasignación a un solo beneficiario canónico "Amazon". Ahora puedes ver de un vistazo que gastaste — gulp — $3,847 en Amazon el año pasado. (De nada.)
 
 ---
 

@@ -10,7 +10,7 @@ nav_order: 2
 
 La página de Presupuesto es el corazón de savr. Es donde tomas decisiones en lugar de reaccionar a ellas.
 
-Cada mes, tomas lo que tienes y le dices a cada peso lo que va a hacer. Renta. Comida. Ahorros. Esa cita con el dentista que has estado posponiendo. Cuando terminas, cada peso tiene un trabajo y sabes — con números reales, no con sensaciones — qué tienes disponible para qué.
+Cada mes, tomas lo que tienes y le dices a cada dólar lo que va a hacer. Renta. Comida. Ahorros. Esa cita con el dentista que has estado posponiendo. Cuando terminas, cada dólar tiene un trabajo y sabes — con números reales, no con sensaciones — qué tienes disponible para qué.
 
 Suena aburrido escrito así. En la práctica es sorprendentemente satisfactorio. Como organizar un clóset, pero con tu dinero.
 
@@ -44,28 +44,28 @@ Cada asignación reduce **Por Asignar** en la misma cantidad. La matemática que
 
 > **Ingresos − Asignaciones = 0**
 
-Cuando el lado derecho llega a cero, cada peso tiene un trabajo y terminaste.
+Cuando el lado derecho llega a cero, cada dólar tiene un trabajo y terminaste.
 
 ### Ejemplo trabajado
 
-Empiezas el mes con $32,000 en tu cuenta de cheques, todo ganado este mes. Por Asignar muestra $32,000.
+Empiezas el mes con $3,200 en tu cuenta de cheques, todo ganado este mes. Por Asignar muestra $3,200.
 
 Empiezas a hacer clic en categorías:
 
 | Categoría | Asignado | Por Asignar después |
 |---|---|---|
-| Renta | $14,000 | $18,000 |
-| Comida | $5,000 | $13,000 |
-| Servicios | $1,500 | $11,500 |
-| Teléfono e Internet | $1,200 | $10,300 |
-| Gasolina | $1,800 | $8,500 |
-| Restaurantes | $2,000 | $6,500 |
-| Suscripciones | $400 | $6,100 |
-| Fondo de Emergencia | $3,000 | $3,100 |
-| Vacaciones | $2,000 | $1,100 |
-| Hobbies | $1,100 | $0 |
+| Renta | $1,400 | $1,800 |
+| Comida | $500 | $1,300 |
+| Servicios | $150 | $1,150 |
+| Teléfono e Internet | $120 | $1,030 |
+| Gasolina | $180 | $850 |
+| Restaurantes | $200 | $650 |
+| Suscripciones | $40 | $610 |
+| Fondo de Emergencia | $300 | $310 |
+| Vacaciones | $200 | $110 |
+| Hobbies | $110 | $0 |
 
-Por Asignar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada peso ya sabe para qué es.
+Por Asignar: $0. Mayo está completamente planeado. Puedes gastar con confianza porque cada dólar ya sabe para qué es.
 
 ### Cómo afectan los tipos de transacción a Por Asignar
 
@@ -78,7 +78,7 @@ Cómo afectan las transacciones a Por Asignar depende de su tipo:
 | **Reembolso** | Sin efecto en Por Asignar. Solo reduce el Gastado de la categoría. |
 | **Transferencia** | Sin efecto — el dinero se mueve entre tus cuentas |
 
-> **Por qué Reembolso no se suma a Por Asignar:** Un reembolso cancela un gasto previo. Si compraste $800 de comida y devolviste $200, tu categoría debe reflejar $600 de gasto neto — no "$800 gastados + $200 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
+> **Por qué Reembolso no se suma a Por Asignar:** Un reembolso cancela un gasto previo. Si compraste $80 de comida y devolviste $20, tu categoría debe reflejar $60 de gasto neto — no "$80 gastados + $20 de ingreso nuevo para presupuestar." Reembolso lo hace bien. Usa Ingreso para dinero realmente nuevo: sueldos, regalos, intereses ganados.
 
 ---
 
@@ -95,7 +95,7 @@ Vas a excederte en algo cada mes. Restaurantes es clásico — sales un par de v
 
 Ambas categorías ahora muestran la transferencia en su historial. Tu Por Asignar general sigue en cero. Nada está roto — solo ajustaste el plan.
 
-> **Escenario común:** Presupuestaste $2,000 para Restaurantes y terminaste en $2,450. Disponible es -$450. Mueves $450 desde Hobbies (donde apenas has gastado) hacia Restaurantes. Ambas categorías se rebalancean. Presupuesto total sin cambios.
+> **Escenario común:** Presupuestaste $200 para Restaurantes y terminaste en $245. Disponible es -$45. Mueves $45 desde Hobbies (donde apenas has gastado) hacia Restaurantes. Ambas categorías se rebalancean. Presupuesto total sin cambios.
 
 Este es el movimiento que evita que la gente abandone su presupuesto a mitad de mes. Acéptalo.
 
@@ -145,10 +145,10 @@ Un objetivo le dice a savr "esto es lo que quiero presupuestar para esta categor
 | **Personalizado** | Ahorrar un monto total para una fecha objetivo. Puede repetirse cada N meses / años, o ser único. |
 
 > **Por ejemplo:**
-> - Renta — Objetivo Mensual de $14,000, vence el día 1.
-> - Comida — Objetivo Semanal de $1,250 (savr sabe que son ~$5,400/mes).
-> - Seguro de auto — Objetivo Anual de $7,200, vence en octubre.
-> - Vacaciones — Objetivo Personalizado de $24,000 para agosto del próximo año. savr sugiere ~$2,000/mes.
+> - Renta — Objetivo Mensual de $1,400, vence el día 1.
+> - Comida — Objetivo Semanal de $125 (savr sabe que son ~$540/mes).
+> - Seguro de auto — Objetivo Anual de $720, vence en octubre.
+> - Vacaciones — Objetivo Personalizado de $2,400 para agosto del próximo año. savr sugiere ~$200/mes.
 
 ### Configurar un objetivo
 

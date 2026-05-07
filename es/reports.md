@@ -60,7 +60,7 @@ Sobre cero = ahorraste. Bajo cero = gastaste más de lo que ganaste. La tendenci
 
 Esta gráfica es la forma más limpia de responder "¿estoy construyendo a lo largo del tiempo?" Seis meses de barras juntas pueden verse ruidosas. La línea corta el ruido.
 
-> **Por ejemplo:** Si tu línea de ahorro neto se mueve entre +$2,000 y -$1,500 mes a mes, estás más o menos punto-a-punto, con varianza normal. Si la línea está consistentemente sobre cero y subiendo, estás construyendo. Si está consistentemente bajo cero, estás resbalando — es momento de planear una intervención. La gráfica no moraliza; solo te muestra la forma.
+> **Por ejemplo:** Si tu línea de ahorro neto se mueve entre +$200 y -$150 mes a mes, estás más o menos punto-a-punto, con varianza normal. Si la línea está consistentemente sobre cero y subiendo, estás construyendo. Si está consistentemente bajo cero, estás resbalando — es momento de planear una intervención. La gráfica no moraliza; solo te muestra la forma.
 
 ---
 
@@ -72,7 +72,7 @@ Las 8 categorías principales obtienen sus propias rebanadas. El resto se agrupa
 
 Pasa el cursor sobre cualquier rebanada para el monto exacto y el porcentaje. La leyenda al lado lista cada una.
 
-Las divisiones se atribuyen correctamente: una compra de comida de $874 dividida $540/$334 entre Comida y Hogar aparece como $540 en una rebanada y $334 en otra. Las transferencias no aparecen (no son gastos). Las transacciones de saldo inicial se excluyen.
+Las divisiones se atribuyen correctamente: una compra de comida de $87 dividida $54/$33 entre Comida y Hogar aparece como $54 en una rebanada y $33 en otra. Las transferencias no aparecen (no son gastos). Las transacciones de saldo inicial se excluyen.
 
 > **Qué buscar:**
 > - ¿La rebanada más grande es la que esperarías? Si "Suscripciones" es más grande que "Comida", vale la pena un segundo vistazo.
@@ -89,7 +89,7 @@ Esta es la gráfica que produce esos momentos de "espera, ¿*tanto* en Amazon??"
 
 Las transacciones de ingreso se excluyen — esto es sobre a dónde se fue tu dinero, no de dónde vino.
 
-> **Por ejemplo:** Costco es tu beneficiario #1 con $4,870. Bodega Aurrera es #4 con $1,080. Gasto total en supermercado entre ambos: $5,950, que es $950 sobre tu presupuesto de Comida de $5,000. La gráfica no presupuestó por ti, pero te mostró la verdad — rápido.
+> **Por ejemplo:** Whole Foods es tu beneficiario #1 con $487. Trader Joe's es #4 con $108. Gasto total en supermercado entre ambos: $595, que es $95 sobre tu presupuesto de Comida de $500. La gráfica no presupuestó por ti, pero te mostró la verdad — rápido.
 
 ---
 

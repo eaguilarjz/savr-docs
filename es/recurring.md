@@ -53,12 +53,12 @@ También puedes configurar una **fecha de fin** opcional para detener una recurr
 
 La regla se guarda con una **siguiente fecha** igual a tu fecha de inicio. A partir de ahí, avanza cada vez que se ejecuta.
 
-> **Ejemplo trabajado — tu sueldo:** Te pagan quincenalmente los viernes, $24,000 netos. Configura:
+> **Ejemplo trabajado — tu sueldo:** Te pagan quincenalmente los viernes, $2,400 netos. Configura:
 > - Tipo: Ingreso
 > - Frecuencia: Quincenal
 > - Fecha de inicio: este viernes
 > - Cuenta: Cheques
-> - Monto: $24,000
+> - Monto: $2,400
 > - Beneficiario: Acme Corp Nómina
 > 
 > A partir de ahora, cada quince días el viernes verás "Aplicar" junto a esta regla. Un clic y el ingreso aterriza en tu cuenta, listo para presupuestar.
@@ -71,7 +71,7 @@ Las reglas recurrentes soportan divisiones, igual que las transacciones puntuale
 
 Cuando la regla se ejecuta, la transacción resultante hereda las divisiones.
 
-> **Por ejemplo:** Tu sueldo tiene $18,000 a cuenta de cheques y $6,000 yendo a una sub-cuenta de ahorros. Configuras la regla de ingreso con dos divisiones — $18,000 a "Sueldo → Cheques" y $6,000 a "Sueldo → Ahorros." Cada periodo de pago, ambos aterrizan en sus lugares correctos.
+> **Por ejemplo:** Tu sueldo tiene $1,800 a cuenta de cheques y $600 yendo a una sub-cuenta de ahorros. Configuras la regla de ingreso con dos divisiones — $1,800 a "Sueldo → Cheques" y $600 a "Sueldo → Ahorros." Cada periodo de pago, ambos aterrizan en sus lugares correctos.
 
 ---
 
@@ -89,7 +89,7 @@ Cada vez que la regla se ejecuta, savr crea una entrada pareada que baja el sald
 
 Es la forma más limpia de seguir un préstamo amortizado. La porción del capital crece automáticamente cada mes, los intereses suelen reducirse, y no tienes que recalcular el desglose manualmente. Configúralo una vez, aplícalo cada mes, observa el saldo del préstamo encaminarse a cero.
 
-> **Ejemplo trabajado — tu hipoteca:** Tu pago hipotecario de $12,470 son aproximadamente $9,830 capital + $2,510 intereses + $130 comisiones. Configura una regla Mensual de Pago de Deuda con esos números. Aplícala cada mes. A lo largo de un año, puedes actualizar el reparto capital/interés un par de veces para alinearlo con la tabla de amortización del banco. Observa el saldo de la hipoteca encogerse y siente algo cercano a la felicidad.
+> **Ejemplo trabajado — tu hipoteca:** Tu pago hipotecario de $1,247 son aproximadamente $983 capital + $251 intereses + $13 comisiones. Configura una regla Mensual de Pago de Deuda con esos números. Aplícala cada mes. A lo largo de un año, puedes actualizar el reparto capital/interés un par de veces para alinearlo con la tabla de amortización del banco. Observa el saldo de la hipoteca encogerse y siente algo cercano a la felicidad.
 
 ---
 
@@ -113,7 +113,7 @@ Por cada regla aplicada, savr:
 
 La aplicación es manual a propósito. Te da la oportunidad de revisar la entrada antes de que aterrice en el historial de tu cuenta. Esto importa porque:
 
-- Las suscripciones suben de precio ("Spotify acaba de subirme de $99 a $129")
+- Las suscripciones suben de precio ("Spotify acaba de subirme de $10 a $12")
 - Las rentas cambian
 - Un cargo "mensual" del gimnasio a veces se salta un mes
 - Quieres ver la transacción recurrente *antes* de que afecte tu saldo, no después

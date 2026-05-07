@@ -18,7 +18,7 @@ Cada transacción de Gasto y Reembolso vive en una categoría, y cada categoría
 
 Las categorías son la unidad con la que asignas dinero en la página de Presupuesto y la unidad sobre la que se suma el gasto. Elegir el nivel correcto de granularidad es un balance:
 
-- **Muy pocas categorías** → no puedes ver realmente a dónde va el dinero. "Otros: $12,470" no es información.
+- **Muy pocas categorías** → no puedes ver realmente a dónde va el dinero. "Otros: $1,247" no es información.
 - **Demasiadas** → el mantenimiento se vuelve una tarea, dejas de usar savr, vuelves a preguntarte a dónde se fue el dinero.
 
 Un punto de partida sólido: una categoría por cada cuenta recurrente (renta, servicios, teléfono), una para cada gasto variable importante (comida, transporte, restaurantes), y unas cuantas para metas y calidad de vida. Como 15–25 en total. Ajusta con el tiempo.
