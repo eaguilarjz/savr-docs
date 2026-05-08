@@ -31,9 +31,9 @@ Puedes renombrar, reordenar, ocultar o eliminar categorías en cualquier momento
 
 Si estás empezando de cero y quieres una ventaja, el [asistente de configuración](../getting-started/#el-asistente-de-configuración) ofrece tres plantillas pre-armadas:
 
-- **Simple** — 8 grupos, 1–2 categorías cada uno. El presupuesto mínimo viable.
-- **Estándar** — 8 grupos, 3–4 categorías cada uno. Probablemente lo que quieres.
-- **Detallada** — 8 grupos, 5–6 categorías cada uno. Para gente que disfruta el seguimiento granular.
+- **Simple** — 8 categorías en 8 grupos. El presupuesto mínimo viable.
+- **Estándar** — 21 categorías en 8 grupos. Probablemente lo que quieres.
+- **Detallada** — 40 categorías en 8 grupos. Para gente que disfruta el seguimiento granular.
 
 Puedes editar, renombrar o eliminar cualquier cosa que cree la plantilla. La plantilla solo te ahorra mirar una página de Categorías vacía el día uno.
 

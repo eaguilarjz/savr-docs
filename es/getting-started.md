@@ -57,9 +57,9 @@ La primera vez que inicias sesión, savr te recibe con un breve asistente de con
 | Plantilla | Lo que obtienes | Buena para |
 |---|---|---|
 | **Ninguna** | Lienzo en blanco | Sabes exactamente qué quieres |
-| **Simple** | 8 grupos, 1–2 categorías cada uno | Primerizos, vidas simples |
-| **Estándar** | 8 grupos, 3–4 categorías cada uno | La mayoría de la gente |
-| **Detallada** | 8 grupos, 5–6 categorías cada uno | Te gusta el detalle |
+| **Simple** | 8 categorías en 8 grupos (1 cada uno) | Primerizos, vidas simples |
+| **Estándar** | 21 categorías en 8 grupos (2–4 cada uno) | La mayoría de la gente |
+| **Detallada** | 40 categorías en 8 grupos (4–6 cada uno) | Te gusta el detalle |
 
 Puedes editar, renombrar o eliminar cualquier cosa que cree la plantilla. No lo pienses demasiado — elige **Estándar** si no estás seguro.
 

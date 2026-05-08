@@ -57,9 +57,9 @@ The first time you sign in, savr greets you with a short setup wizard. It walks 
 | Template | What you get | Good for |
 |---|---|---|
 | **None** | A blank slate | You know exactly what you want |
-| **Simple** | 8 groups, 1–2 categories each | First-timers, simple lives |
-| **Standard** | 8 groups, 3–4 categories each | Most people |
-| **Detailed** | 8 groups, 5–6 categories each | You like granularity |
+| **Simple** | 8 categories across 8 groups (1 each) | First-timers, simple lives |
+| **Standard** | 21 categories across 8 groups (2–4 each) | Most people |
+| **Detailed** | 40 categories across 8 groups (4–6 each) | You like granularity |
 
 You can edit, rename, or delete anything the template creates. Don't overthink it — pick **Standard** if you're not sure.
 

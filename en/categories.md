@@ -31,9 +31,9 @@ You can rename, reorder, hide, or delete categories at any time, so don't fret o
 
 If you're starting fresh and want a head start, the [onboarding wizard](../getting-started/#the-onboarding-wizard) offers three pre-built templates:
 
-- **Simple** — 8 groups, 1–2 categories each. The minimum viable budget.
-- **Standard** — 8 groups, 3–4 categories each. Probably what you want.
-- **Detailed** — 8 groups, 5–6 categories each. For people who like granular tracking.
+- **Simple** — 8 categories across 8 groups. The minimum viable budget.
+- **Standard** — 21 categories across 8 groups. Probably what you want.
+- **Detailed** — 40 categories across 8 groups. For people who like granular tracking.
 
 You can edit, rename, or delete anything the template creates. The template just saves you from staring at an empty Categories page on day one.
 
