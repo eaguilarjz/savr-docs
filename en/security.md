@@ -34,8 +34,6 @@ When you click **Sign in with Google** or **Sign in with Microsoft** on the sign
 2. Reads the email address from the response.
 3. **Creates a new account** with that email, or **links** the provider to your existing savr account if the email already exists. No duplicate accounts.
 
-> **Heads up:** New accounts created from Google or Microsoft get a **14-day trial** (vs. 90 days for email sign-ups). Add a payment method before the 14 days are up if you want to keep using savr without a break.
-
 ### Switching methods later
 
 You're not locked into the method you started with. From **Profile → Security → Connected accounts**, you can:

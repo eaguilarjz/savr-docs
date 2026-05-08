@@ -34,8 +34,6 @@ Cuando haces clic en **Continuar con Google** o **Continuar con Microsoft** en l
 2. Lee el correo de la respuesta.
 3. **Crea una cuenta nueva** con ese correo, o **vincula** el proveedor a tu cuenta de savr existente si el correo ya existe. Sin cuentas duplicadas.
 
-> **Atención:** Las cuentas creadas desde Google o Microsoft reciben **14 días de prueba** (vs. 90 días para registros con correo). Agrega un método de pago antes de que pasen los 14 días si quieres seguir usando savr sin interrupción.
-
 ### Cambiar de método después
 
 No estás atrapado en el método con el que empezaste. Desde **Perfil → Seguridad → Cuentas conectadas**, puedes:

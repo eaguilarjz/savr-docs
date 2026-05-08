@@ -20,7 +20,7 @@ This guide walks you through creating an account, setting up your first month, a
 
 ## Create your account (and start your free trial)
 
-Every new savr account gets a **free trial** — **90 days** if you sign up with email, **14 days** if you sign up through Google or Microsoft. No credit card required up front, no surprise charges. Use it to get your bearings. Pick a paid plan when you're ready, or don't — savr will remind you near the end.
+Every new savr account gets a **90-day free trial** — same length whether you sign up with email or with Google/Microsoft. No credit card required up front, no surprise charges. Use it to get your bearings. Pick a paid plan when you're ready, or don't — savr will remind you near the end.
 
 You've got three ways to sign up. Pick whichever feels easiest:
 

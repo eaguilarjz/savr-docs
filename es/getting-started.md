@@ -20,7 +20,7 @@ Esta guía te lleva paso a paso por crear tu cuenta, configurar tu primer mes y 
 
 ## Crea tu cuenta (y empieza tu prueba gratuita)
 
-Cada cuenta nueva en savr recibe **prueba gratuita** — **90 días** si te registras con correo, **14 días** si te registras con Google o Microsoft. No se requiere tarjeta de crédito al inicio, sin cargos sorpresa. Úsalos para conocer la herramienta. Elige un plan cuando estés listo, o no — savr te recordará cerca del final.
+Cada cuenta nueva en savr recibe **90 días de prueba gratuita** — la misma duración tanto si te registras con correo como si lo haces con Google o Microsoft. No se requiere tarjeta de crédito al inicio, sin cargos sorpresa. Úsalos para conocer la herramienta. Elige un plan cuando estés listo, o no — savr te recordará cerca del final.
 
 Tienes tres formas de registrarte. Elige la que se sienta más fácil:
 
