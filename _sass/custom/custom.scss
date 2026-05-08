@@ -169,11 +169,13 @@ $savr-sidebar-active: rgba(255, 255, 255, 0.20);
       }
 
       td {
+        background-color: #0c0a09; // matches body bg
+        color: #e7e5e4;
         border-color: #292524;
       }
 
       tr:nth-child(even) td {
-        background-color: rgba(255, 255, 255, 0.025);
+        background-color: #1c1917; // subtle zebra stripe
       }
     }
 
