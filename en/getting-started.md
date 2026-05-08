@@ -20,7 +20,15 @@ This guide walks you through creating an account, setting up your first month, a
 
 ## Create your account (and start your free trial)
 
-Every new savr account gets a **90-day free trial**. No credit card required up front, no surprise charges. Use it to get your bearings. Pick a paid plan when you're ready, or don't — savr will remind you near the end of the trial.
+Every new savr account gets a **free trial** — **90 days** if you sign up with email, **14 days** if you sign up through Google or Microsoft. No credit card required up front, no surprise charges. Use it to get your bearings. Pick a paid plan when you're ready, or don't — savr will remind you near the end.
+
+You've got three ways to sign up. Pick whichever feels easiest:
+
+### Option A — Sign up with Google or Microsoft (fastest)
+
+On the sign-up screen, click **Continue with Google** or **Continue with Microsoft**. Confirm on the provider's screen, and you're in. No password to set, no email to verify, no waiting. (You can always [add a password later](../security/#change-your-password) if you want one.)
+
+### Option B — Sign up with email and password
 
 1. Open the app and click **Sign up**.
 2. Enter your email and click **Continue**.
@@ -34,7 +42,7 @@ Every new savr account gets a **90-day free trial**. No credit card required up 
 
 **Forgot your password?** From the sign-in screen, click **Forgot password?** and enter your email. You'll get a reset link valid for one hour. Open it and pick a new password.
 
-For two-factor authentication and other security features, jump to the [Security](../security/) page when you're ready.
+For two-factor authentication, trusted devices, and how to connect Google or Microsoft to an existing account, jump to the [Security](../security/) page when you're ready.
 
 ---
 
@@ -161,6 +169,29 @@ savr is fully responsive — every page works on a phone, tablet, or desktop. On
 - Forms and tables adapt to the smaller screen — some less-critical columns may be hidden.
 
 Most people do their initial setup on a laptop and then check in from their phone during the day. Both work. Pick whichever is in front of you.
+
+---
+
+## Undo (Cmd/Ctrl + Z)
+
+Made a mistake? You can take it back.
+
+savr has system-wide **undo and redo** for almost every change you make — creating a transaction, editing a budget allocation, deleting a category, reassigning a payee, all of it. The history goes back **50 actions**. Use it freely.
+
+| Shortcut | What it does |
+|---|---|
+| **⌘Z** (Mac) / **Ctrl+Z** (Windows / Linux) | Undo the last action |
+| **⇧⌘Z** (Mac) / **Ctrl+Shift+Z** (Windows / Linux) | Redo the action you just undid |
+
+On mobile, the same controls live as ↶ and ↷ icons in the top bar.
+
+A few details worth knowing:
+
+- **Undo can navigate.** If you undo something on a different page than the one you're on, savr jumps you back to where the change happened so you can see what reverted.
+- **Doing something new clears the redo stack.** Standard editor behavior — once you take a fresh action, the future you'd just undid is gone.
+- **A few things are permanent.** Password changes, OAuth provider linking, and account deletion don't go on the undo stack. Everything else does.
+
+> **Why this matters:** Budget apps usually have a "delete forever" feel that makes people cautious — they hesitate, double-check, leave half-done categorizations because they're afraid to be wrong. savr removes that friction. Click around. If something turns out wrong, ⌘Z gets you back. Faster decisions, fewer regrets.
 
 ---
 

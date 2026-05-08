@@ -16,6 +16,36 @@ You'll find these settings under **Profile → Security**.
 
 ---
 
+## How you sign in
+
+savr accepts three ways to sign in. You can use any one of them, or mix and match — they all reach the same account.
+
+| Method | What you need | Notes |
+|---|---|---|
+| **Email + password** | Your email address and your savr password | The classic. Pair with [MFA](#two-factor-authentication-mfa) for the strongest setup. |
+| **Sign in with Google** | A Google account whose email matches yours in savr | One click. No password to remember. |
+| **Sign in with Microsoft** | A Microsoft account (personal or work) whose email matches yours in savr | Same idea — one click. |
+
+### How OAuth sign-up works
+
+When you click **Sign in with Google** or **Sign in with Microsoft** on the sign-up screen, savr:
+
+1. Sends you to the provider to confirm.
+2. Reads the email address from the response.
+3. **Creates a new account** with that email, or **links** the provider to your existing savr account if the email already exists. No duplicate accounts.
+
+> **Heads up:** New accounts created from Google or Microsoft get a **14-day trial** (vs. 90 days for email sign-ups). Add a payment method before the 14 days are up if you want to keep using savr without a break.
+
+### Switching methods later
+
+You're not locked into the method you started with. From **Profile → Security → Connected accounts**, you can:
+
+- Add Google or Microsoft to an email/password account (now you have both options at sign-in).
+- Remove Google or Microsoft from an account that has at least one other way in.
+- An account with **only OAuth** (no password) can't unlink its last provider — set a password first via **Forgot password?**, then come back and unlink.
+
+---
+
 ## Change your password
 
 1. Open **Profile** and find the **Security** section.
@@ -26,6 +56,28 @@ You'll find these settings under **Profile → Security**.
 Once changed, every signed-in session continues to work, but any signed-out session (a different device, an old browser) will require the new password.
 
 > **Pro tip:** Use a password manager. The strongest password is one you don't have to remember — long, random, unique to savr. 1Password, Bitwarden, Apple's iCloud Keychain, your browser's built-in manager: all fine. Pick one and let it do its job.
+
+---
+
+## Connected accounts
+
+The **Connected accounts** section lists every external sign-in method linked to your savr account — Google, Microsoft, and any future providers.
+
+### Add a provider
+
+1. Open **Profile → Security → Connected accounts**.
+2. Click **Connect** next to the provider.
+3. You're handed off to Google/Microsoft to confirm. Once you're back, the provider is listed with the email address it used.
+
+After connecting, the provider becomes another way to sign in. Useful if you want a fast click-through option *and* a password as backup.
+
+### Remove a provider
+
+Click **Disconnect** next to a provider in the list. The change is immediate — no confirmation dialog.
+
+The one exception: if the provider you're removing is the **only** way you can sign in (an OAuth-only account with no password), savr won't let you. Set a password first via **Forgot password?** on the sign-in page, then come back to remove the provider.
+
+> **Why connect more than one?** Redundancy. If you lose access to one provider account, the other still works. Pair this with [Recovery codes](#recovery-codes) and you've got real account-recovery resilience.
 
 ---
 
@@ -66,6 +118,19 @@ After entering your email and password on the sign-in page, savr asks for a seco
 - Click **Use a recovery code** and enter one of the codes you saved during setup.
 
 The 6-digit codes refresh every 30 seconds. If a code is rejected, wait for the next one and try again — the most common cause is the previous code having expired between you reading it and typing it.
+
+### Trusted devices
+
+The MFA prompt has a **Trust this device for 30 days** checkbox. Tick it, and that device skips the MFA step on every sign-in for the next 30 days. After 30 days, the trust expires and you're back to entering codes.
+
+A few things worth knowing:
+
+- **Trust is per-device, per-browser.** Trusting your laptop in Chrome doesn't trust your phone or your laptop in Firefox.
+- **It's a cookie.** If you clear cookies, the trust is gone — that's a feature, not a bug.
+- **Don't tick it on shared computers.** That's the whole reason MFA exists. Use trusted devices only on phones, laptops, and tablets that nobody else touches.
+- **You're still asked for password + 6-digit code on the first sign-in.** Trust kicks in starting on the next visit.
+
+> **Recommendation:** Trust the two or three devices you actually use. Leave the box unchecked everywhere else. You'll only see the MFA prompt occasionally — when the 30 days roll over, when a cookie clears, or when you sign in somewhere new.
 
 ### Recovery codes
 

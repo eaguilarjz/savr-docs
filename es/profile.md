@@ -13,7 +13,7 @@ La página de Perfil es donde administras tu información personal y cómo se ve
 Esta página cubre los temas personales del día a día. Para:
 
 - **Planes, prueba, facturación, facturas** → [Plan y Facturación](../billing/)
-- **Cambio de contraseña, autenticación de dos factores, códigos de recuperación** → [Seguridad](../security/)
+- **Cambio de contraseña, autenticación de dos factores, códigos de recuperación, dispositivos de confianza, cuentas conectadas de Google/Microsoft** → [Seguridad](../security/)
 
 ---
 
@@ -88,7 +88,10 @@ Algunas cosas que a veces se esperan en una página de perfil viven en otro lado
 |---|---|
 | **Plan, estado de prueba, facturas, cancelación** | [Plan y Facturación](../billing/) |
 | **Cambio de contraseña** | [Seguridad → Cambia tu contraseña](../security/#cambia-tu-contraseña) |
+| **Opciones de inicio de sesión (Google, Microsoft)** | [Seguridad → Cómo inicias sesión](../security/#cómo-inicias-sesión) |
+| **Cuentas conectadas** | [Seguridad → Cuentas conectadas](../security/#cuentas-conectadas) |
 | **Autenticación de dos factores** | [Seguridad → Autenticación de dos factores](../security/#autenticación-de-dos-factores-mfa) |
+| **Dispositivos de confianza para MFA** | [Seguridad → Dispositivos de confianza](../security/#dispositivos-de-confianza) |
 | **Códigos de recuperación** | [Seguridad → Códigos de recuperación](../security/#códigos-de-recuperación) |
 | **Tipos de cuenta y orden** | [Cuentas → Organizar la página de cuentas](../accounts/#organizar-la-página-de-cuentas) |
 | **Grupos de categorías** | [Categorías → Grupos de categorías](../categories/#grupos-de-categorías) |

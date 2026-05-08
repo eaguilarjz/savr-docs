@@ -16,6 +16,36 @@ Encontrarás estos ajustes en **Perfil → Seguridad**.
 
 ---
 
+## Cómo inicias sesión
+
+savr acepta tres formas de iniciar sesión. Puedes usar cualquiera, o combinarlas — todas llegan a la misma cuenta.
+
+| Método | Lo que necesitas | Notas |
+|---|---|---|
+| **Correo + contraseña** | Tu correo y tu contraseña de savr | El clásico. Combínalo con [MFA](#autenticación-de-dos-factores-mfa) para la configuración más fuerte. |
+| **Continuar con Google** | Una cuenta de Google con un correo que coincida con el tuyo en savr | Un clic. Sin contraseña que recordar. |
+| **Continuar con Microsoft** | Una cuenta de Microsoft (personal o de trabajo) con un correo que coincida con el tuyo en savr | Misma idea — un clic. |
+
+### Cómo funciona el registro con OAuth
+
+Cuando haces clic en **Continuar con Google** o **Continuar con Microsoft** en la pantalla de registro, savr:
+
+1. Te envía al proveedor para confirmar.
+2. Lee el correo de la respuesta.
+3. **Crea una cuenta nueva** con ese correo, o **vincula** el proveedor a tu cuenta de savr existente si el correo ya existe. Sin cuentas duplicadas.
+
+> **Atención:** Las cuentas creadas desde Google o Microsoft reciben **14 días de prueba** (vs. 90 días para registros con correo). Agrega un método de pago antes de que pasen los 14 días si quieres seguir usando savr sin interrupción.
+
+### Cambiar de método después
+
+No estás atrapado en el método con el que empezaste. Desde **Perfil → Seguridad → Cuentas conectadas**, puedes:
+
+- Agregar Google o Microsoft a una cuenta de correo/contraseña (ahora tienes ambas opciones al iniciar sesión).
+- Quitar Google o Microsoft de una cuenta que tenga al menos otra forma de entrar.
+- Una cuenta con **solo OAuth** (sin contraseña) no puede desvincular su último proveedor — establece una contraseña primero vía **¿Olvidaste tu contraseña?** y luego regresa a desvincular.
+
+---
+
 ## Cambia tu contraseña
 
 1. Abre **Perfil** y busca la sección **Seguridad**.
@@ -26,6 +56,28 @@ Encontrarás estos ajustes en **Perfil → Seguridad**.
 Una vez cambiada, cada sesión actualmente abierta sigue funcionando, pero cualquier sesión cerrada (otro dispositivo, un navegador viejo) requerirá la nueva contraseña.
 
 > **Pro tip:** Usa un administrador de contraseñas. La contraseña más fuerte es la que no tienes que recordar — larga, aleatoria, única para savr. 1Password, Bitwarden, iCloud Keychain de Apple, el administrador integrado de tu navegador: todos están bien. Elige uno y déjalo hacer su trabajo.
+
+---
+
+## Cuentas conectadas
+
+La sección **Cuentas conectadas** lista cada método externo de inicio de sesión vinculado a tu cuenta de savr — Google, Microsoft, y cualquier proveedor futuro.
+
+### Agregar un proveedor
+
+1. Abre **Perfil → Seguridad → Cuentas conectadas**.
+2. Haz clic en **Conectar** junto al proveedor.
+3. Te llevamos a Google/Microsoft a confirmar. Cuando regreses, el proveedor aparece listado con el correo que usó.
+
+Después de conectar, el proveedor se vuelve otra forma de iniciar sesión. Útil si quieres una opción rápida de un clic *y* una contraseña como respaldo.
+
+### Quitar un proveedor
+
+Haz clic en **Desconectar** junto al proveedor en la lista. El cambio es inmediato — sin diálogo de confirmación.
+
+La excepción: si el proveedor que estás quitando es la **única** forma de iniciar sesión (una cuenta solo OAuth sin contraseña), savr no te lo permitirá. Establece una contraseña primero vía **¿Olvidaste tu contraseña?** en la pantalla de inicio de sesión, y luego regresa a quitar el proveedor.
+
+> **¿Por qué conectar más de uno?** Redundancia. Si pierdes acceso a una cuenta de proveedor, la otra aún funciona. Combínalo con [Códigos de recuperación](#códigos-de-recuperación) y tienes una verdadera resiliencia para recuperar la cuenta.
 
 ---
 
@@ -66,6 +118,19 @@ Después de ingresar tu correo y contraseña en la pantalla de inicio de sesión
 - Haz clic en **Usar un código de recuperación** e ingresa uno de los códigos que guardaste durante la configuración.
 
 Los códigos de 6 dígitos se renuevan cada 30 segundos. Si un código es rechazado, espera al siguiente e intenta de nuevo — la causa más común es que el código anterior expiró entre que lo leíste y lo escribiste.
+
+### Dispositivos de confianza
+
+La pantalla de MFA tiene una casilla **Confiar en este dispositivo por 30 días**. Marcala, y ese dispositivo se salta el paso de MFA en cada inicio de sesión durante los próximos 30 días. Después de 30 días, la confianza expira y vuelves a ingresar códigos.
+
+Cosas que vale saber:
+
+- **La confianza es por dispositivo y por navegador.** Confiar en tu laptop con Chrome no confía en tu teléfono ni en tu laptop con Firefox.
+- **Es una cookie.** Si limpias las cookies, la confianza se va — eso es una característica, no un bug.
+- **No la marques en computadoras compartidas.** Esa es la razón completa por la que existe MFA. Usa dispositivos de confianza solo en teléfonos, laptops y tablets que nadie más toca.
+- **Aún se te pide correo + contraseña + código de 6 dígitos en el primer inicio de sesión.** La confianza arranca a partir de la siguiente visita.
+
+> **Recomendación:** Confía en los dos o tres dispositivos que realmente usas. Deja la casilla sin marcar en todos los demás. Solo verás la pantalla de MFA ocasionalmente — cuando pasen los 30 días, cuando una cookie se limpie, o cuando inicies sesión en algún lugar nuevo.
 
 ### Códigos de recuperación
 

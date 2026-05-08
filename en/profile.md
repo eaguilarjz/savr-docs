@@ -13,7 +13,7 @@ The Profile page is where you manage your personal information and how savr look
 This page covers the everyday personal stuff. For:
 
 - **Plans, trial, billing, invoices** → [Plans & Billing](../billing/)
-- **Password change, two-factor authentication, recovery codes** → [Security](../security/)
+- **Password change, two-factor authentication, recovery codes, trusted devices, connected Google/Microsoft accounts** → [Security](../security/)
 
 ---
 
@@ -88,7 +88,10 @@ A few things sometimes expected on a profile page that live elsewhere:
 |---|---|
 | **Plan, trial status, invoices, cancellation** | [Plans & Billing](../billing/) |
 | **Password change** | [Security → Change your password](../security/#change-your-password) |
+| **Sign-in options (Google, Microsoft)** | [Security → How you sign in](../security/#how-you-sign-in) |
+| **Connected accounts** | [Security → Connected accounts](../security/#connected-accounts) |
 | **Two-factor authentication** | [Security → Two-Factor Authentication](../security/#two-factor-authentication-mfa) |
+| **Trusted devices for MFA** | [Security → Trusted devices](../security/#trusted-devices) |
 | **Recovery codes** | [Security → Recovery codes](../security/#recovery-codes) |
 | **Account types and ordering** | [Accounts → Organizing the accounts page](../accounts/#organizing-the-accounts-page) |
 | **Category groups** | [Categories → Category groups](../categories/#category-groups) |

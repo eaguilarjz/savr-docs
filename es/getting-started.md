@@ -20,7 +20,15 @@ Esta guía te lleva paso a paso por crear tu cuenta, configurar tu primer mes y 
 
 ## Crea tu cuenta (y empieza tu prueba gratuita)
 
-Cada cuenta nueva en savr recibe **90 días de prueba gratuita**. No se requiere tarjeta de crédito al inicio, sin cargos sorpresa. Úsalos para conocer la herramienta. Elige un plan cuando estés listo, o no — savr te recordará cerca del final de la prueba.
+Cada cuenta nueva en savr recibe **prueba gratuita** — **90 días** si te registras con correo, **14 días** si te registras con Google o Microsoft. No se requiere tarjeta de crédito al inicio, sin cargos sorpresa. Úsalos para conocer la herramienta. Elige un plan cuando estés listo, o no — savr te recordará cerca del final.
+
+Tienes tres formas de registrarte. Elige la que se sienta más fácil:
+
+### Opción A — Regístrate con Google o Microsoft (la más rápida)
+
+En la pantalla de registro, haz clic en **Continuar con Google** o **Continuar con Microsoft**. Confirma en la pantalla del proveedor y ya estás dentro. Sin contraseña que configurar, sin correo que verificar, sin esperar. (Siempre puedes [agregar una contraseña después](../security/#cambia-tu-contraseña) si quieres una.)
+
+### Opción B — Regístrate con correo y contraseña
 
 1. Abre la aplicación y haz clic en **Registrarse**.
 2. Ingresa tu correo y haz clic en **Continuar**.
@@ -34,7 +42,7 @@ Cada cuenta nueva en savr recibe **90 días de prueba gratuita**. No se requiere
 
 **¿Olvidaste tu contraseña?** Desde la pantalla de inicio de sesión, haz clic en **¿Olvidaste tu contraseña?** e ingresa tu correo. Recibirás un enlace de recuperación válido por una hora. Ábrelo y elige una nueva.
 
-Para autenticación de dos factores y otras funciones de seguridad, salta a la página [Seguridad](../security/) cuando estés listo.
+Para autenticación de dos factores, dispositivos de confianza, y cómo conectar Google o Microsoft a una cuenta existente, salta a la página [Seguridad](../security/) cuando estés listo.
 
 ---
 
@@ -161,6 +169,29 @@ savr es completamente responsivo — cada página funciona en teléfono, tablet 
 - Los formularios y tablas se adaptan a la pantalla más pequeña — algunas columnas menos críticas pueden ocultarse.
 
 La mayoría de la gente hace la configuración inicial en una laptop y luego revisa desde el teléfono durante el día. Ambas funcionan. Usa lo que tengas enfrente.
+
+---
+
+## Deshacer (Cmd/Ctrl + Z)
+
+¿Te equivocaste? Lo puedes regresar.
+
+savr tiene **deshacer y rehacer** a nivel de sistema para casi cada cambio que haces — crear una transacción, editar una asignación de presupuesto, eliminar una categoría, reasignar un beneficiario, todo. El historial llega hasta **50 acciones**. Úsalo libremente.
+
+| Atajo | Qué hace |
+|---|---|
+| **⌘Z** (Mac) / **Ctrl+Z** (Windows / Linux) | Deshace la última acción |
+| **⇧⌘Z** (Mac) / **Ctrl+Shift+Z** (Windows / Linux) | Rehace la acción que acabas de deshacer |
+
+En móvil, los mismos controles viven como íconos ↶ y ↷ en la barra superior.
+
+Algunos detalles que vale saber:
+
+- **Deshacer puede navegar.** Si deshaces algo en una página distinta a donde estás, savr te lleva de vuelta a donde ocurrió el cambio para que veas qué se revirtió.
+- **Hacer algo nuevo limpia la pila de rehacer.** Comportamiento estándar de editor — una vez que tomas una acción nueva, el futuro que ibas a rehacer se va.
+- **Algunas cosas son permanentes.** Cambios de contraseña, vincular proveedores OAuth y eliminar la cuenta no entran a la pila de deshacer. Todo lo demás sí.
+
+> **Por qué importa:** Las apps de presupuesto suelen tener un aire de "borrar para siempre" que pone cautelosa a la gente — duda, revisa dos veces, deja categorizaciones a medias por miedo a equivocarse. savr quita esa fricción. Haz clic libremente. Si algo sale mal, ⌘Z te regresa. Decisiones más rápidas, menos arrepentimientos.
 
 ---
 

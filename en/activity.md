@@ -138,7 +138,7 @@ The cleared flag is informational only — it doesn't change balance calculation
 
 Click any transaction in the list to open its edit dialog. You can change any field, including converting a regular transaction into a split or back. Click **Save** to apply.
 
-To remove a transaction, open the edit dialog and click **Delete**. Deletes are permanent and the affected account's balance updates immediately.
+To remove a transaction, open the edit dialog and click **Delete**. The affected account's balance updates immediately. Deleted the wrong one? Hit **⌘Z** (Mac) / **Ctrl+Z** (Windows / Linux) to bring it back — see [Getting Started → Undo](../getting-started/#undo-cmdctrl--z).
 
 > **Heads up:** **Opening balance transactions** are special. They're auto-created with each account and don't affect budgets. You can edit the amount if you mistyped your starting balance, but you can't delete the opening balance entry without deleting the account itself.
 

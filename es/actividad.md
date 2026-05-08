@@ -139,7 +139,7 @@ La bandera de compensada es solo informativa — no cambia los cálculos de sald
 
 Haz clic en cualquier transacción de la lista para abrir su diálogo de edición. Puedes cambiar cualquier campo, incluyendo convertir una transacción regular en dividida o viceversa. Haz clic en **Guardar** para aplicar.
 
-Para eliminar una transacción, abre el diálogo de edición y haz clic en **Eliminar**. Las eliminaciones son permanentes y el saldo de la cuenta afectada se actualiza al instante.
+Para eliminar una transacción, abre el diálogo de edición y haz clic en **Eliminar**. El saldo de la cuenta afectada se actualiza al instante. ¿Eliminaste la equivocada? Presiona **⌘Z** (Mac) / **Ctrl+Z** (Windows / Linux) para regresarla — consulta [Primeros pasos → Deshacer](../getting-started/#deshacer-cmdctrl--z).
 
 > **Atención:** Las **transacciones de saldo inicial** son especiales. Se crean automáticamente con cada cuenta y no afectan los presupuestos. Puedes editar el monto si te equivocaste con tu saldo inicial, pero no puedes eliminar la entrada de saldo inicial sin eliminar la cuenta.
 
