@@ -151,7 +151,16 @@ La parte superior de la página de Actividad tiene dos formas de acotar la lista
 
 ### Cuadro de búsqueda
 
-Escribe en el cuadro **Buscar actividad…** para hacer búsqueda libre por **memo**, **nombre del beneficiario** y **nombre de la categoría** (sin distinguir mayúsculas y minúsculas). Útil cuando recuerdas el nombre del lugar o lo que anotaste, pero no la fecha o el monto.
+Escribe en el cuadro **Buscar actividad…** para hacer búsqueda parcial sobre:
+
+- el **memo** de la transacción
+- el **nombre del beneficiario**
+- el **nombre de la categoría**
+- los **nombres de las categorías de cualquier división** de esa transacción
+
+La búsqueda no distingue mayúsculas y minúsculas, y empareja substrings — escribir `costco` encuentra "Costco Wholesale", y escribir `hogar` también saca una transacción dividida aunque su categoría principal no sea "Hogar".
+
+Útil cuando recuerdas el nombre del lugar o lo que anotaste, pero no la fecha o el monto.
 
 ### Pills de filtro
 

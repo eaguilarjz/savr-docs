@@ -150,7 +150,16 @@ The top of the Activity page has two ways to narrow the list:
 
 ### Search box
 
-Type in the **Search activity…** box to free-text search across **memo**, **payee name**, and **category name** (case-insensitive). Useful when you remember the name of the place or what you noted but not the date or amount.
+Type in the **Search activity…** box to substring-search across:
+
+- the transaction's **memo**
+- its **payee name**
+- its **category name**
+- the **category names of any split rows** on that transaction
+
+The match is case-insensitive and partial — typing `whole` finds "Whole Foods", and typing `house` will surface a split-transaction even if its top-level category isn't "Household".
+
+Useful when you remember the name of the place or what you noted but not the date or amount.
 
 ### Filter pills
 
