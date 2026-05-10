@@ -161,6 +161,25 @@ The match is case-insensitive and partial — typing `whole` finds "Whole Foods"
 
 Useful when you remember the name of the place or what you noted but not the date or amount.
 
+#### Power-user tokens
+
+The search box also recognizes a small token syntax. When a token matches a known account / category / payee / type, it gets promoted into a structured filter and the rest of the box stays as free text.
+
+| Token | Effect |
+|---|---|
+| `category:Food` | Filter by category. Use `category:"Eating Out"` for multi-word names. |
+| `payee:Amazon` | Filter by payee. Quote multi-word names. |
+| `account:Checking` | Filter by account. Quote multi-word names. |
+| `type:expense` (or `type:income`, `type:transfer`, `type:credit`) | Filter by transaction type. |
+| `>100`, `>=100` | Minimum absolute amount. |
+| `<500`, `<=500` | Maximum absolute amount. |
+| `since:2026-05-01` | Start date (ISO `YYYY-MM-DD`). |
+| `until:2026-05-31` | End date (ISO `YYYY-MM-DD`). |
+
+If a name lookup misses (you typed `category:Foo` and have no category called "Foo"), the token stays in the search text instead of silently doing nothing — that way you can see the spelling didn't take.
+
+Combine freely: `payee:Amazon >50 since:2026-01-01 office` finds purchases at Amazon over $50 since January 1 with "office" anywhere in the memo.
+
 ### Filter pills
 
 Below the search box, every filter is a togglable pill. Tap one to set it; tap the **×** to clear it.
@@ -172,10 +191,34 @@ Below the search box, every filter is a togglable pill. Tap one to set it; tap t
 | **Payee** | Show transactions with a specific payee |
 | **Type** | Restrict to Income, Expense, Transfer, or Credit |
 | **Date range** | Pick a start and end date |
+| **Amount** | Set a minimum, a maximum, or both. Either bound is optional. Compares absolute values, so `Min 50` matches a $50 expense and a $50 income equally. |
 
 Filters combine with **AND** logic — every active pill applies. The search box also stacks on top: a search term plus a Type pill returns only matches that satisfy both.
 
 > **For example:** Want to see everything you spent at "Whole Foods" this year? Type "Whole Foods" in the search box, set the Type pill to Expense, set Date range to January 1 → today. There's your number.
+
+### Saved views
+
+Once you've built a filter combination you like — say, "Expenses over $100 in the Travel category since January" — you can save it for one-click reuse. The **Views** button sits to the right of the search input.
+
+**Save a view**
+
+1. Set up the filters (and search text) you want.
+2. Click **Views → Save current as…**.
+3. Give it a name and save.
+
+**Load a view**
+
+1. Click **Views**.
+2. Pick the view from the list. The current filter set is replaced wholesale — a view is meant to be a clean snapshot, not a partial overlay.
+
+**Delete a view**
+
+Hover over a view in the popover and click the **×** that appears. Cheap to recreate, so no confirmation modal — just confirm in the toast.
+
+You can have up to **25 saved views per account**. If you hit the limit, delete one to make room for a new one.
+
+> **Worked example:** Create three views — "Uncategorized this month", "Spending > $100 last 90 days", and "Restaurants this year". Now your three most common questions about your money are each one click away.
 
 ---
 

@@ -162,6 +162,25 @@ La búsqueda no distingue mayúsculas y minúsculas, y empareja substrings — e
 
 Útil cuando recuerdas el nombre del lugar o lo que anotaste, pero no la fecha o el monto.
 
+#### Tokens para usuarios avanzados
+
+El cuadro de búsqueda también reconoce una pequeña sintaxis de tokens. Cuando un token coincide con una cuenta / categoría / beneficiario / tipo conocido, se promueve a un filtro estructurado y el resto del cuadro se queda como texto libre.
+
+| Token | Efecto |
+|---|---|
+| `category:Comida` | Filtra por categoría. Usa `category:"Comer fuera"` para nombres con espacios. |
+| `payee:Amazon` | Filtra por beneficiario. Pon comillas si el nombre tiene espacios. |
+| `account:Cheques` | Filtra por cuenta. Pon comillas si el nombre tiene espacios. |
+| `type:expense` (o `type:income`, `type:transfer`, `type:credit`) | Filtra por tipo de transacción. (Las palabras clave son en inglés.) |
+| `>100`, `>=100` | Monto mínimo absoluto. |
+| `<500`, `<=500` | Monto máximo absoluto. |
+| `since:2026-05-01` | Fecha de inicio (ISO `YYYY-MM-DD`). |
+| `until:2026-05-31` | Fecha de fin (ISO `YYYY-MM-DD`). |
+
+Si una búsqueda de nombre falla (escribiste `category:Foo` y no tienes una categoría llamada "Foo"), el token se queda en el texto de búsqueda en lugar de ignorarse en silencio — así puedes ver que no se aplicó.
+
+Combina libremente: `payee:Amazon >50 since:2026-01-01 oficina` encuentra compras en Amazon mayores a $50 desde el 1 de enero con "oficina" en el memo.
+
 ### Pills de filtro
 
 Debajo del cuadro de búsqueda, cada filtro es una pill que puedes activar o desactivar. Tócala para fijarla; toca la **×** para quitarla.
@@ -173,10 +192,34 @@ Debajo del cuadro de búsqueda, cada filtro es una pill que puedes activar o des
 | **Beneficiario** | Muestra las transacciones de un beneficiario específico |
 | **Tipo** | Restringe a Ingreso, Gasto, Transferencia o Crédito |
 | **Rango de fechas** | Elige una fecha de inicio y fin |
+| **Monto** | Establece un mínimo, un máximo, o ambos. Cualquiera de los dos límites es opcional. Compara valores absolutos, así que `Mín 50` empareja un gasto de $50 igual que un ingreso de $50. |
 
 Los filtros se combinan con lógica **Y** — todas las pills activas aplican. La búsqueda también se apila encima: un término de búsqueda más una pill de Tipo regresa solo los resultados que cumplen ambas.
 
 > **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Costco" este año? Escribe "Costco" en el cuadro de búsqueda, fija la pill Tipo en Gasto, y el Rango de fechas a enero 1 → hoy. Ahí está tu número.
+
+### Vistas guardadas
+
+Una vez que armaste una combinación de filtros que te gusta — digamos, "Gastos mayores a $100 en la categoría Viajes desde enero" — puedes guardarla para usarla con un clic. El botón **Vistas** está a la derecha del cuadro de búsqueda.
+
+**Guardar una vista**
+
+1. Configura los filtros (y el texto de búsqueda) que quieras.
+2. Haz clic en **Vistas → Guardar la actual como…**.
+3. Dale un nombre y guarda.
+
+**Cargar una vista**
+
+1. Haz clic en **Vistas**.
+2. Elige la vista de la lista. El conjunto de filtros actual se reemplaza por completo — una vista debe ser una foto limpia, no una capa parcial.
+
+**Eliminar una vista**
+
+Pasa el cursor sobre una vista en el popover y haz clic en la **×** que aparece. Son baratas de recrear, así que no hay modal de confirmación — solo confirma desde el toast.
+
+Puedes tener hasta **25 vistas guardadas por cuenta**. Si llegas al límite, elimina una para hacer espacio.
+
+> **Ejemplo trabajado:** Crea tres vistas — "Sin categorizar este mes", "Gastos > $100 últimos 90 días" y "Restaurantes este año". Ahora tus tres preguntas más frecuentes sobre tu dinero están a un clic cada una.
 
 ---
 
