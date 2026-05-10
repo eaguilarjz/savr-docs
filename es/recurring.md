@@ -101,7 +101,9 @@ Una regla está **vencida** cuando su siguiente fecha es hoy o anterior. Hasta q
 
 1. Abre **Recurrentes**.
 2. Las reglas vencidas aparecen al inicio con una acción **Aplicar**.
-3. Haz clic en **Aplicar vencidas** para ejecutar todas a la vez, o aplícalas individualmente.
+3. Haz clic en **Aplicar vencidas** para abrir un modal de previsualización con todas las reglas vencidas, cada una con una casilla.
+4. Por defecto todo está marcado — significa "aplicar todas ahora." Desmarca cualquier regla que quieras posponer; se queda en la lista de vencidas para la próxima vez.
+5. Haz clic en **Aplicar N** para ejecutar solo las marcadas.
 
 Por cada regla aplicada, savr:
 

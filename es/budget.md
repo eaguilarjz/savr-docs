@@ -24,7 +24,8 @@ Suena aburrido escrito así. En la práctica es sorprendentemente satisfactorio.
 | **Por asignar** | El número titular en la parte superior. Son ingresos que has recibido pero aún no tienen un trabajo. |
 | **Saldo total de cuentas** | Suma de todas tus cuentas activas, mostrado junto al presupuesto como contexto. |
 | **Grupos de categorías** | Agrupaciones colapsables. Cada grupo muestra métricas agregadas. |
-| **Filas de categoría** | Cada categoría muestra Presupuestado, Gastado y Disponible para el mes seleccionado. |
+| **Filas de categoría** | Cada categoría muestra Asignado, Gastado y Disponible para el mes seleccionado. |
+| **Barra de herramientas** | Contiene el menú **Auto-Asignar**, **Cambios recientes**, y **Expandir todos / Colapsar todos** para los grupos de categorías. |
 
 Cada fila de categoría tiene tres números:
 
@@ -33,6 +34,8 @@ Cada fila de categoría tiene tres números:
 - **Disponible** — `Asignado − Gastado`. El número que te importa.
 
 Cuando **Disponible** se vuelve negativo, el valor se muestra en rojo. No es un regaño — es la señal de que debes mover dinero hacia ahí desde otra parte.
+
+> **Pro tip — agregar en línea.** Pasa el cursor sobre cualquier fila de grupo de categoría y aparece un botón **+** para agregar una categoría a ese grupo sin salir de la página de presupuesto. Hay un atajo similar **+ Nuevo grupo** para crear un grupo completo sin abrir otra página. En móvil están siempre visibles.
 
 ---
 
@@ -99,21 +102,32 @@ Ambas categorías ahora muestran la transferencia en su historial. Tu Por asigna
 
 Este es el movimiento que evita que la gente abandone su presupuesto a mitad de mes. Acéptalo.
 
+### Cambios recientes
+
+Abre **Cambios recientes** desde la barra de herramientas del Presupuesto para ver un registro cronológico de cada asignación y movimiento de dinero del mes actual. Las entradas se agrupan por fecha (Hoy / Ayer / Anteriores), con tres pills de filtro arriba:
+
+- **Todos** — cada cambio.
+- **Movidos** — solo las transferencias entre categorías.
+- **Asignados** — solo las asignaciones directas.
+
+Útil cuando no recuerdas de qué categoría sacaste $50 la semana pasada, o cuando estás conciliando a fin de mes y quieres ver el orden en que pasaron las cosas.
+
 ---
 
 ## Estrategias de auto-asignación
 
-savr puede llenar tu presupuesto automáticamente. Abre el menú **Auto-Asignar** en la página de Presupuesto y elige una de cinco estrategias:
+savr puede llenar tu presupuesto automáticamente. Abre el menú **Auto-Asignar** en la página de Presupuesto y elige una de seis estrategias:
 
 | Estrategia | Qué hace | Cuándo usarla |
 |---|---|---|
-| **Categorías con déficit** | Llena cada categoría hasta su objetivo (o hasta lo ya gastado si no hay objetivo). | La más común — deja cada categoría "cubierta." |
+| **Categorías con déficit** | Llena cada categoría hasta su objetivo (o hasta su déficit no cubierto — lo gastado menos lo que ya tenía acumulado — si no hay objetivo). | La más común — deja cada categoría "cubierta" sin doble-financiar las que ya tienen colchón. |
 | **Como el mes pasado** | Copia las asignaciones del mes pasado tal cual. | Meses predecibles donde nada ha cambiado. |
 | **Lo gastado el mes pasado** | Asigna a cada categoría lo que realmente se gastó el mes pasado. | Verificación de presupuesto contra hábitos reales. |
 | **Disponible a cero** | Agrega dinero a categorías donde Disponible es negativo, llevándolas a cero. | Limpieza rápida a fin de mes cuando hay categorías rojas. |
 | **Asignado a cero** | Asigna a categorías que aún no tienen presupuesto este mes. | Empezar un mes nuevo desde cero. |
+| **Reducir sobrefinanciación** | Recorta las categorías que tienen *más* asignado del que necesitan — las deja en su objetivo o en lo que se haya gastado, lo que sea mayor. El opuesto de Categorías con déficit. | Recuperar dinero hacia **Por asignar** para mandarlo a otro lado. |
 
-Puedes ver el total que asignará cada estrategia antes de aplicarla, y opcionalmente fijar un máximo a gastar.
+Puedes ver el total que cada estrategia asignará (o recuperará) antes de aplicarla, y opcionalmente fijar un máximo a gastar.
 
 ### Llenar por Objetivos
 

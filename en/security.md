@@ -24,7 +24,7 @@ savr accepts three ways to sign in. You can use any one of them, or mix and matc
 |---|---|---|
 | **Email + password** | Your email address and your savr password | The classic. Pair with [MFA](#two-factor-authentication-mfa) for the strongest setup. |
 | **Sign in with Google** | A Google account whose email matches yours in savr | One click. No password to remember. |
-| **Sign in with Microsoft** | A Microsoft account (personal or work) whose email matches yours in savr | Same idea — one click. |
+| **Sign in with Microsoft** | A **personal** Microsoft account (Outlook.com, Hotmail, Live, MSN) whose email matches yours in savr | Same idea — one click. Work or school AAD accounts aren't supported. |
 
 ### How OAuth sign-up works
 

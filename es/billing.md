@@ -25,7 +25,7 @@ Tres meses son suficientes para:
 - Ver si savr realmente encaja en tu vida
 - Decidir si vale la pena pagar por él
 
-Aproximadamente dos semanas antes de que termine la prueba, savr te enviará un correo recordatorio para que elijas un plan o, si no es para ti, te vayas limpiamente. Preferimos que canceles a que te sientas atrapado.
+Unos días antes de que termine la prueba, savr te enviará un correo recordatorio único para que elijas un plan o, si no es para ti, te vayas limpiamente. Preferimos que canceles a que te sientas atrapado.
 
 Cuando termina la prueba, tus datos no se eliminan — solo se vuelven de solo lectura hasta que elijas un plan. Suscríbete y todo se reactiva al instante.
 
@@ -61,9 +61,18 @@ El primer cargo sucede de inmediato. Los cargos futuros suceden automáticamente
 
 ### Cambiar planes (subir o bajar)
 
-¿Quieres cambiar de Mensual a Anual para ahorrar? ¿O bajar de Anual a Mensual? Abre **Perfil → Plan y Facturación → Administrar Facturación**. El portal de facturación maneja los cambios de plan, incluyendo cualquier reembolso o cargo prorrateado.
+¿Quieres cambiar de Mensual a Anual para ahorrar? ¿O bajar de Anual a Mensual? No necesitas salir de savr.
+
+1. Abre **Perfil → Plan y Facturación**.
+2. Haz clic en el plan al que quieres cambiar.
+3. Un diálogo de **Cambiar plan** confirma el cambio y te avisa que la diferencia de precio se **prorratea** y aplica a tu próxima factura.
+4. Confirma. El cambio aplica de inmediato — sin interrupciones.
 
 Puedes cambiar tan seguido como quieras. Sin penalización, sin llamada incómoda.
+
+> **Una pequeña condición:** Si tu último pago falló y tu cuenta está **Pendiente de pago**, el cambio en línea queda deshabilitado hasta que liquides el saldo desde el portal de facturación. Lo mismo para suscripciones **En pausa** — reanúdalas primero, luego cambia.
+
+> **Si previamente habías cancelado** (configurado para "cancelar al final del periodo") y cambias de plan, la cancelación se deshace — tu suscripción se reanuda en el nuevo plan.
 
 ---
 
@@ -91,6 +100,25 @@ Cada cargo genera una factura. Abre **Perfil → Plan y Facturación → Factura
 ¿Necesitas una factura más vieja? Manda correo a soporte y la sacaremos.
 
 > **Para temporada de impuestos:** Las facturas tienen todo lo que un contador necesita (fechas, montos, datos del negocio). Descarga un año entero con unos cuantos clics.
+
+---
+
+## Pausar y reanudar
+
+Si necesitas un descanso — quizás estás de viaje, entre trabajos, o solo quieres alejarte un mes — puedes **pausar** en lugar de cancelar.
+
+1. Abre **Perfil → Plan y Facturación → Administrar Facturación**.
+2. En el portal de facturación, elige **Pausar suscripción**.
+
+Mientras está pausada:
+
+- **No** se te cobra. Las renovaciones se detienen hasta que reanudes.
+- savr muestra una pantalla de "tu suscripción está en pausa" al iniciar sesión, con un botón **Reanudar suscripción**.
+- Todos tus datos se quedan exactamente donde están.
+
+Para reanudar, haz clic en **Reanudar suscripción** desde esa pantalla, o vuelve a abrir el portal de facturación y elige Reanudar. La facturación retoma su cadencia normal y regresas de inmediato.
+
+> **Pausar vs. cancelar:** Pausar es para "voy a regresar" — la facturación se detiene, la suscripción se queda. Cancelar es para "ya terminé por ahora" — la facturación se detiene, la suscripción termina al final del periodo, y la cuenta se vuelve de solo lectura. Ambas son reversibles; pausar es más fluido.
 
 ---
 
@@ -143,7 +171,8 @@ Algunos escenarios menos comunes:
 | Cancelas a mitad de ciclo | Mantienes acceso completo hasta el final del periodo pagado. Después se vuelve de solo lectura. |
 | Te re-suscribes después de cancelar | Obtienes acceso completo de inmediato. Tus datos están exactamente donde los dejaste. |
 | Tu tarjeta expira | Reintentamos; recibes recordatorios por correo; eventualmente la cuenta va a Vencido/Sin pagar. Actualiza la tarjeta para recuperar. |
-| Cambias de plan (p. ej. Mensual → Anual) | El portal de facturación prorratea la diferencia. Sin interrupción a tu cuenta. |
+| Cambias de plan (p. ej. Mensual → Anual) | savr prorratea la diferencia y la aplica a tu próxima factura. Sin interrupción. |
+| Pausas | La facturación se detiene, tus datos se quedan, el inicio de sesión muestra un botón Reanudar. Sin matemática de prorrateo, sin sorpresas a fin de periodo. |
 | Eliminas tu cuenta con saldo pendiente | Bloqueado hasta que el saldo se liquide. |
 
 ---
@@ -154,4 +183,5 @@ Algunos escenarios menos comunes:
 - **Actualiza tu método de pago antes de que expire.** Una tarea de dos minutos antes de que la tarjeta llegue a su fecha de expiración te ahorra los días incómodos de cargos declinados.
 - **Cancelar ≠ eliminar.** Cancelar detiene la facturación. Tus datos se quedan. Eliminar tu cuenta es una acción separada (irreversible).
 - **Revisa Plan y Facturación una vez por trimestre.** Asegúrate de que tu plan sigue encajando y que tu método de pago está al día. Dos minutos, cuatro veces al año.
-- **Lee el correo recordatorio de la prueba.** Dos semanas antes de que termine tu prueba, recibirás un correo con la fecha y un enlace de un clic para suscribirte. Es un empujón útil — mucha gente lo usa como su momento de decisión.
+- **Lee el correo recordatorio de la prueba.** Unos días antes de que termine tu prueba, recibirás un correo con la fecha y un enlace de un clic para suscribirte. Es un empujón útil — mucha gente lo usa como su momento de decisión.
+- **Pausa antes de cancelar.** Si tal vez vas a regresar, pausar mantiene viva tu suscripción y tu facturación intacta. Cancelar manda la cuenta a solo lectura y es un poco más fricción para deshacer.

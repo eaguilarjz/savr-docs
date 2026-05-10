@@ -50,13 +50,13 @@ Picking the right type matters. Here's the cheat sheet:
 2. Fill in:
    - **Type** — Income, Expense, Transfer, or Credit
    - **Account** — which account this affects
-   - **Amount** — always positive; the type tells savr the direction
+   - **Amount** — always positive; the type tells savr the direction. **You can type math expressions** here: `30+12.50`, `100/4`, `(15+8)*2` — savr evaluates them when you tab away. Useful for splitting a check or applying a percentage on the fly.
    - **Date** — defaults to today
-   - **Category** — required for Expense and Credit
+   - **Category** — required for Expense and Credit. The dropdown shows each category's **Available** balance next to its name, so you can pick one that has room without leaving the form.
    - **Payee** — optional, but useful for spending analysis
    - **Memo** — optional notes
    - **Cleared** — toggle if it's already cleared your bank statement
-3. Click **Save**.
+3. Click **Save** to close the dialog, or **Save and New** to keep it open and start the next entry. The form keeps your account, type, and date so you can rip through several entries quickly; the amount field gets the focus.
 
 ### Transfers
 
@@ -144,9 +144,17 @@ To remove a transaction, open the edit dialog and click **Delete**. The affected
 
 ---
 
-## Filters
+## Search and filters
 
-The Activity page has a filter bar across the top so you can find activity quickly:
+The top of the Activity page has two ways to narrow the list:
+
+### Search box
+
+Type in the **Search activity…** box to free-text search across **memo**, **payee name**, and **category name** (case-insensitive). Useful when you remember the name of the place or what you noted but not the date or amount.
+
+### Filter pills
+
+Below the search box, every filter is a togglable pill. Tap one to set it; tap the **×** to clear it.
 
 | Filter | What it does |
 |---|---|
@@ -156,9 +164,9 @@ The Activity page has a filter bar across the top so you can find activity quick
 | **Type** | Restrict to Income, Expense, Transfer, or Credit |
 | **Date range** | Pick a start and end date |
 
-Filters combine with **AND** logic — every constraint applies. To clear, hit the reset button or remove filters one at a time.
+Filters combine with **AND** logic — every active pill applies. The search box also stacks on top: a search term plus a Type pill returns only matches that satisfy both.
 
-> **For example:** Want to see everything you spent at "Whole Foods" this year? Filter by Payee = Whole Foods, Type = Expense, Date range = January 1 to today. There's your number.
+> **For example:** Want to see everything you spent at "Whole Foods" this year? Type "Whole Foods" in the search box, set the Type pill to Expense, set Date range to January 1 → today. There's your number.
 
 ---
 

@@ -24,7 +24,7 @@ savr acepta tres formas de iniciar sesión. Puedes usar cualquiera, o combinarla
 |---|---|---|
 | **Correo + contraseña** | Tu correo y tu contraseña de savr | El clásico. Combínalo con [MFA](#autenticación-de-dos-factores-mfa) para la configuración más fuerte. |
 | **Continuar con Google** | Una cuenta de Google con un correo que coincida con el tuyo en savr | Un clic. Sin contraseña que recordar. |
-| **Continuar con Microsoft** | Una cuenta de Microsoft (personal o de trabajo) con un correo que coincida con el tuyo en savr | Misma idea — un clic. |
+| **Continuar con Microsoft** | Una cuenta **personal** de Microsoft (Outlook.com, Hotmail, Live, MSN) con un correo que coincida con el tuyo en savr | Misma idea — un clic. Las cuentas de trabajo o escuela (AAD) no están soportadas. |
 
 ### Cómo funciona el registro con OAuth
 

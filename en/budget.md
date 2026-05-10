@@ -24,7 +24,8 @@ It sounds boring written out like that. In practice it's surprisingly satisfying
 | **Ready to Assign** | The headline number at the top. This is income you've received but haven't given a job to yet. |
 | **Account balance total** | Sum of all your active accounts, shown alongside the budget for context. |
 | **Category groups** | Collapsible groupings of categories. Each group shows aggregated metrics. |
-| **Category rows** | Each category shows Budgeted, Spent, and Available for the selected month. |
+| **Category rows** | Each category shows Assigned, Spent, and Available for the selected month. |
+| **Toolbar** | Holds the **Auto-Assign** menu, **Recent Moves**, and **Expand all / Collapse all** for the category groups. |
 
 Each category row has three numbers:
 
@@ -33,6 +34,8 @@ Each category row has three numbers:
 - **Available** — `Assigned − Spent`. The number you care about.
 
 When **Available** goes negative, the value turns red. That's not a scolding — it's a signal that you should move money in from somewhere else.
+
+> **Pro tip — inline adds.** Hover over any category-group row and a **+** button appears so you can add a category to that group without leaving the budget page. There's a matching **+ New group** affordance to add a whole new group inline. Same on mobile, just always visible.
 
 ---
 
@@ -99,21 +102,32 @@ Both categories now show the transfer in their history. Your overall Ready to As
 
 This is the move that keeps people from ditching their budget mid-month. Embrace it.
 
+### Recent Moves
+
+Open **Recent Moves** from the Budget toolbar to see a chronological log of every assignment and money transfer for the current month. Entries are grouped by date (Today / Yesterday / Older), with three filter pills at the top:
+
+- **All** — every change.
+- **Moved** — only the transfers between categories.
+- **Assigned** — only the direct allocations.
+
+Useful when you can't remember which category you pulled $50 out of last week, or when you're reconciling end-of-month and want to see the order things happened in.
+
 ---
 
 ## Auto-assign strategies
 
-savr can fill out your budget for you. Open the **Auto-Assign** menu on the Budget page and pick one of five strategies:
+savr can fill out your budget for you. Open the **Auto-Assign** menu on the Budget page and pick one of six strategies:
 
 | Strategy | What it does | When to reach for it |
 |---|---|---|
-| **Underfunded** | Fills each category up to its target (or up to what's already spent if no target). | Most common — gets every category to "covered." |
+| **Underfunded** | Fills each category up to its target (or up to its uncovered shortfall — what you spent minus what carried forward — if no target). | Most common — gets every category to "covered" without double-funding things that already have a buffer. |
 | **Assigned Last Month** | Copies last month's allocations as-is. | Predictable months where nothing changed. |
 | **Spent Last Month** | Allocates each category what was actually spent last month. | A reality-check budget against your real habits. |
 | **Zero Available** | Adds money to categories where Available is negative, bringing them back to zero. | Quick cleanup at the end of the month when a few categories are red. |
 | **Zero Assigned** | Allocates to categories that have no budget yet this month. | Starting a new month from scratch. |
+| **Reduce Overfunding** | Trims categories that have *more* assigned than they need — leaves each one at its target or its actual spending, whichever is higher. The opposite of Underfunded. | Pulling money back to **Ready to Assign** so you can redirect it elsewhere. |
 
-You can preview the total each strategy will assign before applying, and optionally cap the maximum spend.
+You can preview the total each strategy will assign (or pull back) before applying, and optionally cap the maximum spend.
 
 ### Fill by Targets
 

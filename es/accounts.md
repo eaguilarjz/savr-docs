@@ -22,7 +22,7 @@ savr soporta seis tipos. El tipo importa porque controla cómo se agrupa la cuen
 |---|---|---|
 | **Cuenta corriente** | Gastos del día a día | Donde vive la mayoría de las transacciones |
 | **Ahorro** | Dinero apartado | Se trata como Cuenta corriente para fines de presupuesto |
-| **Tarjeta de Crédito** | Tarjetas de crédito | Gastar aquí no reduce una cuenta de efectivo; registra los pagos como Transferencias |
+| **Tarjeta de Crédito** | Tarjetas de crédito | Gastar aquí no reduce una cuenta de efectivo; registra los pagos como Transferencias. Campo opcional de **límite de crédito** que aparece en la página de detalle. |
 | **Efectivo** | Efectivo en mano | Dinero de bolsillo, ese sobre en el cajón |
 | **Inversiones** | Brokerage, retiro, cripto | Sigue el saldo; no está pensado para detalle por operación |
 | **Préstamo** | Hipotecas, créditos automotrices, créditos personales, créditos educativos | Tasa de interés, pago mensual, categoría de pago vinculada |
@@ -67,6 +67,24 @@ Para registrar pagos de préstamo con desglose de capital, intereses y comisione
 
 ---
 
+## Tarjetas de crédito
+
+Las cuentas de tarjeta de crédito funcionan igual que Cuenta corriente y Ahorro para presupuestar — cada cargo reduce el Disponible de una categoría, cada pago es una Transferencia desde otra cuenta. Dos extras que vale la pena conocer:
+
+### Límite de crédito (opcional)
+
+Al crear o editar una cuenta de tarjeta de crédito, puedes establecer un **Límite de crédito**. Es puramente un valor de referencia — savr no bloquea transacciones cuando lo cruzas — pero el límite aparece en la página de detalle de la cuenta junto a tu saldo actual, así puedes ver el margen de un vistazo.
+
+Déjalo en blanco si no te interesa. Agrégalo después desde el editor de la cuenta cuando quieras.
+
+### Registrar pagos
+
+Un pago de tarjeta de crédito es una [Transferencia](../actividad/#transferencias) desde tu Cuenta corriente (o de donde salga el dinero) a la cuenta de la tarjeta. El saldo de la tarjeta baja; el saldo de la cuenta corriente baja; tu patrimonio neto general no cambia. No registres el pago como un Gasto en la tarjeta — eso lo contaría dos veces.
+
+Para pagos automáticos mensuales, configura una [Transferencia recurrente](../recurring/#crear-una-transacción-recurrente) para que se ejecute el mismo día cada mes.
+
+---
+
 ## Editar, cerrar, reabrir, eliminar
 
 ### Editar una cuenta
@@ -76,6 +94,7 @@ Haz clic en la fila de la cuenta para abrir su editor. Puedes cambiar:
 - El nombre
 - El tipo
 - (Para préstamos) la tasa de interés y el pago mensual
+- (Para tarjetas de crédito) el **límite de crédito** — consulta [Tarjetas de crédito](#tarjetas-de-crédito) arriba
 
 El saldo inicial se establece al crear. Para ajustar saldos históricos, edita o agrega una transacción directamente.
 
@@ -105,9 +124,11 @@ Cerrar es casi siempre lo que quieres. Eliminar es para cuando creaste una cuent
 
 ## Conciliación
 
-Cada cuenta tiene un botón **Conciliar** que te lleva paso a paso a hacer coincidir savr con el extracto de tu banco. Es el movimiento que detecta errores de captura, transacciones perdidas y el ocasional cobro doble del banco.
+La mayoría de las cuentas tienen un botón **Conciliar** que te lleva paso a paso a hacer coincidir savr con el extracto de tu banco. Es el movimiento que detecta errores de captura, transacciones perdidas y el ocasional cobro doble del banco.
 
 Si el saldo de la cuenta en savr empieza a separarse de la realidad, corre una conciliación. Es la forma más limpia de ponerte al día.
+
+> **Atención:** Las cuentas de préstamo no tienen botón Conciliar. Los prestamistas no emiten el tipo de extracto compensado/no compensado que asume el flujo de conciliación. Para un préstamo, lo correcto es mantener el saldo del capital al día con entradas precisas de [Pago de Deuda](../actividad/#pagos-de-deuda) y actualizar el saldo inicial una vez al año si el número del prestamista se aleja del tuyo.
 
 → Guía completa: [Conciliación](../reconcile/)
 

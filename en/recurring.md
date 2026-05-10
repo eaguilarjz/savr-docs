@@ -101,7 +101,9 @@ A rule is **due** when its next date is today or in the past. Until you apply it
 
 1. Open **Recurring**.
 2. Due rules show up at the top with an **Apply** action.
-3. Click **Apply due** to fire all due rules at once, or apply them individually.
+3. Click **Apply due** to open a preview modal listing every rule that's currently due, each with a checkbox.
+4. By default everything is ticked — meaning "apply all of these now." Untick any rule you want to defer; it stays on the due list for next time.
+5. Click **Apply N** to fire only the ticked rules.
 
 For each rule applied, savr:
 

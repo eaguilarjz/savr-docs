@@ -22,7 +22,7 @@ savr supports six types. The type matters because it controls how the account is
 |---|---|---|
 | **Checking** | Day-to-day spending | Where most transactions live |
 | **Savings** | Money set aside | Treated like checking for budgeting purposes |
-| **Credit Card** | Credit cards | Spending here doesn't reduce a cash account; record payments as Transfers |
+| **Credit Card** | Credit cards | Spending here doesn't reduce a cash account; record payments as Transfers. Optional **credit limit** field shown on the account detail page. |
 | **Cash** | Physical cash on hand | Pocket money, that envelope in the drawer |
 | **Investment** | Brokerage, retirement, crypto | Tracks the balance; not designed for trade-by-trade detail |
 | **Loan** | Mortgages, auto loans, personal loans, student loans | Interest rate, monthly payment, linked payment category |
@@ -67,6 +67,24 @@ For how to record loan payments with separate principal, interest, and fees amou
 
 ---
 
+## Credit cards
+
+Credit-card accounts work the same as Checking and Savings for budgeting — every charge reduces a category's Available, every payment is a Transfer from another account. Two extras worth knowing:
+
+### Credit limit (optional)
+
+When you create or edit a credit-card account, you can set a **Credit Limit**. It's purely a reference value — savr doesn't block transactions when you cross it — but the limit shows up on the account detail page next to your current balance, so you can see headroom at a glance.
+
+Leave it blank if you don't want to bother. Add it later from the account editor whenever you decide to.
+
+### Recording payments
+
+A credit-card payment is a [Transfer](../activity/#transfers) from your Checking (or wherever the money comes from) to the credit-card account. The credit-card balance drops; your checking balance drops; your overall net worth doesn't change. Don't enter the payment as an Expense on the credit card — that would double-count.
+
+For automated monthly payments, set up a [Recurring Transfer](../recurring/#create-a-recurring-transaction) so it fires the same day every month.
+
+---
+
 ## Edit, close, reopen, delete
 
 ### Edit an account
@@ -76,6 +94,7 @@ Click the account row to open its editor. You can change:
 - The name
 - The type
 - (For loans) the interest rate and monthly payment
+- (For credit cards) the **credit limit** — see [Credit cards](#credit-cards) below
 
 Opening balance is set at creation. To adjust historical balances, edit or add a transaction directly.
 
@@ -105,9 +124,11 @@ Closing is almost always what you want. Deletion is for when you created an acco
 
 ## Reconciliation
 
-Each account has a **Reconcile** button that walks you through matching savr to your bank's statement. This is the move that catches typos, missed transactions, and the occasional double-charge from your bank.
+Most accounts have a **Reconcile** button that walks you through matching savr to your bank's statement. This is the move that catches typos, missed transactions, and the occasional double-charge from your bank.
 
 If your account balance in savr starts to drift from reality, run a reconciliation. It's the cleanest way to catch up.
+
+> **Heads up:** Loan accounts don't have a Reconcile button. Lenders don't issue the kind of cleared/uncleared statement that the reconciliation flow assumes. For a loan, the right move is to keep the principal balance in sync via accurate [Debt Payment](../activity/#debt-payments) entries, and update the opening balance once a year if your lender's number drifts from yours.
 
 → Full guide: [Reconciliation](../reconcile/)
 

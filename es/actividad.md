@@ -47,17 +47,17 @@ Elegir el tipo correcto importa. Aquí está la chuleta:
 
 ## Crear una transacción
 
-1. Abre **Transacciones** y haz clic en **Nueva Transacción** (o presiona el mismo botón en la página de detalle de una cuenta).
+1. Abre **Actividad** y haz clic en **Nueva Transacción** (o presiona el mismo botón en la página de detalle de una cuenta).
 2. Llena:
    - **Tipo** — Ingreso, Gasto, Transferencia o Crédito
    - **Cuenta** — qué cuenta afecta
-   - **Monto** — siempre positivo; el tipo le dice a savr la dirección
+   - **Monto** — siempre positivo; el tipo le dice a savr la dirección. **Puedes escribir expresiones matemáticas** aquí: `30+12.50`, `100/4`, `(15+8)*2` — savr las evalúa cuando sales del campo. Útil para dividir una cuenta o aplicar un porcentaje sobre la marcha.
    - **Fecha** — por defecto hoy
-   - **Categoría** — requerida para Gasto y Crédito
+   - **Categoría** — requerida para Gasto y Crédito. El menú desplegable muestra el saldo **Disponible** de cada categoría junto a su nombre, así puedes elegir una con espacio sin salir del formulario.
    - **Beneficiario** — opcional, pero útil para análisis de gasto
    - **Memo** — notas opcionales
    - **Compensada** — actívalo si ya está confirmada en tu extracto
-3. Haz clic en **Guardar**.
+3. Haz clic en **Guardar** para cerrar el diálogo, o en **Guardar y nuevo** para mantenerlo abierto y empezar la siguiente entrada. El formulario conserva tu cuenta, tipo y fecha para que captures varias entradas rápido; el campo de monto recibe el foco automáticamente.
 
 ### Transferencias
 
@@ -145,9 +145,17 @@ Para eliminar una transacción, abre el diálogo de edición y haz clic en **Eli
 
 ---
 
-## Filtros
+## Búsqueda y filtros
 
-La página de Actividad tiene una barra de filtros en la parte superior para encontrar actividad rápido:
+La parte superior de la página de Actividad tiene dos formas de acotar la lista:
+
+### Cuadro de búsqueda
+
+Escribe en el cuadro **Buscar actividad…** para hacer búsqueda libre por **memo**, **nombre del beneficiario** y **nombre de la categoría** (sin distinguir mayúsculas y minúsculas). Útil cuando recuerdas el nombre del lugar o lo que anotaste, pero no la fecha o el monto.
+
+### Pills de filtro
+
+Debajo del cuadro de búsqueda, cada filtro es una pill que puedes activar o desactivar. Tócala para fijarla; toca la **×** para quitarla.
 
 | Filtro | Qué hace |
 |---|---|
@@ -157,9 +165,9 @@ La página de Actividad tiene una barra de filtros en la parte superior para enc
 | **Tipo** | Restringe a Ingreso, Gasto, Transferencia o Crédito |
 | **Rango de fechas** | Elige una fecha de inicio y fin |
 
-Los filtros se combinan con lógica **Y** — todas las restricciones aplican. Para limpiar, presiona el botón de reinicio o quítalos uno a uno.
+Los filtros se combinan con lógica **Y** — todas las pills activas aplican. La búsqueda también se apila encima: un término de búsqueda más una pill de Tipo regresa solo los resultados que cumplen ambas.
 
-> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Costco" este año? Filtra Beneficiario = Costco, Tipo = Gasto, Rango de fechas = enero 1 a hoy. Ahí está tu número.
+> **Por ejemplo:** ¿Quieres ver todo lo que gastaste en "Costco" este año? Escribe "Costco" en el cuadro de búsqueda, fija la pill Tipo en Gasto, y el Rango de fechas a enero 1 → hoy. Ahí está tu número.
 
 ---
 

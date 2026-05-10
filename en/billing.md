@@ -25,7 +25,7 @@ Three months is plenty of time to:
 - See whether savr actually fits your life
 - Decide if it's worth paying for
 
-Around two weeks before the trial ends, savr will email you a reminder so you can pick a plan or, if it's not for you, walk away cleanly. We'd rather you cancel than feel trapped.
+A few days before the trial ends, savr will email you a one-time reminder so you can pick a plan or, if it's not for you, walk away cleanly. We'd rather you cancel than feel trapped.
 
 When the trial ends, your data isn't deleted — it just becomes read-only until you pick a plan. Subscribe and everything reactivates instantly.
 
@@ -61,9 +61,18 @@ The first charge happens immediately. Future charges happen automatically on the
 
 ### Switching plans (upgrade or downgrade)
 
-Want to switch from Monthly to Annual to save? Or step back from Annual to Monthly? Open **Profile → Plans & Billing → Manage Billing**. The billing portal handles plan changes, including any prorated refunds or charges.
+Want to switch from Monthly to Annual to save? Or step back from Annual to Monthly? You don't need to leave savr.
+
+1. Open **Profile → Plans & Billing**.
+2. Click the plan you want to switch to.
+3. A **Switch plan** dialog confirms the change and tells you the price difference is **prorated** to your next invoice.
+4. Confirm. The change takes effect immediately — no gap in access.
 
 You can switch as often as you want. There's no penalty, no awkward call.
+
+> **One small condition:** If your last payment failed and your account is **Past Due**, the in-app switch is disabled until you settle the balance from the billing portal. Same for **Paused** subscriptions — resume first, then switch.
+
+> **If you'd previously canceled** (set to "cancel at period end") and you switch plans, the cancellation is undone — your subscription resumes on the new plan.
 
 ---
 
@@ -91,6 +100,25 @@ Every charge generates an invoice. Open **Profile → Plans & Billing → Invoic
 Need an older invoice? Email support and we'll dig it up.
 
 > **For tax season:** The invoices have everything an accountant needs (dates, amounts, business info). Download a year's worth with a few clicks.
+
+---
+
+## Pausing and resuming
+
+If you need a break — maybe you're traveling, between jobs, or just want to step away for a month — you can **pause** instead of canceling.
+
+1. Open **Profile → Plans & Billing → Manage Billing**.
+2. In the billing portal, choose **Pause subscription**.
+
+While paused:
+
+- You're **not** charged. Renewals stop until you resume.
+- savr shows a "subscription is paused" screen on sign-in with a **Resume subscription** button.
+- All your data stays exactly where it is.
+
+To resume, click **Resume subscription** from that screen, or open the billing portal again and choose Resume. Billing picks back up on its normal cadence and you're back in immediately.
+
+> **Pause vs. cancel:** Pause is for "I'll be back" — billing stops, the subscription stays. Cancel is for "I'm done for now" — billing stops, the subscription ends at the period boundary, and the account goes read-only. Both are reversible; pause is just smoother.
 
 ---
 
@@ -143,7 +171,8 @@ A few less-common scenarios:
 | You cancel mid-cycle | You keep full access until the end of the paid period. Then it goes read-only. |
 | You re-subscribe after canceling | You get full access immediately. Your data is exactly where you left it. |
 | Your card expires | We retry; you get email reminders; eventually account goes Past Due/Unpaid. Update the card to recover. |
-| You change plans (e.g. Monthly → Annual) | The billing portal prorates the difference. No interruption to your account. |
+| You change plans (e.g. Monthly → Annual) | savr prorates the difference and applies it to your next invoice. No interruption. |
+| You pause | Billing stops, your data stays, sign-in shows a Resume button. No proration math, no period-end surprises. |
 | You delete your account with an unpaid balance | Blocked until the balance is settled. |
 
 ---
@@ -154,4 +183,5 @@ A few less-common scenarios:
 - **Update your payment method before it expires.** A two-minute task before the card hits its expiration date saves the awkward few days of declined charges.
 - **Cancel ≠ delete.** Canceling stops billing. Your data stays. Deleting your account is a separate (irreversible) action.
 - **Check Plans & Billing once a quarter.** Make sure your plan still fits and your payment method is up to date. Two minutes, four times a year.
-- **Read the trial reminder email.** Two weeks before your trial ends, you'll get an email with the date and a one-click link to subscribe. It's a useful nudge — many people use it as their decision moment.
+- **Read the trial reminder email.** A few days before your trial ends, you'll get an email with the date and a one-click link to subscribe. It's a useful nudge — many people use it as their decision moment.
+- **Pause before you cancel.** If you might come back, pausing keeps your subscription alive and your billing intact. Canceling sends the account read-only and is a tiny bit more friction to undo.
